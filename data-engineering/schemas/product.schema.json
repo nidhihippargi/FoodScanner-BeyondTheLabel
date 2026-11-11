@@ -1,0 +1,684 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Food Scanner Canonical Product Record",
+  "description": "Source-neutral product facts with field-level status and provenance. This schema does not contain health verdicts or analysis output.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "recordId",
+    "identifiers",
+    "productName",
+    "brand",
+    "packageQuantity",
+    "ingredients",
+    "nutrition",
+    "images",
+    "sourceRecords",
+    "conflicts",
+    "quality",
+    "createdAt",
+    "updatedAt"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0.0"
+    },
+    "recordId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "identifiers": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "gtin"
+      ],
+      "properties": {
+        "gtin": {
+          "$ref": "#/$defs/gtinField"
+        }
+      }
+    },
+    "productName": {
+      "$ref": "#/$defs/stringField"
+    },
+    "brand": {
+      "$ref": "#/$defs/stringField"
+    },
+    "packageQuantity": {
+      "$ref": "#/$defs/quantityField"
+    },
+    "ingredients": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "rawText",
+        "language",
+        "status",
+        "provenance"
+      ],
+      "properties": {
+        "rawText": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "language": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "BCP 47 language tag when known."
+        },
+        "status": {
+          "$ref": "#/$defs/fieldStatus"
+        },
+        "provenance": {
+          "$ref": "#/$defs/provenanceList"
+        }
+      }
+    },
+    "nutrition": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "declaredBasis",
+        "servingSize",
+        "nutrients"
+      ],
+      "properties": {
+        "declaredBasis": {
+          "type": "string",
+          "enum": [
+            "per_100g",
+            "per_100ml",
+            "per_serving",
+            "as_sold",
+            "unknown"
+          ]
+        },
+        "servingSize": {
+          "$ref": "#/$defs/servingSizeField"
+        },
+        "nutrients": {
+          "type": "object",
+          "description": "Canonical nutrient key to value/status/provenance record. Unknown keys must be added to the documented vocabulary before use.",
+          "propertyNames": {
+            "pattern": "^[a-z][a-z0-9_]*$"
+          },
+          "additionalProperties": {
+            "$ref": "#/$defs/nutrientField"
+          }
+        }
+      }
+    },
+    "images": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/imageReference"
+      }
+    },
+    "sourceRecords": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/sourceRecord"
+      }
+    },
+    "conflicts": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/conflict"
+      }
+    },
+    "quality": {
+      "$ref": "#/$defs/qualitySummary"
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "$defs": {
+    "fieldStatus": {
+      "type": "string",
+      "enum": [
+        "available",
+        "missing",
+        "unverified",
+        "conflicting"
+      ]
+    },
+    "provenanceEntry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "sourceId",
+        "extractionMethod"
+      ],
+      "properties": {
+        "sourceId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "extractionMethod": {
+          "type": "string",
+          "enum": [
+            "barcode_lookup",
+            "ocr_extraction",
+            "manual_entry",
+            "api_import",
+            "other"
+          ]
+        },
+        "sourceField": {
+          "type": "string",
+          "minLength": 1
+        },
+        "observedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "confidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "transformationNotes": {
+          "type": "string"
+        }
+      }
+    },
+    "provenanceList": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/provenanceEntry"
+      }
+    },
+    "stringField": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "value",
+        "status",
+        "provenance"
+      ],
+      "properties": {
+        "value": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "status": {
+          "$ref": "#/$defs/fieldStatus"
+        },
+        "provenance": {
+          "$ref": "#/$defs/provenanceList"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "available"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "missing"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "type": "null"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "gtinField": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "value",
+        "status",
+        "provenance"
+      ],
+      "properties": {
+        "value": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[0-9]{8,14}$"
+        },
+        "status": {
+          "$ref": "#/$defs/fieldStatus"
+        },
+        "provenance": {
+          "$ref": "#/$defs/provenanceList"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "available"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "type": "string",
+                "pattern": "^[0-9]{8,14}$"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "missing"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "type": "null"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "quantityField": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "rawText",
+        "value",
+        "unit",
+        "status",
+        "provenance"
+      ],
+      "properties": {
+        "rawText": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "value": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "unit": {
+          "type": "string",
+          "enum": [
+            "g",
+            "kg",
+            "ml",
+            "l",
+            "count",
+            "unknown"
+          ]
+        },
+        "status": {
+          "$ref": "#/$defs/fieldStatus"
+        },
+        "provenance": {
+          "$ref": "#/$defs/provenanceList"
+        }
+      }
+    },
+    "servingSizeField": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "rawText",
+        "value",
+        "unit",
+        "status",
+        "provenance"
+      ],
+      "properties": {
+        "rawText": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "value": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "unit": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "status": {
+          "$ref": "#/$defs/fieldStatus"
+        },
+        "provenance": {
+          "$ref": "#/$defs/provenanceList"
+        }
+      }
+    },
+    "basis": {
+      "type": "string",
+      "enum": [
+        "per_100g",
+        "per_100ml",
+        "per_serving",
+        "as_sold",
+        "unknown"
+      ]
+    },
+    "nutrientField": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "originalValue",
+        "standardizedValues",
+        "status",
+        "provenance"
+      ],
+      "properties": {
+        "originalValue": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "value",
+            "unit",
+            "basis"
+          ],
+          "properties": {
+            "value": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": 0
+            },
+            "unit": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "basis": {
+              "$ref": "#/$defs/basis"
+            }
+          }
+        },
+        "status": {
+          "$ref": "#/$defs/fieldStatus"
+        },
+        "provenance": {
+          "$ref": "#/$defs/provenanceList"
+        },
+        "standardizedValues": {
+          "type": "array",
+          "description": "Zero or more source-provided or deterministically converted nutrient representations, each with an explicit basis. Do not derive serving values in this layer.",
+          "items": {
+            "$ref": "#/$defs/nutrientRepresentation"
+          }
+        }
+      }
+    },
+    "sourceRecord": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "sourceId",
+        "sourceType",
+        "extractionMethod",
+        "retrievedAt"
+      ],
+      "properties": {
+        "sourceId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sourceType": {
+          "type": "string",
+          "enum": [
+            "open_food_facts",
+            "ocr",
+            "user_correction",
+            "manual_entry",
+            "other"
+          ]
+        },
+        "extractionMethod": {
+          "type": "string",
+          "enum": [
+            "barcode_lookup",
+            "ocr_extraction",
+            "manual_entry",
+            "api_import",
+            "other"
+          ]
+        },
+        "retrievedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "sourceUpdatedAt": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "externalRecordId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "sourceUri": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "uri"
+        }
+      }
+    },
+    "imageReference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "url",
+        "kind",
+        "sourceId"
+      ],
+      "properties": {
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "front",
+            "ingredients",
+            "nutrition",
+            "other"
+          ]
+        },
+        "sourceId": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "conflictCandidate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "sourceId",
+        "value"
+      ],
+      "properties": {
+        "sourceId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "value": {},
+        "observedAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "conflict": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "fieldPath",
+        "candidates",
+        "resolutionStatus"
+      ],
+      "properties": {
+        "fieldPath": {
+          "type": "string",
+          "pattern": "^/"
+        },
+        "candidates": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "$ref": "#/$defs/conflictCandidate"
+          }
+        },
+        "resolutionStatus": {
+          "type": "string",
+          "enum": [
+            "unresolved",
+            "resolved"
+          ]
+        },
+        "resolutionNote": {
+          "type": "string"
+        }
+      }
+    },
+    "qualitySummary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "recordStatus",
+        "missingFields",
+        "unverifiedFields"
+      ],
+      "properties": {
+        "recordStatus": {
+          "type": "string",
+          "enum": [
+            "complete",
+            "partial",
+            "insufficient",
+            "conflicted"
+          ]
+        },
+        "missingFields": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^/"
+          },
+          "uniqueItems": true
+        },
+        "unverifiedFields": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^/"
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "nutrientRepresentation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "value",
+        "unit",
+        "basis"
+      ],
+      "properties": {
+        "value": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "unit": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "basis": {
+          "type": "string",
+          "enum": [
+            "per_100g",
+            "per_100ml",
+            "per_serving"
+          ]
+        }
+      }
+    }
+  }
+}

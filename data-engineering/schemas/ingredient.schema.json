@@ -1,0 +1,100 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Food Scanner Ingredient Reference Entry",
+  "description": "Reference-data contract for canonical ingredient names, aliases, evidence and review status. It does not make a nutrition or health judgement.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "ingredientId",
+    "canonicalName",
+    "aliases",
+    "classification",
+    "evidence",
+    "notes",
+    "createdAt",
+    "updatedAt"
+  ],
+  "properties": {
+    "schemaVersion": { "const": "1.0.0" },
+    "ingredientId": { "type": "string", "minLength": 1 },
+    "canonicalName": { "type": "string", "minLength": 1 },
+    "aliases": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/alias" }
+    },
+    "classification": { "$ref": "#/$defs/classification" },
+    "evidence": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/evidence" }
+    },
+    "notes": { "type": "string" },
+    "createdAt": { "type": "string", "format": "date-time" },
+    "updatedAt": { "type": "string", "format": "date-time" }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "classification": {
+            "properties": { "reviewStatus": { "const": "verified" } },
+            "required": ["reviewStatus"]
+          }
+        },
+        "required": ["classification"]
+      },
+      "then": { "properties": { "evidence": { "minItems": 1 } } }
+    }
+  ],
+  "$defs": {
+    "alias": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "language", "aliasType"],
+      "properties": {
+        "name": { "type": "string", "minLength": 1 },
+        "language": { "type": ["string", "null"], "description": "Optional BCP 47 language tag." },
+        "aliasType": {
+          "type": "string",
+          "enum": ["variant", "spelling_variant", "translation", "commercial_name", "other"]
+        }
+      }
+    },
+    "classification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["category", "reviewStatus"],
+      "properties": {
+        "category": {
+          "type": "string",
+          "enum": [
+            "sugar_or_syrup",
+            "sugar_alcohol",
+            "non_sugar_sweetener",
+            "starch_or_dextrin",
+            "other_carbohydrate",
+            "other",
+            "unclassified"
+          ]
+        },
+        "reviewStatus": {
+          "type": "string",
+          "enum": ["verified", "proposed", "needs_review", "rejected"]
+        },
+        "reviewNote": { "type": "string" }
+      }
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sourceName", "publisher", "url", "accessedAt", "supports"],
+      "properties": {
+        "sourceName": { "type": "string", "minLength": 1 },
+        "publisher": { "type": "string", "minLength": 1 },
+        "url": { "type": "string", "format": "uri" },
+        "accessedAt": { "type": "string", "format": "date" },
+        "supports": { "type": "string", "minLength": 1 }
+      }
+    }
+  }
+}
