@@ -1,7 +1,8 @@
-
 const express = require("express");
 const cors = require("cors");
 require("dotenv").config();
+
+const connectDB = require("./config/database");
 
 const app = express();
 
@@ -17,9 +18,21 @@ app.get("/api/health", (req, res) => {
     });
 });
 
-// Server
-const PORT = process.env.PORT || 5000;
+// Start server after connecting to MongoDB
+const startServer = async () => {
+    try {
+        await connectDB();
 
-app.listen(PORT, () => {
-    console.log(`Food Scanner backend running on port ${PORT}`);
-});
+        const PORT = process.env.PORT || 5000;
+
+        app.listen(PORT, () => {
+            console.log(`Food Scanner backend running on port ${PORT}`);
+        });
+
+    } catch (error) {
+        console.error("Failed to start server:", error.message);
+        process.exit(1);
+    }
+};
+
+startServer();
