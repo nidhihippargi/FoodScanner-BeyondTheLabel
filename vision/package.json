@@ -1,0 +1,13 @@
+{
+  "name": "foodscanner-vision",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Vision processing module for FoodScanner Beyond The Label",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node --test"
+  },
+  "dependencies": {
+    "sharp": "^0.35.5"
+  }
+}
