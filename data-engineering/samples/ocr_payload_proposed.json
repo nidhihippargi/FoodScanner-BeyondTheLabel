@@ -1,0 +1,33 @@
+{
+  "requestId": "sample-ocr-request-001",
+  "capturedAt": "2026-11-12T10:15:00Z",
+  "barcode": null,
+  "ingredients": {
+    "rawText": "Oats, dates, almonds, cocoa powder",
+    "language": "en",
+    "confidence": 0.92
+  },
+  "nutrition": {
+    "declaredBasis": "per_100g",
+    "servingSizeText": "Per 3 chips",
+    "items": [
+      {
+        "sourceLabel": "Total Sugars",
+        "value": 9.5,
+        "unit": "g",
+        "basis": "per_100g",
+        "rawText": "Total Sugars 9.5 g",
+        "confidence": 0.88
+      },
+      {
+        "sourceLabel": "Total Fat",
+        "value": 12.0,
+        "unit": "g",
+        "basis": "per_100g",
+        "rawText": "Total Fat 12 g",
+        "confidence": 0.94
+      }
+    ]
+  },
+  "imageReferences": []
+}

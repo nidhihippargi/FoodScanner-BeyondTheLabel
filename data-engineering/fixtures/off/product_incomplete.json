@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "product": {
+    "code": "8901234500000",
+    "schema_version": 1004,
+    "product_type": "food"
+  },
+  "warnings": [],
+  "errors": [],
+  "fixtureNote": "Synthetic incomplete product response used to test missing-field handling."
+}

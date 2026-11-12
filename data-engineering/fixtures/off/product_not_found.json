@@ -1,0 +1,8 @@
+{
+  "httpStatus": 404,
+  "body": {
+    "status": "failure",
+    "errors": [{ "message": { "id": "product_not_found", "name": "Product not found" } }]
+  },
+  "fixtureNote": "The product lookup endpoint documents HTTP 404 for a missing product. This fixture stores status metadata for tests; it is not an actual captured network response."
+}

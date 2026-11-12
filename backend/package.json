@@ -1,0 +1,25 @@
+{
+  "name": "foodscanner-data-engine",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Data Engine module for Food Scanner: Beyond the Label",
+  "main": "src/data-engine/index.js",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "test": "node --test",
+    "test:unit": "node --test test/*.test.js",
+    "test:integration": "node --test test/integration/*.test.js",
+    "migrate": "node src/data-engine/storage/migrate.js",
+    "seed:aliases": "node src/data-engine/storage/migrations/002_seed_aliases.js",
+    "validate:static": "node scripts/validate-static-data.js"
+  },
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "dotenv": "^16.4.5",
+    "mongodb": "^6.10.0"
+  }
+}

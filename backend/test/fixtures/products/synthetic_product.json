@@ -1,0 +1,109 @@
+{
+  "schemaVersion": "1.0.0",
+  "recordId": "fixture-product-8901234567890",
+  "identifiers": {
+    "gtin": {
+      "value": "8901234567890",
+      "status": "available",
+      "provenance": [
+        {
+          "sourceId": "fixture-off-1",
+          "extractionMethod": "barcode_lookup",
+          "sourceField": "product.code"
+        }
+      ]
+    }
+  },
+  "productName": {
+    "value": "Synthetic Example Snack",
+    "status": "available",
+    "provenance": [
+      {
+        "sourceId": "fixture-off-1",
+        "extractionMethod": "barcode_lookup",
+        "sourceField": "product.product_name"
+      }
+    ]
+  },
+  "brand": {
+    "value": null,
+    "status": "missing",
+    "provenance": []
+  },
+  "packageQuantity": {
+    "rawText": null,
+    "value": null,
+    "unit": "unknown",
+    "status": "missing",
+    "provenance": []
+  },
+  "ingredients": {
+    "rawText": "Oats, dates",
+    "language": "en",
+    "status": "available",
+    "provenance": [
+      {
+        "sourceId": "fixture-off-1",
+        "extractionMethod": "barcode_lookup",
+        "sourceField": "product.ingredients_text"
+      }
+    ]
+  },
+  "nutrition": {
+    "declaredBasis": "per_100g",
+    "servingSize": {
+      "rawText": null,
+      "value": null,
+      "unit": null,
+      "status": "missing",
+      "provenance": []
+    },
+    "nutrients": {
+      "sugars": {
+        "originalValue": {
+          "value": 8.2,
+          "unit": "g",
+          "basis": "per_100g"
+        },
+        "standardizedValues": [
+          {
+            "value": 8.2,
+            "unit": "g",
+            "basis": "per_100g"
+          }
+        ],
+        "status": "available",
+        "provenance": [
+          {
+            "sourceId": "fixture-off-1",
+            "extractionMethod": "barcode_lookup",
+            "sourceField": "product.nutrition.aggregated_set.nutrients.sugars"
+          }
+        ]
+      }
+    }
+  },
+  "images": [],
+  "sourceRecords": [
+    {
+      "sourceId": "fixture-off-1",
+      "sourceType": "open_food_facts",
+      "extractionMethod": "barcode_lookup",
+      "retrievedAt": "2026-11-12T00:00:00Z",
+      "externalRecordId": "8901234567890",
+      "sourceUri": "https://world.openfoodfacts.org/product/8901234567890"
+    }
+  ],
+  "conflicts": [],
+  "quality": {
+    "recordStatus": "partial",
+    "missingFields": [
+      "/brand",
+      "/packageQuantity",
+      "/nutrition/servingSize"
+    ],
+    "unverifiedFields": []
+  },
+  "createdAt": "2026-11-12T00:00:00Z",
+  "updatedAt": "2026-11-12T00:00:00Z"
+}
