@@ -1,0 +1,355 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://foodscanner.local/schemas/nutrient-composition.schema.json",
+  "title": "Food Scanner Generic Nutrient Composition Record",
+  "description": "Source-specific generic nutrient composition for a described food item. Never implies the amount of that ingredient in a packaged product.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "nutrientCompositionId",
+    "ingredientId",
+    "source",
+    "basis",
+    "preparationState",
+    "nutrients",
+    "reviewStatus",
+    "createdAt",
+    "updatedAt"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0.0"
+    },
+    "nutrientCompositionId": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9._-]*$"
+    },
+    "ingredientId": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9._-]*$"
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "provider",
+        "externalFoodId",
+        "description",
+        "dataType",
+        "datasetRelease",
+        "sourceUri",
+        "retrievedAt",
+        "licenseStatus"
+      ],
+      "properties": {
+        "provider": {
+          "type": "string",
+          "enum": [
+            "USDA_FDC",
+            "ICMR_IFCT",
+            "other"
+          ]
+        },
+        "externalFoodId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1
+        },
+        "dataType": {
+          "type": "string",
+          "enum": [
+            "Foundation Foods",
+            "FNDDS",
+            "Branded Foods",
+            "Experimental Foods",
+            "SR Legacy",
+            "IFCT",
+            "other",
+            "not_applicable"
+          ]
+        },
+        "foodCategory": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "countryOrRegion": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "datasetRelease": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "publishedDate": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "modifiedDate": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "sourceUri": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "uri"
+        },
+        "retrievedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "licenseStatus": {
+          "type": "string",
+          "enum": [
+            "unknown",
+            "open",
+            "attribution_required",
+            "permission_required",
+            "restricted"
+          ]
+        },
+        "licenseName": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "sampleCount": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        }
+      }
+    },
+    "basis": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "quantity",
+        "unit",
+        "description"
+      ],
+      "properties": {
+        "quantity": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "unit": {
+          "type": "string",
+          "enum": [
+            "g",
+            "ml",
+            "portion",
+            "other"
+          ]
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1
+        },
+        "ediblePortionOnly": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        }
+      }
+    },
+    "preparationState": {
+      "type": "string",
+      "enum": [
+        "raw",
+        "cooked",
+        "boiled",
+        "fried",
+        "baked",
+        "roasted",
+        "dried",
+        "frozen",
+        "processed",
+        "as_sold",
+        "not_specified",
+        "other"
+      ]
+    },
+    "preparationDetails": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "nutrients": {
+      "type": "object",
+      "minProperties": 1,
+      "propertyNames": {
+        "pattern": "^[a-z][a-z0-9_]*$"
+      },
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "nutrientName",
+          "sourceNutrientId",
+          "value",
+          "unit",
+          "valueType",
+          "sourceField"
+        ],
+        "properties": {
+          "nutrientName": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sourceNutrientId": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "value": {
+            "type": "number",
+            "minimum": 0
+          },
+          "unit": {
+            "type": "string",
+            "minLength": 1
+          },
+          "valueType": {
+            "type": "string",
+            "enum": [
+              "analytical",
+              "calculated",
+              "reported",
+              "imputed",
+              "unknown"
+            ]
+          },
+          "sourceField": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "notes": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "reviewStatus": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "needs_review",
+        "reviewed",
+        "approved",
+        "retired"
+      ]
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "source": {
+            "properties": {
+              "provider": {
+                "const": "USDA_FDC"
+              }
+            },
+            "required": [
+              "provider"
+            ]
+          }
+        },
+        "required": [
+          "source"
+        ]
+      },
+      "then": {
+        "properties": {
+          "source": {
+            "properties": {
+              "dataType": {
+                "enum": [
+                  "Foundation Foods",
+                  "FNDDS",
+                  "Branded Foods",
+                  "Experimental Foods",
+                  "SR Legacy"
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "source": {
+            "properties": {
+              "provider": {
+                "const": "ICMR_IFCT"
+              }
+            },
+            "required": [
+              "provider"
+            ]
+          }
+        },
+        "required": [
+          "source"
+        ]
+      },
+      "then": {
+        "properties": {
+          "source": {
+            "properties": {
+              "licenseStatus": {
+                "enum": [
+                  "permission_required",
+                  "restricted",
+                  "unknown",
+                  "open",
+                  "attribution_required"
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "$comment": "A generic composition record must remain linked to a source-specific food description, preparation state and basis. Do not use it as a product recipe quantity. IFCT records must not be embedded/redistributed without required NIN permission."
+}

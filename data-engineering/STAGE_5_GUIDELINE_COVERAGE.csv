@@ -1,0 +1,10 @@
+guidelineId,topic,authority,population,operator,value,unit,basis,reviewStatus
+who-free-sugars-under-10-energy,free_sugars,WHO,Throughout the life course; energy needs vary by age and individual,less_than,10,percent_of_total_daily_energy,"Percentage of total daily energy intake. WHO notes approximately 50 g/day for a healthy-weight adult consuming about 2,000 kcal/day.",reviewed
+who-free-sugars-5-energy-additional-benefit,free_sugars,WHO,Throughout the life course; energy needs vary by age and individual,at_most,5,percent_of_total_daily_energy,Percentage of total daily energy intake.,reviewed
+who-total-fat-at-most-30-energy-adults,total_fat,WHO,Adults; WHO general-population dietary guidance,at_most,30,percent_of_total_daily_energy,Percentage of total daily energy intake.,reviewed
+who-saturated-fat-at-most-10-energy-adults,saturated_fat,WHO,Adults; WHO general-population dietary guidance,at_most,10,percent_of_total_daily_energy,Percentage of total daily energy intake.,reviewed
+who-trans-fat-at-most-1-energy-adults,trans_fat,WHO,Adults; WHO general-population dietary guidance,at_most,1,percent_of_total_daily_energy,Percentage of total daily energy intake.,reviewed
+who-sodium-under-2000-mg-day-adults,sodium,WHO,Adults; WHO general-population dietary guidance,less_than,2000,mg/day,Total daily sodium intake.,reviewed
+who-salt-under-5-g-day-adults,salt,WHO,Adults; WHO general-population dietary guidance,less_than,5,g/day,Total daily salt intake.,reviewed
+who-dietary-fibre-at-least-25-g-day-over-10,dietary_fibre,WHO,People older than 10 years,at_least,25,g/day,Daily intake of naturally occurring dietary fibre from foods.,reviewed
+who-fruit-vegetables-at-least-400-g-day-over-10,fruit_and_vegetable_intake,WHO,People older than 10 years,at_least,400,g/day,Combined daily intake of fruits and vegetables.,reviewed

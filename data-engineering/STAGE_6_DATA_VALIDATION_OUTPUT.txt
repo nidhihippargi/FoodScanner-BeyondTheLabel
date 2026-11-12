@@ -1,0 +1,9 @@
+Ingredient Intelligence reference validation passed.
+{
+  "ingredients": 40,
+  "nutrientCompositions": 43,
+  "additives": 15,
+  "dietaryGuidelines": 9,
+  "legacyAliasCandidates": 0
+}
+All ingredient composition/additive references and additive evidence links resolve.

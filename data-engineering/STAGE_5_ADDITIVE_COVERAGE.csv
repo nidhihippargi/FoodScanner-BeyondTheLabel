@@ -1,0 +1,16 @@
+additiveId,canonicalName,INS,JECFA_ADI_status,FSSAI_category_records,reviewStatus
+sodium_benzoate,Sodium benzoate,211,group_numeric,1,needs_review
+potassium_sorbate,Potassium sorbate,202,group_numeric,0,reviewed
+tartrazine,Tartrazine,102,numeric,0,reviewed
+acesulfame_potassium,Acesulfame potassium,950,numeric,2,needs_review
+aspartame,Aspartame,951,numeric,2,needs_review
+sucralose,Sucralose,955,numeric,1,needs_review
+bha,Butylated hydroxyanisole,320,numeric,1,needs_review
+bht,Butylated hydroxytoluene,321,numeric,1,needs_review
+sodium_nitrite,Sodium nitrite,250,numeric,1,needs_review
+monosodium_glutamate,Monosodium L-glutamate,621,not_specified,0,reviewed
+brilliant_blue_fcf,Brilliant Blue FCF,133,numeric,1,needs_review
+allura_red_ac,Allura Red AC,129,numeric,1,needs_review
+sunset_yellow_fcf,Sunset Yellow FCF,110,numeric,0,reviewed
+citric_acid,Citric acid,330,not_limited,0,reviewed
+calcium_propionate,Calcium propionate,282,not_limited,0,reviewed

@@ -1,0 +1,399 @@
+[
+  {
+    "schemaVersion": "1.0.0",
+    "guidelineId": "who-free-sugars-under-10-energy",
+    "nutrientOrTopic": "free_sugars",
+    "authority": "WHO",
+    "jurisdiction": "Global",
+    "population": {
+      "description": "Throughout the life course; energy needs vary by age and individual",
+      "lifeStage": "all_population",
+      "sex": "all",
+      "minimumAge": null,
+      "maximumAge": null,
+      "ageUnit": "not_applicable",
+      "conditions": [
+        "Use the percentage-of-energy basis; do not apply an adult gram equivalent to children."
+      ]
+    },
+    "recommendation": {
+      "recommendationType": "limit",
+      "operator": "less_than",
+      "value": 10,
+      "lowerValue": null,
+      "upperValue": null,
+      "unit": "percent_of_total_daily_energy",
+      "basis": "Percentage of total daily energy intake. WHO notes approximately 50 g/day for a healthy-weight adult consuming about 2,000 kcal/day.",
+      "referenceEnergyKcal": 2000
+    },
+    "conditions": [
+      "Free sugars include monosaccharides and disaccharides added by manufacturer, cook or consumer, plus sugars naturally present in honey, syrups, fruit juices and fruit juice concentrates.",
+      "The 50 g equivalence is an illustrative 2,000 kcal adult reference, not a universal gram limit."
+    ],
+    "source": {
+      "sourceName": "Healthy diet",
+      "publisher": "World Health Organization (WHO)",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/healthy-diet",
+      "publicationDate": "2026-01-26",
+      "accessedAt": "2026-11-13",
+      "locator": "Sugars section; updated 26 January 2026",
+      "documentVersion": null,
+      "supports": "WHO recommends keeping free sugars below 10% of total energy intake; 5% or less may provide additional benefits. Its guidance defines which sugars are included."
+    },
+    "validFrom": null,
+    "validTo": null,
+    "reviewStatus": "reviewed",
+    "createdAt": "2026-11-13T00:00:00Z",
+    "updatedAt": "2026-11-13T00:00:00Z"
+  },
+  {
+    "schemaVersion": "1.0.0",
+    "guidelineId": "who-free-sugars-5-energy-additional-benefit",
+    "nutrientOrTopic": "free_sugars",
+    "authority": "WHO",
+    "jurisdiction": "Global",
+    "population": {
+      "description": "Throughout the life course; energy needs vary by age and individual",
+      "lifeStage": "all_population",
+      "sex": "all",
+      "minimumAge": null,
+      "maximumAge": null,
+      "ageUnit": "not_applicable",
+      "conditions": [
+        "Use the percentage-of-energy basis; do not apply an adult gram equivalent to children."
+      ]
+    },
+    "recommendation": {
+      "recommendationType": "target",
+      "operator": "at_most",
+      "value": 5,
+      "lowerValue": null,
+      "upperValue": null,
+      "unit": "percent_of_total_daily_energy",
+      "basis": "Percentage of total daily energy intake."
+    },
+    "conditions": [
+      "WHO states that limiting free sugars further to 5% or less may provide additional health benefits. This is presented as an additional-benefit target, not as a product additive limit."
+    ],
+    "source": {
+      "sourceName": "Healthy diet",
+      "publisher": "World Health Organization (WHO)",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/healthy-diet",
+      "publicationDate": "2026-01-26",
+      "accessedAt": "2026-11-13",
+      "locator": "Sugars section; updated 26 January 2026",
+      "documentVersion": null,
+      "supports": "WHO recommends keeping free sugars below 10% of total energy intake; 5% or less may provide additional benefits. Its guidance defines which sugars are included."
+    },
+    "validFrom": null,
+    "validTo": null,
+    "reviewStatus": "reviewed",
+    "createdAt": "2026-11-13T00:00:00Z",
+    "updatedAt": "2026-11-13T00:00:00Z"
+  },
+  {
+    "schemaVersion": "1.0.0",
+    "guidelineId": "who-total-fat-at-most-30-energy-adults",
+    "nutrientOrTopic": "total_fat",
+    "authority": "WHO",
+    "jurisdiction": "Global",
+    "population": {
+      "description": "Adults; WHO general-population dietary guidance",
+      "lifeStage": "adult",
+      "sex": "all",
+      "minimumAge": 18,
+      "maximumAge": null,
+      "ageUnit": "years",
+      "conditions": []
+    },
+    "recommendation": {
+      "recommendationType": "limit",
+      "operator": "at_most",
+      "value": 30,
+      "lowerValue": null,
+      "upperValue": null,
+      "unit": "percent_of_total_daily_energy",
+      "basis": "Percentage of total daily energy intake."
+    },
+    "conditions": [
+      "WHO states that limiting total fat to 30% or less of daily energy may help prevent unhealthy weight gain in adults. Children have different energy needs."
+    ],
+    "source": {
+      "sourceName": "Healthy diet",
+      "publisher": "World Health Organization (WHO)",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/healthy-diet",
+      "publicationDate": "2026-01-26",
+      "accessedAt": "2026-11-13",
+      "locator": "Fats section; updated 26 January 2026",
+      "documentVersion": null,
+      "supports": "WHO states that limiting total fat to 30% or less of total daily energy may help prevent unhealthy weight gain in adults."
+    },
+    "validFrom": null,
+    "validTo": null,
+    "reviewStatus": "reviewed",
+    "createdAt": "2026-11-13T00:00:00Z",
+    "updatedAt": "2026-11-13T00:00:00Z"
+  },
+  {
+    "schemaVersion": "1.0.0",
+    "guidelineId": "who-saturated-fat-at-most-10-energy-adults",
+    "nutrientOrTopic": "saturated_fat",
+    "authority": "WHO",
+    "jurisdiction": "Global",
+    "population": {
+      "description": "Adults; WHO general-population dietary guidance",
+      "lifeStage": "adult",
+      "sex": "all",
+      "minimumAge": 18,
+      "maximumAge": null,
+      "ageUnit": "years",
+      "conditions": []
+    },
+    "recommendation": {
+      "recommendationType": "limit",
+      "operator": "at_most",
+      "value": 10,
+      "lowerValue": null,
+      "upperValue": null,
+      "unit": "percent_of_total_daily_energy",
+      "basis": "Percentage of total daily energy intake."
+    },
+    "conditions": [
+      "WHO general healthy-diet fact sheet states no more than 10% of total energy from saturated fat. Replacing saturated fat with unsaturated fat is a distinct dietary-quality consideration."
+    ],
+    "source": {
+      "sourceName": "Healthy diet",
+      "publisher": "World Health Organization (WHO)",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/healthy-diet",
+      "publicationDate": "2026-01-26",
+      "accessedAt": "2026-11-13",
+      "locator": "Fats section; updated 26 January 2026",
+      "documentVersion": null,
+      "supports": "WHO recommends limiting saturated fatty acids to no more than 10% of total energy intake."
+    },
+    "validFrom": null,
+    "validTo": null,
+    "reviewStatus": "reviewed",
+    "createdAt": "2026-11-13T00:00:00Z",
+    "updatedAt": "2026-11-13T00:00:00Z"
+  },
+  {
+    "schemaVersion": "1.0.0",
+    "guidelineId": "who-trans-fat-at-most-1-energy-adults",
+    "nutrientOrTopic": "trans_fat",
+    "authority": "WHO",
+    "jurisdiction": "Global",
+    "population": {
+      "description": "Adults; WHO general-population dietary guidance",
+      "lifeStage": "adult",
+      "sex": "all",
+      "minimumAge": 18,
+      "maximumAge": null,
+      "ageUnit": "years",
+      "conditions": []
+    },
+    "recommendation": {
+      "recommendationType": "limit",
+      "operator": "at_most",
+      "value": 1,
+      "lowerValue": null,
+      "upperValue": null,
+      "unit": "percent_of_total_daily_energy",
+      "basis": "Percentage of total daily energy intake."
+    },
+    "conditions": [
+      "WHO recommends no more than 1% of total energy from trans fat and says industrially produced trans fats are not part of a healthy diet and should be avoided."
+    ],
+    "source": {
+      "sourceName": "Healthy diet",
+      "publisher": "World Health Organization (WHO)",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/healthy-diet",
+      "publicationDate": "2026-01-26",
+      "accessedAt": "2026-11-13",
+      "locator": "Fats section; updated 26 January 2026",
+      "documentVersion": null,
+      "supports": "WHO recommends limiting trans-fatty acids to no more than 1% of total energy intake and avoiding industrially produced trans fat."
+    },
+    "validFrom": null,
+    "validTo": null,
+    "reviewStatus": "reviewed",
+    "createdAt": "2026-11-13T00:00:00Z",
+    "updatedAt": "2026-11-13T00:00:00Z"
+  },
+  {
+    "schemaVersion": "1.0.0",
+    "guidelineId": "who-sodium-under-2000-mg-day-adults",
+    "nutrientOrTopic": "sodium",
+    "authority": "WHO",
+    "jurisdiction": "Global",
+    "population": {
+      "description": "Adults; WHO general-population dietary guidance",
+      "lifeStage": "adult",
+      "sex": "all",
+      "minimumAge": 18,
+      "maximumAge": null,
+      "ageUnit": "years",
+      "conditions": []
+    },
+    "recommendation": {
+      "recommendationType": "limit",
+      "operator": "less_than",
+      "value": 2000,
+      "lowerValue": null,
+      "upperValue": null,
+      "unit": "mg/day",
+      "basis": "Total daily sodium intake."
+    },
+    "conditions": [
+      "WHO adult guidance: less than 2 g/day sodium. Children require lower amounts estimated from energy needs. This is a whole-diet daily recommendation, not a per-product limit."
+    ],
+    "source": {
+      "sourceName": "Healthy diet",
+      "publisher": "World Health Organization (WHO)",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/healthy-diet",
+      "publicationDate": "2026-01-26",
+      "accessedAt": "2026-11-13",
+      "locator": "Salt/sodium and potassium section; updated 26 January 2026",
+      "documentVersion": null,
+      "supports": "WHO recommends adults consume less than 2,000 mg sodium per day."
+    },
+    "validFrom": null,
+    "validTo": null,
+    "reviewStatus": "reviewed",
+    "createdAt": "2026-11-13T00:00:00Z",
+    "updatedAt": "2026-11-13T00:00:00Z"
+  },
+  {
+    "schemaVersion": "1.0.0",
+    "guidelineId": "who-salt-under-5-g-day-adults",
+    "nutrientOrTopic": "salt",
+    "authority": "WHO",
+    "jurisdiction": "Global",
+    "population": {
+      "description": "Adults; WHO general-population dietary guidance",
+      "lifeStage": "adult",
+      "sex": "all",
+      "minimumAge": 18,
+      "maximumAge": null,
+      "ageUnit": "years",
+      "conditions": []
+    },
+    "recommendation": {
+      "recommendationType": "limit",
+      "operator": "less_than",
+      "value": 5,
+      "lowerValue": null,
+      "upperValue": null,
+      "unit": "g/day",
+      "basis": "Total daily salt intake."
+    },
+    "conditions": [
+      "WHO adult guidance: less than 5 g/day salt, equivalent to less than 2 g/day sodium. This is a whole-diet daily recommendation, not a per-product limit."
+    ],
+    "source": {
+      "sourceName": "Healthy diet",
+      "publisher": "World Health Organization (WHO)",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/healthy-diet",
+      "publicationDate": "2026-01-26",
+      "accessedAt": "2026-11-13",
+      "locator": "Salt/sodium and potassium section; updated 26 January 2026",
+      "documentVersion": null,
+      "supports": "WHO recommends adults consume less than 5 g salt per day, equivalent to less than 2,000 mg sodium."
+    },
+    "validFrom": null,
+    "validTo": null,
+    "reviewStatus": "reviewed",
+    "createdAt": "2026-11-13T00:00:00Z",
+    "updatedAt": "2026-11-13T00:00:00Z"
+  },
+  {
+    "schemaVersion": "1.0.0",
+    "guidelineId": "who-dietary-fibre-at-least-25-g-day-over-10",
+    "nutrientOrTopic": "dietary_fibre",
+    "authority": "WHO",
+    "jurisdiction": "Global",
+    "population": {
+      "description": "People older than 10 years",
+      "lifeStage": "all_population",
+      "sex": "all",
+      "minimumAge": 11,
+      "maximumAge": null,
+      "ageUnit": "years",
+      "conditions": [
+        "WHO gives lower specific targets for younger children."
+      ]
+    },
+    "recommendation": {
+      "recommendationType": "minimum",
+      "operator": "at_least",
+      "value": 25,
+      "lowerValue": null,
+      "upperValue": null,
+      "unit": "g/day",
+      "basis": "Daily intake of naturally occurring dietary fibre from foods."
+    },
+    "conditions": [
+      "Applies to people older than 10 years. WHO gives lower values for ages 2–5 (at least 15 g/day) and 6–9 (at least 21 g/day). Do not use this record for children under 11."
+    ],
+    "source": {
+      "sourceName": "Healthy diet",
+      "publisher": "World Health Organization (WHO)",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/healthy-diet",
+      "publicationDate": "2026-01-26",
+      "accessedAt": "2026-11-13",
+      "locator": "Carbohydrates section; updated 26 January 2026",
+      "documentVersion": null,
+      "supports": "WHO recommends at least 25 g naturally occurring dietary fibre per day for people older than 10 years, with lower age-specific values for younger children."
+    },
+    "validFrom": null,
+    "validTo": null,
+    "reviewStatus": "reviewed",
+    "createdAt": "2026-11-13T00:00:00Z",
+    "updatedAt": "2026-11-13T00:00:00Z"
+  },
+  {
+    "schemaVersion": "1.0.0",
+    "guidelineId": "who-fruit-vegetables-at-least-400-g-day-over-10",
+    "nutrientOrTopic": "fruit_and_vegetable_intake",
+    "authority": "WHO",
+    "jurisdiction": "Global",
+    "population": {
+      "description": "People older than 10 years",
+      "lifeStage": "all_population",
+      "sex": "all",
+      "minimumAge": 11,
+      "maximumAge": null,
+      "ageUnit": "years",
+      "conditions": [
+        "WHO gives lower specific targets for younger children."
+      ]
+    },
+    "recommendation": {
+      "recommendationType": "minimum",
+      "operator": "at_least",
+      "value": 400,
+      "lowerValue": null,
+      "upperValue": null,
+      "unit": "g/day",
+      "basis": "Combined daily intake of fruits and vegetables."
+    },
+    "conditions": [
+      "Applies to people older than 10 years. WHO gives lower values for ages 2–5 (at least 250 g/day) and 6–9 (at least 350 g/day). This is a dietary-pattern guideline, not a single-product nutrient target."
+    ],
+    "source": {
+      "sourceName": "Healthy diet",
+      "publisher": "World Health Organization (WHO)",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/healthy-diet",
+      "publicationDate": "2026-01-26",
+      "accessedAt": "2026-11-13",
+      "locator": "Carbohydrates section; updated 26 January 2026",
+      "documentVersion": null,
+      "supports": "WHO recommends at least 400 g of fruit and vegetables per day for people older than 10 years, with lower age-specific values for younger children."
+    },
+    "validFrom": null,
+    "validTo": null,
+    "reviewStatus": "reviewed",
+    "createdAt": "2026-11-13T00:00:00Z",
+    "updatedAt": "2026-11-13T00:00:00Z"
+  }
+]
