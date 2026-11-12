@@ -2,6 +2,7 @@ const { detectSugarAliases } = require("./ingredientService");
 const { normalizeNutrition } = require("./nutritionService");
 const { verifyClaim } = require("./claimService");
 const { analyzePersonalization } = require("./personalizationService");
+const { calculateProductScore } = require("./scoringService");
 
 function analyzeProduct(product) {
     if (!product || typeof product !== "object" || Array.isArray(product)) {
@@ -71,7 +72,14 @@ function analyzeProduct(product) {
         preferences
     );
 
-    // 6. Combined response
+    // 6. Calculate the overall product score using the four module outputs
+    const scoringAnalysis = calculateProductScore({
+        ingredients: ingredientAnalysis,
+        nutrition: nutritionAnalysis,
+        claims: claimAnalysis
+    });
+
+    // 7. Combined response
     return {
         success: true,
 
@@ -83,7 +91,8 @@ function analyzeProduct(product) {
             ingredients: ingredientAnalysis,
             nutrition: nutritionAnalysis,
             claims: claimAnalysis,
-            personalization: personalizationAnalysis
+            personalization: personalizationAnalysis,
+            scoring: scoringAnalysis
         }
     };
 }
