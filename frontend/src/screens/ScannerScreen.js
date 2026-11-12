@@ -7,7 +7,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useIsFocused } from '@react-navigation/native';
 import ScannerOverlay from '../components/ScannerOverlay';
 import { lookupBarcode, USE_MOCK } from '../services/api';
-import { recognizeText } from '../services/ocr';
+import { recognizeText } from '../services/vision';
 import { useScanHistory } from '../context/ScanHistoryContext';
 import { usePreferences } from '../context/PreferenceContext';
 import { DECEPTIVE_CEREAL, CLEAN_SNACK } from '../utils/mockData';

@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "name": "Food Scanner",
+    "slug": "food-scanner-beyond-the-label",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "plugins": [["expo-camera", { "cameraPermission": "Food Scanner needs the camera to scan barcodes and nutrition labels." }]],
+    "ios": { "supportsTablet": false, "bundleIdentifier": "com.foodscanner.beyondthelabel", "infoPlist": { "NSCameraUsageDescription": "Scan barcodes and nutrition labels." } },
+    "android": { "package": "com.foodscanner.beyondthelabel", "permissions": ["CAMERA"], "usesCleartextTraffic": true }
+  }
+}

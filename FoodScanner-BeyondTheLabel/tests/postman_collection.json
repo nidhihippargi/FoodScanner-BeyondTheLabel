@@ -1,0 +1,419 @@
+{
+  "info": {
+    "name": "Food Scanner: Beyond the Label",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:5000/api"
+    }
+  ],
+  "item": [
+    {
+      "name": "1. Health",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/health",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "health"
+          ]
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('status 200', () => pm.response.to.have.status(200));",
+              "const j = pm.response.json();",
+              "pm.test('ok', () => pm.expect(j.data.status).to.eql('ok'));"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "2. Scan barcode - Maggi",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/scan/barcode",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "scan",
+            "barcode"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"barcode\": \"8901058851298\"\n}"
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('status 200', () => pm.response.to.have.status(200));",
+              "const j = pm.response.json();",
+              "pm.test('has product', () => pm.expect(j.data.product.nutrition).to.be.an('object'));"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "3. Scan barcode - Coca-Cola",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/scan/barcode",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "scan",
+            "barcode"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"barcode\": \"5449000000996\"\n}"
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('status 200', () => pm.response.to.have.status(200));",
+              "const j = pm.response.json();"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "4. Scan barcode - invalid (400)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/scan/barcode",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "scan",
+            "barcode"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"barcode\": \"12345\"\n}"
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('status 400', () => pm.response.to.have.status(400));",
+              "const j = pm.response.json();",
+              "pm.test('code', () => pm.expect(j.error.code).to.eql('INVALID_BARCODE'));"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "5. Scan barcode - unknown (404)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/scan/barcode",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "scan",
+            "barcode"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"barcode\": \"4006381333931\",\n  \"offline\": true\n}"
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('status 404', () => pm.response.to.have.status(404));",
+              "const j = pm.response.json();"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "6. Scan OCR text",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/scan/ocr",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "scan",
+            "ocr"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"text\": \"Nutrition per 100 g\\nEnergy 450 kcal\\nProtein 8 g\\nSugar 22 g\\nFat 18 g\\nSaturated fat 9 g\\nSodium 640 mg\\nIngredients: Sugar, Palm oil, Colour (102), Flavour enhancers (627, 631).\\nHealthy\"\n}"
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('status 200', () => pm.response.to.have.status(200));",
+              "const j = pm.response.json();",
+              "pm.test('ocr confidence', () => pm.expect(j.data.ocr.confidence).to.be.a('number'));"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "7. Analyze by barcode + preferences",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/analyze",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "analyze"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"barcode\": \"8901000000019\",\n  \"preferences\": {\n    \"allergens\": [\n      \"milk\"\n    ],\n    \"diets\": [\n      \"vegetarian\"\n    ],\n    \"conditions\": [\n      \"diabetes\",\n      \"hypertension\"\n    ]\n  }\n}"
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('status 200', () => pm.response.to.have.status(200));",
+              "const j = pm.response.json();",
+              "pm.test('analysis', () => { pm.expect(j.data.analysis.score).to.be.within(0,100); pm.expect(j.data.analysis.claimCheck).to.be.an('array'); });"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "8. Analyze by OCR text",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/analyze",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "analyze"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"text\": \"Sugar 30 g\\nSodium 700 mg\\nFat 25 g\\nSaturated fat 12 g\",\n  \"preferences\": {}\n}"
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('status 200', () => pm.response.to.have.status(200));",
+              "const j = pm.response.json();"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "9. Analyze client-corrected product",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/analyze",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "analyze"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"product\": {\n    \"name\": \"Corrected\",\n    \"per\": \"100g\",\n    \"nutrition\": {\n      \"sugar\": 4,\n      \"sodium\": 120,\n      \"fat\": 3,\n      \"saturatedFat\": 1,\n      \"protein\": 8\n    }\n  },\n  \"preferences\": {}\n}"
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('status 200', () => pm.response.to.have.status(200));",
+              "const j = pm.response.json();"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "10. History",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/history",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "history"
+          ]
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('status 200', () => pm.response.to.have.status(200));",
+              "const j = pm.response.json();"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "11. Clear history",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/history",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "history"
+          ]
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('status 200', () => pm.response.to.have.status(200));",
+              "const j = pm.response.json();"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
