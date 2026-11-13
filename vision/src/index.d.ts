@@ -8,8 +8,14 @@ declare namespace visionModule {
     error: string | null;
   }
 
+  interface BarcodeDecodeOptions {
+    /** Scan additional image rows to improve the chance of finding a barcode. */
+    tryHarder?: boolean;
+  }
+
   interface BarcodeDecodeResult {
     success: boolean;
+    /** Decoded digits, retained on checksum failure for diagnostics. */
     text: string | null;
     format: string | null;
     barcodeValidation: BarcodeValidationResult | null;
@@ -263,7 +269,7 @@ declare namespace visionModule {
   const version: string;
 
   const barcode: {
-    decodeBarcodeFromRgba(image: RgbaImageInput, options?: { tryHarder?: boolean }): BarcodeDecodeResult;
+    decodeBarcodeFromRgba(image: RgbaImageInput, options?: BarcodeDecodeOptions): BarcodeDecodeResult;
     fetchProductByBarcode(barcode: unknown): Promise<ProductLookupResult>;
     validateBarcode(barcode: unknown): BarcodeValidationResult;
   };
@@ -290,7 +296,7 @@ declare namespace visionModule {
   };
 
   function cleanOcrText(rawText: unknown): CleanOcrTextResult;
-  function decodeBarcodeFromRgba(image: RgbaImageInput, options?: { tryHarder?: boolean }): BarcodeDecodeResult;
+  function decodeBarcodeFromRgba(image: RgbaImageInput, options?: BarcodeDecodeOptions): BarcodeDecodeResult;
   function extractLabelData(input: unknown, options?: ExtractLabelDataOptions): ExtractedLabelData | ExtractLabelDataFailure;
   function normalizeOcrResult(input: unknown): NormalizedOcrResult;
   function normalizeNutrition(rawNutrition?: RawNutrition): NormalizedNutrition;

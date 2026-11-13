@@ -63,8 +63,18 @@ function validateFoodLabel(input) {
     warnings.push("No normalized nutrition values are available.");
   }
 
-  const basis = parsedData.nutritionBasis || "unknown";
-  checks.push({ name: "nutrition_basis_known", passed: basis === "per_100g" || basis === "per_serving" });
+  const rawBasis = parsedData.nutritionBasis;
+  const basis = rawBasis === undefined || rawBasis === null || rawBasis === ""
+    ? "unknown"
+    : rawBasis;
+  const validBasis = ["per_100g", "per_serving", "unknown"].includes(basis);
+  checks.push({ name: "nutrition_basis_valid", passed: validBasis });
+  if (!validBasis) {
+    errors.push("nutritionBasis must be 'per_100g', 'per_serving' or 'unknown'.");
+  }
+
+  const basisKnown = validBasis && basis !== "unknown";
+  checks.push({ name: "nutrition_basis_known", passed: basisKnown });
   if (basis === "unknown") {
     warnings.push("Nutrition basis is unknown; do not compare values until the basis is confirmed.");
   }

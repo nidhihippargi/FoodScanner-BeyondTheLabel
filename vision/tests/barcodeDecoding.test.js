@@ -89,3 +89,38 @@ test("returns a structured no-barcode result for a blank image", () => {
   assert.equal(result.success, false);
   assert.equal(result.errorCode, "BARCODE_NOT_FOUND");
 });
+
+test("rejects an EAN-13 image with an invalid check digit", () => {
+  const result = decodeBarcodeFromRgba(renderBarcode(ean13Bits("4006381333932")));
+
+  assert.equal(result.success, false);
+  assert.equal(result.text, "4006381333932");
+  assert.equal(result.format, "EAN-13");
+  assert.equal(result.barcodeValidation.valid, false);
+  assert.equal(result.errorCode, "INVALID_CHECK_DIGIT");
+});
+
+test("rejects a GTIN-8 image with an invalid check digit", () => {
+  const result = decodeBarcodeFromRgba(renderBarcode(ean8Bits("96385075")));
+
+  assert.equal(result.success, false);
+  assert.equal(result.text, "96385075");
+  assert.equal(result.barcodeValidation.valid, false);
+  assert.equal(result.errorCode, "INVALID_CHECK_DIGIT");
+});
+
+test("tryHarder scans additional image rows", () => {
+  const singleRow = renderBarcode(ean13Bits("4006381333931"), 3, 1);
+  const imageHeight = 101;
+  const barcodeY = 10;
+  const data = new Uint8ClampedArray(singleRow.width * imageHeight * 4).fill(255);
+  data.set(singleRow.data, barcodeY * singleRow.width * 4);
+  const image = { width: singleRow.width, height: imageHeight, data };
+
+  const normalResult = decodeBarcodeFromRgba(image);
+  const harderResult = decodeBarcodeFromRgba(image, { tryHarder: true });
+
+  assert.equal(normalResult.success, false);
+  assert.equal(harderResult.success, true);
+  assert.equal(harderResult.text, "4006381333931");
+});

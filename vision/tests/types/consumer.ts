@@ -1,7 +1,7 @@
 import vision from "../../src";
 import { cleanOcrText, extractLabelData, processOcrResult, ParsedFoodLabel } from "../../src/ocr";
 import { preprocessImage } from "../../src/image-processing";
-import { decodeBarcodeFromRgba } from "../../src/barcode";
+import { decodeBarcodeFromRgba, BarcodeDecodeOptions } from "../../src/barcode";
 import { validateFoodLabel } from "../../src/food-label";
 
 const rgba: vision.RgbaImageInput = {
@@ -10,7 +10,8 @@ const rgba: vision.RgbaImageInput = {
   height: 1
 };
 
-const barcodeResult: vision.BarcodeDecodeResult = decodeBarcodeFromRgba(rgba);
+const decodeOptions: BarcodeDecodeOptions = { tryHarder: true };
+const barcodeResult: vision.BarcodeDecodeResult = decodeBarcodeFromRgba(rgba, decodeOptions);
 const preparedImage: vision.PreprocessImageResult = preprocessImage(rgba, { rotation: 90 });
 const cleanedText = cleanOcrText("Ingredients: Wheat flour");
 const extracted = extractLabelData(cleanedText.text);

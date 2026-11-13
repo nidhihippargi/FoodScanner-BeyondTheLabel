@@ -47,3 +47,31 @@ test("accepts the full extraction response as input", () => {
   } });
   assert.equal(result.valid, true);
 });
+
+test("rejects unsupported nutrition-basis values", () => {
+  const result = validateFoodLabel({
+    productName: "Rice",
+    ingredients: ["Rice"],
+    allergens: [],
+    nutrition: { calories: 100 },
+    nutritionBasis: "per_100ml"
+  });
+
+  assert.equal(result.valid, false);
+  assert.equal(result.needsReview, true);
+  assert.ok(result.errors.some(error => error.includes("nutritionBasis")));
+  assert.ok(result.checks.some(check => check.name === "nutrition_basis_valid" && !check.passed));
+});
+
+test("treats a missing nutrition basis as unknown and requires review", () => {
+  const result = validateFoodLabel({
+    productName: "Rice",
+    ingredients: ["Rice"],
+    allergens: [],
+    nutrition: { calories: 100 }
+  });
+
+  assert.equal(result.valid, true);
+  assert.equal(result.needsReview, true);
+  assert.ok(result.warnings.some(warning => warning.includes("basis is unknown")));
+});

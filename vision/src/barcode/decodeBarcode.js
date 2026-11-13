@@ -24,7 +24,7 @@ const FIRST_DIGIT_PARITY = [
   "LGGLLG", "LGGGLL", "LGLGLG", "LGLGGL", "LGGLGL"
 ];
 
-function decodeBarcodeFromRgba(image) {
+function decodeBarcodeFromRgba(image, options = {}) {
   if (!image || typeof image !== "object") {
     return failure("Image input must be an object containing RGBA pixel data.");
   }
@@ -39,7 +39,10 @@ function decodeBarcodeFromRgba(image) {
     return failure("RGBA data length must equal width × height × 4.");
   }
 
-  const rowsToTry = uniqueRows(height);
+  const tryHarder = Boolean(options && options.tryHarder === true);
+  const rowsToTry = uniqueRows(height, tryHarder);
+  let checksumFailure = null;
+
   for (const y of rowsToTry) {
     const gray = getGrayscaleRow(data, width, y);
     const threshold = otsuThreshold(gray);
@@ -55,14 +58,25 @@ function decodeBarcodeFromRgba(image) {
       const startX = guardRuns[0].start;
       const ean13 = readModules(binary, startX, moduleWidth, 95);
       const decoded13 = ean13 && decodeEan13Bits(ean13);
-      if (decoded13) return makeSuccess(decoded13.text, decoded13.format);
+      if (decoded13) {
+        const result = makeSuccess(decoded13.text, decoded13.format);
+        if (result.success) return result;
+        checksumFailure = result;
+      }
 
       const ean8 = readModules(binary, startX, moduleWidth, 67);
       const decoded8 = ean8 && decodeEan8Bits(ean8);
-      if (decoded8) return makeSuccess(decoded8.text, decoded8.format);
+      if (decoded8) {
+        const result = makeSuccess(decoded8.text, decoded8.format);
+        if (result.success) return result;
+        checksumFailure = result;
+      }
     }
   }
-  return failure("No valid EAN-8, EAN-13 or UPC-A barcode was decoded from the supplied image.", "BARCODE_NOT_FOUND");
+  return checksumFailure || failure(
+    "No valid EAN-8, EAN-13 or UPC-A barcode was decoded from the supplied image.",
+    "BARCODE_NOT_FOUND"
+  );
 }
 
 function decodeEan13Bits(bits) {
@@ -189,18 +203,36 @@ function makeRuns(binary) {
   return runs;
 }
 
-function uniqueRows(height) {
+function uniqueRows(height, tryHarder = false) {
   const rows = new Set();
-  for (const ratio of [0.3, 0.4, 0.5, 0.6, 0.7]) rows.add(Math.min(height - 1, Math.max(0, Math.floor(height * ratio))));
+  const ratios = tryHarder
+    ? Array.from({ length: 19 }, (_, index) => (index + 1) / 20)
+    : [0.3, 0.4, 0.5, 0.6, 0.7];
+
+  for (const ratio of ratios) {
+    rows.add(Math.min(height - 1, Math.max(0, Math.floor(height * ratio))));
+  }
   return [...rows];
 }
 
 function makeSuccess(text, format) {
+  const barcodeValidation = validateBarcode(text);
+  if (!barcodeValidation.valid) {
+    return {
+      success: false,
+      text,
+      format,
+      barcodeValidation,
+      error: barcodeValidation.error || "Decoded barcode failed validation.",
+      errorCode: "INVALID_CHECK_DIGIT"
+    };
+  }
+
   return {
     success: true,
     text,
     format,
-    barcodeValidation: validateBarcode(text),
+    barcodeValidation,
     error: null,
     errorCode: null
   };
