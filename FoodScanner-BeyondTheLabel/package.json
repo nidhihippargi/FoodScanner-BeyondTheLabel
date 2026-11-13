@@ -1,0 +1,18 @@
+{
+  "name": "foodscanner-beyondthelabel",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Food Scanner: Beyond the Label - monorepo (frontend, backend, data-engineering, verification, vision)",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "install:all": "npm --prefix backend install && npm --prefix frontend install",
+    "test": "node --test vision/unit.test.js data-engineering/unit.test.js verification/unit.test.js backend/unit.test.js tests/integration.test.js",
+    "test:vision": "node --test vision/unit.test.js",
+    "test:data": "node --test data-engineering/unit.test.js",
+    "test:verification": "node --test verification/unit.test.js",
+    "test:backend": "node --test backend/unit.test.js",
+    "test:integration": "node --test tests/integration.test.js",
+    "backend": "npm --prefix backend start",
+    "frontend": "npm --prefix frontend start"
+  }
+}

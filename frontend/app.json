@@ -1,0 +1,25 @@
+{
+  "expo": {
+    "name": "Food Scanner",
+    "slug": "food-scanner-beyond-the-label",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Food Scanner needs the camera to scan barcodes and ingredient labels."
+        }
+      ],
+      "expo-status-bar",
+      "expo-font"
+    ],
+    "ios": {
+      "bundleIdentifier": "com.example.foodscanner"
+    },
+    "android": {
+      "package": "com.example.foodscanner"
+    }
+  }
+}
