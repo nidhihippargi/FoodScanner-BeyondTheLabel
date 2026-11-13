@@ -1,0 +1,15 @@
+{
+  "name": "foodscanner-vision",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Vision processing module for FoodScanner Beyond The Label",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node --test",
+    "typecheck": "tsc --noEmit --strict --module commonjs --target es2020 --esModuleInterop src/index.d.ts src/ocr/index.d.ts src/barcode/index.d.ts src/image-processing/index.d.ts src/food-label/index.d.ts tests/types/consumer.ts"
+  },
+  "types": "src/index.d.ts",
+  "devDependencies": {
+    "typescript": "^7.0.2"
+  }
+}
