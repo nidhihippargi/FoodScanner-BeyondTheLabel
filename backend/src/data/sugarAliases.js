@@ -41,7 +41,7 @@ const sugarAliases = [
     },
     {
         name: "Sucrose",
-        aliases: ["sucrose"],
+        aliases: ["sucrose","sugar","table sugar"],
         explanation: "Common table sugar consisting of glucose and fructose."
     },
     {
