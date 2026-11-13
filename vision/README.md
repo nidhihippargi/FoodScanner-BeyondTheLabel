@@ -1,554 +1,479 @@
-# Vision Engineering Module
-## Food Scanner: Beyond the Label
+# FoodScanner – Beyond the Label
+## Vision Engineering Module
 
-**Module:** Vision Engineering  
-**Project:** Food Scanner: Beyond the Label  
-**Status:** Initial Development  
-**Primary Technologies:** React Native, TypeScript, Google ML Kit  
-**Development Environment:** Visual Studio Code  
-**Target Platform:** Android (initial development)
+**Module:** Vision Engineering
+**Branch:** `feature/vision-ocr`
+**Status:** Core JavaScript utilities implemented; React Native integration pending
+**Primary technologies:** JavaScript, React Native, Google ML Kit (frontend integration)
 
 ---
 
 ## 1. Overview
 
-The Vision Engineering module is responsible for extracting meaningful information from food product packaging using computer vision and image-processing technologies.
+The Vision Engineering module provides reusable utilities for processing food-label information.
 
-Food product packaging contains important information such as:
+Its responsibilities include:
 
-- Product name
-- Ingredients list
-- Nutritional information
-- Allergen declarations
-- Manufacturing and expiry dates
-- Food additives and preservatives
-- Vegetarian and non-vegetarian indicators
-- Barcode information
+- Validating product barcodes.
+- Retrieving product information using Open Food Facts.
+- Validating image metadata.
+- Assessing basic image-quality measurements.
+- Cleaning OCR-recognized text.
+- Extracting structured information from food labels.
 
-This information is often presented in small fonts, different layouts, multiple languages, and sometimes in poorly lit or curved packaging.
+The module is designed to separate platform-independent processing logic from device-specific functionality.
 
-The purpose of this module is to capture product-label images, extract text using Optical Character Recognition (OCR), and provide structured information to other modules of the Food Scanner application.
+**Important:** Camera access, gallery selection, barcode scanning, native OCR recognition, and native image preprocessing are not implemented inside this JavaScript module. These responsibilities belong to the React Native application and its native integrations.
 
-The Vision Engineering module will work alongside the frontend, backend, data engineering, and verification teams.
+## 2. Architecture
 
-## 2. Objectives
+The intended processing workflow is:
 
-The primary objectives are:
+1. The frontend captures an image or selects one from the gallery.
+2. The frontend performs native image handling and metadata extraction.
+3. Vision validates the image metadata.
+4. The frontend passes the image to its OCR engine, such as Google ML Kit.
+5. Vision cleans the recognized text.
+6. Vision extracts ingredients, allergens, nutrition information, and serving size.
+7. The resulting data is passed to the appropriate application modules.
 
-1. Implement OCR-based text extraction from food product labels.
-2. Support image input from the device gallery and camera.
-3. Extract text from ingredients lists and nutrition tables.
-4. Preserve the original OCR output for further processing.
-5. Support barcode recognition for product identification.
-6. Handle image-quality issues that affect text recognition.
-7. Provide structured OCR results to the backend and data engineering modules.
-8. Evaluate OCR accuracy using real-world packaged food images.
-9. Design the module so additional image-processing capabilities can be integrated later.
+Barcode processing follows a separate workflow:
 
-## 3. Scope of the Module
+1. The frontend scans a barcode using a camera/scanning library.
+2. The frontend passes the detected barcode string to Vision.
+3. Vision validates the barcode.
+4. Vision can retrieve product information from Open Food Facts.
 
-### 3.1 Image Input
-
-The module will accept images captured using a mobile camera or selected from the device gallery.
-
-Supported image formats will depend on the image-picker and OCR libraries used.
-
-### 3.2 Optical Character Recognition (OCR)
-
-OCR converts text present in an image into machine-readable text.
-
-The OCR module will aim to extract:
-
-- Product and brand names
-- Ingredients
-- Nutritional values
-- Allergen warnings
-- Food-related declarations
-- Other relevant packaging information
-
-Google ML Kit Text Recognition is the proposed OCR technology.
-
-### 3.3 Barcode Recognition
-
-Barcode recognition will be used to identify food products through their packaging barcodes.
-
-The extracted barcode value can be passed to the backend or product database for product identification.
-
-Barcode recognition will be implemented separately from OCR so that each feature can be developed and tested independently.
-
-### 3.4 Image Processing
-
-Image preprocessing may be introduced to improve recognition quality.
-
-Planned techniques include:
-
-- Image resizing
-- Image rotation and orientation correction
-- Cropping relevant label regions
-- Brightness and contrast adjustment
-- Noise reduction
-- Perspective correction, if required
-
-These techniques will be introduced based on actual OCR testing results.
-
-## 4. Technology Stack
-
-| Technology | Purpose |
-|---|---|
-| React Native | Mobile application framework |
-| TypeScript | Application and module development |
-| Google ML Kit Text Recognition | OCR and text extraction |
-| Android Studio | Android SDK and native build tools |
-| VS Code | Primary code editor |
-| Git and GitHub | Version control and collaboration |
-| Expo | Proposed React Native development workflow |
-
-**Note:** The final package versions and Expo compatibility must be confirmed before implementation. Native ML Kit integration may require an Expo development build rather than Expo Go.
-
-## 5. Module Architecture
-
-The planned workflow is:
-
-```text
-        Food Product Packaging
-                  |
-                  v
-          Image Acquisition
-                  |
-          +-------+-------+
-          |               |
-          v               v
-       Camera          Gallery
-          |               |
-          +-------+-------+
-                  |
-                  v
-           Image Validation
-                  |
-                  v
-          Image Preprocessing
-                  |
-          +-------+-------+
-          |               |
-          v               v
-       OCR Engine     Barcode Scanner
-          |               |
-          v               v
-     Extracted Text   Barcode Value
-          |               |
-          +-------+-------+
-                  |
-                  v
-          Result Formatting
-                  |
-                  v
-       Structured Data Output
-                  |
-          +-------+-------+
-          |               |
-          v               v
-      Backend       Data Engineering
-```
-
-OCR and barcode recognition are independent processing paths. They may run separately or together depending on the application workflow.
-
-## 6. Project Directory Structure
-
-The proposed Vision Engineering directory structure is:
+## 3. Project Structure
 
 ```text
 vision/
 │
+├── package.json
+├── package-lock.json
 ├── README.md
 │
 ├── src/
-│   │
-│   ├── ocr/
-│   │   ├── textRecognition.ts
-│   │   └── ocrTypes.ts
+│   ├── index.js
 │   │
 │   ├── barcode/
-│   │   └── barcodeScanner.ts
+│   │   ├── index.js
+│   │   ├── validateBarcode.js
+│   │   └── productLookup.js
 │   │
-│   ├── image/
-│   │   └── imageProcessing.ts
+│   ├── image-processing/
+│   │   ├── index.js
+│   │   ├── validateImage.js
+│   │   └── assessImageQuality.js
 │   │
-│   └── index.ts
+│   └── ocr/
+│       ├── index.js
+│       ├── cleanOcrText.js
+│       └── extractLabelData.js
 │
 └── tests/
-    ├── ocrTests.ts
-    ├── barcodeTests.ts
-    └── testImages/
+    ├── barcode tests
+    ├── image-processing tests
+    └── OCR tests
 ```
 
-### File Responsibilities
+## 4. Public API
 
-| File | Responsibility |
-|---|---|
-| `textRecognition.ts` | OCR processing and text extraction |
-| `ocrTypes.ts` | TypeScript types for OCR results |
-| `barcodeScanner.ts` | Barcode detection and value extraction |
-| `imageProcessing.ts` | Image preprocessing operations |
-| `index.ts` | Exports module functions |
-| `ocrTests.ts` | OCR testing |
-| `barcodeTests.ts` | Barcode testing |
-| `testImages/` | Sample images for testing |
+The main entry point is:
 
-This is the proposed structure. Files will be added as implementation progresses.
+```javascript
+const vision = require("./src");
+```
 
-## 7. OCR Implementation
+The module exposes three namespaces:
 
-### 7.1 OCR Workflow
+```javascript
+vision.barcode
+vision.imageProcessing
+vision.ocr
+```
 
-The OCR process will follow these steps:
+### 4.1 Barcode Module
 
-1. Receive an image URI.
-2. Validate that the image exists and is accessible.
-3. Pass the image to the OCR engine.
-4. Detect text and text blocks.
-5. Extract the recognized text.
-6. Format the OCR output.
-7. Return the result to the calling application.
+#### `validateBarcode(barcode)`
 
-### 7.2 Proposed OCR Result Format
+Validates barcode values using their length and GS1 check digit.
 
-The OCR module will return a consistent result structure.
+Supported formats:
+
+| Format | Length |
+|---|---:|
+| GTIN-8 | 8 digits |
+| UPC-A | 12 digits |
+| EAN-13 | 13 digits |
+| GTIN-14 | 14 digits |
 
 Example:
 
-```json
+```javascript
+const result = vision.barcode.validateBarcode(
+  "8901234567890"
+);
+```
+
+Successful result:
+
+```javascript
 {
-  "success": true,
-  "rawText": "Ingredients: Wheat flour, sugar, salt...",
-  "blocks": [
-    "Ingredients:",
-    "Wheat flour, sugar, salt..."
-  ],
-  "error": null
+  valid: true,
+  barcode: "8901234567890",
+  format: "EAN-13",
+  error: null
 }
 ```
 
-The `rawText` field will preserve the recognized text, while `blocks` will contain individual recognized text sections.
+The function rejects invalid input types, non-digit characters, unsupported lengths, and incorrect check digits.
 
-The output is raw OCR data, not verified nutritional or ingredient information. Further interpretation and validation will be handled by the appropriate project modules.
+#### `fetchProductByBarcode(barcode)`
 
-### 7.3 TypeScript Interface
+Validates the barcode and retrieves product information from the Open Food Facts API.
 
-```typescript
-export type OCRResult = {
-  rawText: string;
-  blocks: string[];
-  success: boolean;
-  error?: string;
-};
+Example:
+
+```javascript
+const result =
+  await vision.barcode.fetchProductByBarcode(
+    "8901234567890"
+  );
 ```
 
-### 7.4 OCR Function
+The returned object contains:
 
-The planned OCR function will use the following interface:
+- `success`
+- `found`
+- `barcode`
+- `error`
+- `product`
 
-```typescript
-export async function recognizeText(
-  imageUri: string
-): Promise<OCRResult>;
-```
+The product object may contain:
 
-This interface will allow the frontend to call the OCR module without depending on its internal implementation.
+- Product name
+- Brand
+- Quantity
+- Ingredients
+- Allergens
+- Nutrition information
+- Nutri-Score
+- NOVA group
+- Product image URL
 
-## 8. Barcode Recognition
+A valid barcode does not guarantee that a product exists in Open Food Facts.
 
-Barcode recognition will be implemented as a separate feature.
+### 4.2 Image Processing Module
 
-The scanner will:
+#### `validateImage(image)`
 
-1. Access the camera.
-2. Detect a barcode in the camera frame.
-3. Extract the barcode value.
-4. Identify the barcode format where available.
-5. Return the result to the frontend or backend.
+Validates image metadata supplied by the frontend.
 
-### Proposed Barcode Result
+Expected input:
 
-```json
+```javascript
 {
-  "success": true,
-  "barcode": "8901234567890",
-  "format": "EAN-13"
+  mimeType: "image/jpeg",
+  width: 1920,
+  height: 1080
 }
 ```
 
-The example barcode is illustrative only.
+Supported MIME types:
 
-Barcode detection does not guarantee that a product exists in the database. Product lookup and verification will be handled by the backend.
+- `image/jpeg`
+- `image/png`
+- `image/webp`
 
-## 9. Image Processing
+Successful result:
 
-Image quality has a direct impact on OCR performance.
+```javascript
+{
+  valid: true,
+  error: null,
+  image: {
+    mimeType: "image/jpeg",
+    width: 1920,
+    height: 1080,
+    aspectRatio: 1.778
+  }
+}
+```
 
-The module may introduce preprocessing when initial testing identifies recognition problems.
+This function validates supplied metadata. It does not inspect image files or verify that the underlying image is accessible.
 
-| Technique | Purpose |
+#### `assessImageQuality(image)`
+
+Evaluates image dimensions and optional quality measurements supplied by the caller.
+
+Expected input:
+
+```javascript
+{
+  width: 1920,
+  height: 1080,
+  brightness: 120,
+  blurScore: 80
+}
+```
+
+Measurement scales:
+
+- Brightness: 0–255.
+- Blur score: 0–100, where lower values indicate more blur.
+
+The function checks:
+
+- Minimum resolution.
+- Excessively dark images.
+- Overexposed images.
+- Low blur scores.
+
+Example result:
+
+```javascript
+{
+  suitableForOCR: true,
+  issues: []
+}
+```
+
+**Limitation:** The function does not calculate brightness or blur. Those measurements must be supplied by the frontend or another image-analysis component.
+
+### 4.3 OCR Module
+
+The OCR module processes text returned by an external OCR engine. It does not recognize text directly from images.
+
+#### `cleanOcrText(rawText)`
+
+Normalizes recognized text by:
+
+- Removing unnecessary spaces.
+- Removing empty lines.
+- Normalizing Windows line endings.
+- Preserving the original words and their order.
+
+Example:
+
+```javascript
+const result = vision.ocr.cleanOcrText(
+  "Ingredients: Wheat flour, sugar\r\n\r\nSalt"
+);
+```
+
+Successful result:
+
+```javascript
+{
+  success: true,
+  text: "Ingredients: Wheat flour, sugar\nSalt",
+  lines: [
+    "Ingredients: Wheat flour, sugar",
+    "Salt"
+  ]
+}
+```
+
+#### `extractLabelData(input)`
+
+Extracts structured information from OCR text.
+
+Currently supported fields:
+
+- Ingredients
+- Allergen declarations
+- Energy
+- Protein
+- Carbohydrates
+- Sugars
+- Fat
+- Saturated fat
+- Fibre
+- Sodium
+- Serving size
+
+Example:
+
+```javascript
+const result = vision.ocr.extractLabelData(
+  `Ingredients: Wheat flour, sugar, salt
+Contains: Wheat, Milk
+Energy: 250 kcal
+Protein: 5 g
+Serving Size: 50 g`
+);
+```
+
+The function returns:
+
+```javascript
+{
+  success: true,
+  ingredients: ["Wheat flour", "sugar", "salt"],
+  allergens: ["Wheat", "Milk"],
+  nutrition: {
+    energy: {
+      value: 250,
+      unit: "kcal"
+    },
+    protein: {
+      value: 5,
+      unit: "g"
+    }
+  },
+  servingSize: "50 g",
+  error: null
+}
+```
+
+The extraction currently uses text patterns and regular expressions. It is not a complete food-label parser and does not independently verify the accuracy of OCR results or nutritional information.
+
+## 5. React Native Integration Responsibilities
+
+The Vision module is intended to provide reusable JavaScript logic. The frontend team is responsible for connecting device-specific capabilities.
+
+| Responsibility | Owner |
 |---|---|
-| Resizing | Improve processing efficiency |
-| Rotation correction | Correct incorrectly oriented images |
-| Cropping | Focus on relevant label regions |
-| Contrast adjustment | Improve visibility of printed text |
-| Noise reduction | Reduce visual interference |
-| Perspective correction | Improve recognition of angled labels |
+| Camera access | Frontend |
+| Gallery image selection | Frontend |
+| Image URI management | Frontend |
+| Image metadata extraction | Frontend/native adapter |
+| Native image preprocessing | Frontend/native adapter |
+| OCR recognition using ML Kit | Frontend/native adapter |
+| Barcode scanning using camera | Frontend/native adapter |
+| Barcode validation | Vision |
+| Product lookup | Vision |
+| OCR text cleaning | Vision |
+| Label-data extraction | Vision |
 
-Preprocessing should not be applied unnecessarily. Original images should remain available so results can be compared and recognition problems investigated.
+### Example integration workflow
 
-## 10. Integration with Other Modules
+```javascript
+// The frontend obtains recognized text
+// using its native OCR integration.
 
-### Frontend Team
+const rawText = recognizedText;
 
-The frontend will provide the selected image or image URI to the Vision Engineering module.
+// Vision processes the recognized text.
+const cleaned = vision.ocr.cleanOcrText(rawText);
 
-The vision module will return OCR or barcode results through documented functions.
+if (cleaned.success) {
+  const labelData =
+    vision.ocr.extractLabelData(cleaned.text);
 
-### Backend Team
+  console.log(labelData);
+}
+```
 
-The backend may receive:
+The example assumes the frontend has already obtained `recognizedText` from its OCR engine.
 
-- Extracted OCR text
-- Barcode values
-- Recognition status
-- Relevant metadata
+### React Native compatibility considerations
 
-The backend will handle product lookup and other server-side functionality.
+The current implementation uses JavaScript functions, CommonJS exports, and the standard `fetch` API.
 
-### Data Engineering Team
+There are no intended Node.js-only runtime dependencies in the public processing modules.
 
-The extracted text will be used for further processing, including:
+However, compatibility must still be verified through actual React Native/Metro bundling and Android/iOS integration testing. In particular, the Open Food Facts request and its custom headers must be tested on the target platforms.
 
-- Ingredient extraction
-- Nutritional information identification
-- Food additive identification
-- Data normalization
-- Structured product information
+## 6. Dependencies
 
-### Verification Team
+The current Vision package has no external runtime dependencies.
 
-The verification team will help evaluate:
+Development tests use Node.js built-in testing functionality.
 
-- OCR accuracy
-- Barcode detection reliability
-- Image-quality sensitivity
-- Error handling
-- Performance on different packaged food products
-
-## 11. Testing Strategy
-
-Testing will use real packaged food products rather than only synthetic examples.
-
-### Initial Test Dataset
-
-The initial dataset should contain:
-
-1. Images of nutrition facts tables.
-2. Images of ingredients lists.
-3. Images with small printed text.
-4. Images containing multiple languages.
-5. Images with tilted labels.
-6. Images with poor lighting.
-7. Images with curved packaging.
-8. Images containing barcodes.
-
-### Testing Metrics
-
-| Metric | What it measures |
-|---|---|
-| Character Error Rate (CER) | Character-level OCR errors |
-| Word Error Rate (WER) | Word-level OCR errors |
-| Field extraction accuracy | Correct extraction of important fields |
-| Barcode detection rate | Successful barcode recognition |
-| Processing time | Time required to process an image |
-
-CER and WER will be calculated against manually transcribed reference text.
-
-A successful OCR response does not necessarily mean the extracted text is accurate. Recognition quality must be evaluated against ground truth.
-
-## 12. Error Handling
-
-The module should handle common failure conditions.
-
-| Error | Expected handling |
-|---|---|
-| No image provided | Return a validation error |
-| Invalid image URI | Return an image-access error |
-| Unsupported image format | Report an unsupported-format error |
-| No text detected | Return an empty OCR result |
-| OCR processing failure | Return an error without crashing |
-| Barcode not detected | Report that no barcode was found |
-| Poor image quality | Allow the user to capture or select another image |
-
-Error messages should be understandable to both developers and users.
-
-## 13. Development Roadmap
-
-### Phase 1 — Initial Setup
-
-- [ ] Configure the development environment.
-- [ ] Confirm the React Native and Expo setup with the frontend team.
-- [ ] Create the Vision Engineering directory structure.
-- [ ] Define the OCR result interface.
-- [ ] Create the initial OCR function.
-
-### Phase 2 — OCR Integration
-
-- [ ] Confirm Google ML Kit package compatibility.
-- [ ] Configure the required native Android dependencies.
-- [ ] Connect the OCR engine.
-- [ ] Test OCR using static food-label images.
-- [ ] Evaluate text extraction quality.
-
-### Phase 3 — Camera and Gallery Integration
-
-- [ ] Integrate image selection from the gallery.
-- [ ] Integrate camera image capture.
-- [ ] Validate image URIs.
-- [ ] Pass images to the OCR module.
-
-### Phase 4 — Barcode Recognition
-
-- [ ] Select a compatible barcode-scanning library.
-- [ ] Implement barcode detection.
-- [ ] Extract barcode values.
-- [ ] Test supported barcode formats.
-- [ ] Integrate with the backend.
-
-### Phase 5 — Image Processing
-
-- [ ] Evaluate common OCR failures.
-- [ ] Add preprocessing where necessary.
-- [ ] Compare OCR performance before and after preprocessing.
-
-### Phase 6 — Integration and Testing
-
-- [ ] Integrate with the frontend.
-- [ ] Coordinate output format with the backend.
-- [ ] Provide OCR results to data engineering.
-- [ ] Run end-to-end tests.
-- [ ] Document limitations and test results.
-
-## 14. Installation and Setup
-
-### Prerequisites
-
-Install the following tools:
-
-- Node.js LTS
-- Git
-- Visual Studio Code
-- Android Studio
-- Android SDK
-
-### Repository Setup
-
-Clone the project:
+Run the tests from the `vision` directory:
 
 ```bash
-git clone https://github.com/nidhihippargi/FoodScanner-BeyondTheLabel.git
+npm test
 ```
 
-Enter the project directory:
+The module currently uses:
 
-```bash
-cd FoodScanner-BeyondTheLabel
+```json
+{
+  "name": "foodscanner-vision",
+  "version": "1.0.0",
+  "private": true,
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node --test"
+  }
+}
 ```
 
-Create a feature branch:
+The package is private and is not currently configured as a published npm package.
 
-```bash
-git checkout -b feature/vision-ocr
-```
+## 7. Testing
 
-The mobile application dependencies will be installed from the frontend application's directory once the frontend setup is finalized.
+The existing tests cover:
 
-**Important:** The Vision module is not yet a standalone installable package. Its dependency and build configuration will be documented after the OCR integration is implemented.
+- Barcode formats and check-digit validation.
+- Supported image formats and metadata validation.
+- Image-quality threshold checks.
+- OCR text cleaning.
+- Ingredient extraction.
+- Allergen extraction.
+- Nutritional value extraction.
+- Serving-size extraction.
+- Multiple-line ingredient handling.
+- Realistic food-label text examples.
 
-## 15. Git and Collaboration Guidelines
+Passing Node.js tests verifies the tested JavaScript functionality. It does not establish native OCR accuracy or full mobile integration compatibility.
 
-Use feature branches for development rather than directly modifying the `main` branch.
+Future testing should include:
 
-Suggested branch names:
+- React Native/Metro bundle tests.
+- Android device integration.
+- iOS device integration, if supported by the application.
+- Real-world packaged food images.
+- OCR accuracy evaluation using manually transcribed reference text.
+- Network failure and API response testing.
 
-```text
-feature/vision-ocr
-feature/vision-barcode
-feature/vision-image-processing
-```
-
-Suggested commit messages:
-
-```text
-docs: add vision engineering documentation
-feat: implement OCR text recognition
-feat: add barcode detection
-feat: add image preprocessing
-test: add OCR test cases
-fix: handle invalid image input
-```
-
-Before submitting changes:
-
-1. Test your implementation.
-2. Check that existing team code is not broken.
-3. Update the README if the setup or module interface changes.
-4. Commit changes to your feature branch.
-5. Open a pull request for team review.
-
-## 16. Security and Privacy Considerations
-
-- Prefer on-device OCR when practical.
-- Avoid uploading product images unless required by the application.
-- Do not store personal information in OCR logs.
-- Keep original image data separate from extracted text.
-- Validate all image inputs.
-- Do not treat OCR output as verified product information.
-
-## 17. Current Implementation Status
-
-The Vision Engineering module is currently in its initial planning and setup stage.
+## 8. Current Implementation Status
 
 | Component | Status |
 |---|---|
-| Module documentation | In progress |
-| Directory structure | Planned |
-| OCR result interface | Planned |
-| OCR engine integration | Not started |
-| Camera integration | Not started |
-| Gallery integration | Not started |
-| Barcode recognition | Not started |
-| Image preprocessing | Not started |
-| OCR testing | Not started |
-| Backend integration | Not started |
+| Barcode validation | Implemented |
+| Open Food Facts product lookup | Implemented |
+| Image metadata validation | Implemented |
+| Basic image-quality assessment | Implemented |
+| OCR text cleaning | Implemented |
+| Label-data extraction | Implemented |
+| Native barcode scanning | Frontend integration required |
+| Native OCR recognition | Frontend integration required |
+| Native image preprocessing | Frontend integration required |
+| React Native/Metro integration testing | Pending |
+| Android end-to-end testing | Pending |
+| iOS end-to-end testing | Pending |
 
-Statuses should be updated as features are implemented and tested.
+## 9. Current Limitations and Future Work
 
-## 18. Future Improvements
+The current implementation is an initial processing layer.
 
-Potential future improvements include:
+Potential improvements include:
 
-- Better recognition of regional Indian languages.
-- Improved extraction from complex nutrition tables.
-- Automatic identification of ingredients and allergens.
-- Detection of label sections and table boundaries.
-- Recognition of expiry and manufacturing dates.
-- Improved recognition under challenging lighting conditions.
-- Confidence-based handling of uncertain OCR results.
+1. Better extraction from complex nutrition tables.
+2. Improved recognition of regional Indian languages through the OCR integration.
+3. More robust ingredient-list parsing.
+4. Better allergen identification.
+5. Improved handling of nutrition units and serving sizes.
+6. Confidence-aware extraction.
+7. More comprehensive image-quality analysis.
+8. TypeScript declarations for frontend integration.
+9. React Native integration and platform-specific testing.
 
-These improvements will be prioritized based on project requirements and testing results.
+OCR output and extracted label data should not be treated as verified product information without appropriate validation.
+
+## 10. Collaboration
+
+The Vision module works alongside the frontend, backend, data engineering, and verification teams.
+
+Changes should be developed on the appropriate feature branch and tested before being submitted for review.
+
+The frontend team should coordinate with Vision before changing public function signatures or expected input/output structures.
 
 ---
 
-## 19. Conclusion
-
-The Vision Engineering module forms an important part of Food Scanner: Beyond the Label. Its primary responsibility is to convert visual information from food packaging into machine-readable data.
-
-By combining OCR, barcode recognition, and image processing, the module will help the application understand food labels and provide reliable input for nutritional analysis and food-label verification.
-
-The initial development priority is to establish a working OCR pipeline, evaluate its accuracy using real packaged food images, and provide a consistent output interface for integration with the other project modules.
-
-**Maintained by:** Vision Engineering Team  
 **Repository:** [FoodScanner-BeyondTheLabel](https://github.com/nidhihippargi/FoodScanner-BeyondTheLabel)
+**Maintained by:** Vision Engineering Team

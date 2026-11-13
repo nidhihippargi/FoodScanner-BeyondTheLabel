@@ -1,10 +1,10 @@
-
 const { assessImageQuality } = require("./assessImageQuality");
-const { preprocessImage } = require("./preprocessImage");
+const { preprocessImage, validateRgbaImage } = require("./preprocessImage");
 const { validateImage } = require("./validateImage");
 
 module.exports = {
   assessImageQuality,
   preprocessImage,
-  validateImage
+  validateImage,
+  validateRgbaImage
 };

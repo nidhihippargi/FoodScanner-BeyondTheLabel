@@ -1,8 +1,9 @@
-
-const { validateBarcode } = require("./validateBarcode");
+const { decodeBarcodeFromRgba } = require("./decodeBarcode");
 const { fetchProductByBarcode } = require("./productLookup");
+const { validateBarcode } = require("./validateBarcode");
 
 module.exports = {
-  validateBarcode,
-  fetchProductByBarcode
+  decodeBarcodeFromRgba,
+  fetchProductByBarcode,
+  validateBarcode
 };

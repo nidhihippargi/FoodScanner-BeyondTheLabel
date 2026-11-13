@@ -5,9 +5,11 @@
   "description": "Vision processing module for FoodScanner Beyond The Label",
   "main": "src/index.js",
   "scripts": {
-    "test": "node --test"
+    "test": "node --test",
+    "typecheck": "tsc --noEmit --strict --module commonjs --target es2020 --esModuleInterop src/index.d.ts src/ocr/index.d.ts src/barcode/index.d.ts src/image-processing/index.d.ts src/food-label/index.d.ts tests/types/consumer.ts"
   },
-  "dependencies": {
-    "sharp": "^0.35.5"
+  "types": "src/index.d.ts",
+  "devDependencies": {
+    "typescript": "^7.0.2"
   }
 }
