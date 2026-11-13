@@ -1,0 +1,26 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node src/services/testClaimService.js && node src/services/testIngredientService.js && node src/services/testNutritionService.js && node src/services/testPersonalizationService.js && node src/services/testProductAnalysisService.js && jest --runInBand",
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.10",
+    "express": "^4.22.3",
+    "mongoose": "^8.24.8"
+  },
+  "devDependencies": {
+    "jest": "^30.5.2",
+    "nodemon": "^3.1.14",
+    "nyc": "^18.0.0",
+    "supertest": "^7.3.2"
+  }
+}
