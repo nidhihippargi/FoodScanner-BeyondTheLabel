@@ -1,0 +1,1289 @@
+{
+  "datasetVersion": "1.0.0",
+  "description": "Expanded ingredient identity catalogue linked to generic source composition records. Empty healthConsiderations/allergenInfo means these topics were not assessed in Stage 4; it is not a negative or safety finding.",
+  "records": [
+    {
+      "schemaVersion": "1.0.0",
+      "ingredientId": "almonds",
+      "canonicalName": "almonds",
+      "displayName": "Almonds",
+      "category": "other",
+      "functions": [
+        "nut ingredient"
+      ],
+      "description": "Whole raw almonds used as a nut ingredient.",
+      "healthConsiderations": [],
+      "allergenInfo": [],
+      "nutrientCompositionRefs": [
+        "usda_fdc_almonds_raw"
+      ],
+      "additiveRefs": [],
+      "evidence": [
+        {
+          "evidenceId": "usda-food-record-2346393",
+          "sourceName": "USDA FoodData Central / USDA SR28 food record: Almonds",
+          "publisher": "USDA Agricultural Research Service",
+          "sourceType": "composition_dataset",
+          "url": "https://fdc.nal.usda.gov/food-details/2346393/nutrients",
+          "accessedAt": "2026-11-13",
+          "supports": "Identifies the generic food item associated with the linked composition record(s). It does not establish how much of this ingredient is used in a packaged product.",
+          "licenseStatus": "open"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "ingredientId": "amaranth_grain",
+      "canonicalName": "amaranth grain",
+      "displayName": "Amaranth grain",
+      "category": "cereal_grain",
+      "functions": [
+        "grain ingredient"
+      ],
+      "description": "Amaranth grain used as a cereal or grain ingredient.",
+      "healthConsiderations": [],
+      "allergenInfo": [],
+      "nutrientCompositionRefs": [
+        "usda_sr28_amaranth_grain_raw"
+      ],
+      "additiveRefs": [],
+      "evidence": [
+        {
+          "evidenceId": "usda-food-record-ndb-20001",
+          "sourceName": "USDA FoodData Central / USDA SR28 food record: Amaranth grain",
+          "publisher": "USDA Agricultural Research Service",
+          "sourceType": "composition_dataset",
+          "url": "https://fdc.nal.usda.gov/download-datasets/",
+          "accessedAt": "2026-11-13",
+          "supports": "Identifies the generic food item associated with the linked composition record(s). It does not establish how much of this ingredient is used in a packaged product.",
+          "licenseStatus": "open"
+        }
+      ],
+      "reviewStatus": "reviewed",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "ingredientId": "apple_with_skin",
+      "canonicalName": "apple with skin",
+      "displayName": "Apple with skin",
+      "category": "fruit",
+      "functions": [
+        "fruit ingredient"
+      ],
+      "description": "Raw apple with skin in the referenced record.",
+      "healthConsiderations": [],
+      "allergenInfo": [],
+      "nutrientCompositionRefs": [
+        "usda_fdc_apple_raw"
+      ],
+      "additiveRefs": [],
+      "evidence": [
+        {
+          "evidenceId": "usda-food-record-171688",
+          "sourceName": "USDA FoodData Central / USDA SR28 food record: Apple with skin",
+          "publisher": "USDA Agricultural Research Service",
+          "sourceType": "composition_dataset",
+          "url": "https://fdc.nal.usda.gov/food-details/171688/nutrients",
+          "accessedAt": "2026-11-13",
+          "supports": "Identifies the generic food item associated with the linked composition record(s). It does not establish how much of this ingredient is used in a packaged product.",
+          "licenseStatus": "open"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "ingredientId": "avocado",
+      "canonicalName": "avocado",
+      "displayName": "Avocado",
+      "category": "fruit",
+      "functions": [
+        "fruit ingredient"
+      ],
+      "description": "Raw avocado from all commercial varieties in the referenced record.",
+      "healthConsiderations": [],
+      "allergenInfo": [],
+      "nutrientCompositionRefs": [
+        "usda_fdc_avocado_raw"
+      ],
+      "additiveRefs": [],
+      "evidence": [
+        {
+          "evidenceId": "usda-food-record-171705",
+          "sourceName": "USDA FoodData Central / USDA SR28 food record: Avocado",
+          "publisher": "USDA Agricultural Research Service",
+          "sourceType": "composition_dataset",
+          "url": "https://fdc.nal.usda.gov/food-details/171705/nutrients",
+          "accessedAt": "2026-11-13",
+          "supports": "Identifies the generic food item associated with the linked composition record(s). It does not establish how much of this ingredient is used in a packaged product.",
+          "licenseStatus": "open"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "ingredientId": "banana",
+      "canonicalName": "banana",
+      "displayName": "Banana",
+      "category": "fruit",
+      "functions": [
+        "fruit ingredient"
+      ],
+      "description": "Raw ripe and slightly ripe banana used as a fruit ingredient.",
+      "healthConsiderations": [],
+      "allergenInfo": [],
+      "nutrientCompositionRefs": [
+        "usda_fdc_banana_raw"
+      ],
+      "additiveRefs": [],
+      "evidence": [
+        {
+          "evidenceId": "usda-food-record-1105314",
+          "sourceName": "USDA FoodData Central / USDA SR28 food record: Banana",
+          "publisher": "USDA Agricultural Research Service",
+          "sourceType": "composition_dataset",
+          "url": "https://fdc.nal.usda.gov/food-details/1105314/nutrients",
+          "accessedAt": "2026-11-13",
+          "supports": "Identifies the generic food item associated with the linked composition record(s). It does not establish how much of this ingredient is used in a packaged product.",
+          "licenseStatus": "open"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "ingredientId": "barley_flour",
+      "canonicalName": "barley flour",
+      "displayName": "Barley flour",
+      "category": "cereal_grain",
+      "functions": [
+        "flour ingredient"
+      ],
+      "description": "Milled barley flour or meal used in food preparation.",
+      "healthConsiderations": [],
+      "allergenInfo": [],
+      "nutrientCompositionRefs": [
+        "usda_sr28_barley_flour"
+      ],
+      "additiveRefs": [],
+      "evidence": [
+        {
+          "evidenceId": "usda-food-record-ndb-20130",
+          "sourceName": "USDA FoodData Central / USDA SR28 food record: Barley flour",
+          "publisher": "USDA Agricultural Research Service",
+          "sourceType": "composition_dataset",
+          "url": "https://fdc.nal.usda.gov/download-datasets/",
+          "accessedAt": "2026-11-13",
+          "supports": "Identifies the generic food item associated with the linked composition record(s). It does not establish how much of this ingredient is used in a packaged product.",
+          "licenseStatus": "open"
+        }
+      ],
+      "reviewStatus": "reviewed",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "ingredientId": "bread_flour_enriched",
+      "canonicalName": "bread flour, enriched",
+      "displayName": "Bread flour, enriched",
+      "category": "cereal_grain",
+      "functions": [
+        "flour ingredient"
+      ],
+      "description": "White enriched unbleached bread flour used in baking.",
+      "healthConsiderations": [],
+      "allergenInfo": [],
+      "nutrientCompositionRefs": [
+        "usda_fdc_bread_flour"
+      ],
+      "additiveRefs": [],
+      "evidence": [
+        {
+          "evidenceId": "usda-food-record-790146",
+          "sourceName": "USDA FoodData Central / USDA SR28 food record: Bread flour, enriched",
+          "publisher": "USDA Agricultural Research Service",
+          "sourceType": "composition_dataset",
+          "url": "https://fdc.nal.usda.gov/food-details/790146/nutrients",
+          "accessedAt": "2026-11-13",
+          "supports": "Identifies the generic food item associated with the linked composition record(s). It does not establish how much of this ingredient is used in a packaged product.",
+          "licenseStatus": "open"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "ingredientId": "broccoli",
+      "canonicalName": "broccoli",
+      "displayName": "Broccoli",
+      "category": "vegetable",
+      "functions": [
+        "vegetable ingredient"
+      ],
+      "description": "Raw broccoli used as a vegetable ingredient.",
+      "healthConsiderations": [],
+      "allergenInfo": [],
+      "nutrientCompositionRefs": [
+        "usda_fdc_broccoli_raw"
+      ],
+      "additiveRefs": [],
+      "evidence": [
+        {
+          "evidenceId": "usda-food-record-747447",
+          "sourceName": "USDA FoodData Central / USDA SR28 food record: Broccoli",
+          "publisher": "USDA Agricultural Research Service",
+          "sourceType": "composition_dataset",
+          "url": "https://fdc.nal.usda.gov/food-details/747447/nutrients",
+          "accessedAt": "2026-11-13",
+          "supports": "Identifies the generic food item associated with the linked composition record(s). It does not establish how much of this ingredient is used in a packaged product.",
+          "licenseStatus": "open"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "ingredientId": "brown_rice",
+      "canonicalName": "brown rice",
+      "displayName": "Brown rice",
+      "category": "cereal_grain",
+      "functions": [
+        "grain ingredient"
+      ],
+      "description": "Brown rice with bran and germ retained; record varies by grain type.",
+      "healthConsiderations": [],
+      "allergenInfo": [],
+      "nutrientCompositionRefs": [
+        "usda_sr28_brown_rice_medium_raw",
+        "usda_fdc_brown_rice_long_raw"
+      ],
+      "additiveRefs": [],
+      "evidence": [
+        {
+          "evidenceId": "usda-food-record-ndb-20040",
+          "sourceName": "USDA FoodData Central / USDA SR28 food record: Brown rice",
+          "publisher": "USDA Agricultural Research Service",
+          "sourceType": "composition_dataset",
+          "url": "https://fdc.nal.usda.gov/download-datasets/",
+          "accessedAt": "2026-11-13",
+          "supports": "Identifies the generic food item associated with the linked composition record(s). It does not establish how much of this ingredient is used in a packaged product.",
+          "licenseStatus": "open"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "ingredientId": "butter_salted",
+      "canonicalName": "salted butter",
+      "displayName": "Salted butter",
+      "category": "dairy",
+      "functions": [
+        "dairy fat ingredient"
+      ],
+      "description": "Salted butter used as a dairy fat ingredient.",
+      "healthConsiderations": [],
+      "allergenInfo": [],
+      "nutrientCompositionRefs": [
+        "usda_fdc_butter_salted"
+      ],
+      "additiveRefs": [],
+      "evidence": [
+        {
+          "evidenceId": "usda-food-record-173410",
+          "sourceName": "USDA FoodData Central / USDA SR28 food record: Salted butter",
+          "publisher": "USDA Agricultural Research Service",
+          "sourceType": "composition_dataset",
+          "url": "https://fdc.nal.usda.gov/food-details/173410/nutrients",
+          "accessedAt": "2026-11-13",
+          "supports": "Identifies the generic food item associated with the linked composition record(s). It does not establish how much of this ingredient is used in a packaged product.",
+          "licenseStatus": "open"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "ingredientId": "carrot",
+      "canonicalName": "carrot",
+      "displayName": "Carrot",
+      "category": "vegetable",
+      "functions": [
+        "vegetable ingredient"
+      ],
+      "description": "Raw mature carrot used as a vegetable ingredient.",
+      "healthConsiderations": [],
+      "allergenInfo": [],
+      "nutrientCompositionRefs": [
+        "usda_fdc_carrot_raw"
+      ],
+      "additiveRefs": [],
+      "evidence": [
+        {
+          "evidenceId": "usda-food-record-2258586",
+          "sourceName": "USDA FoodData Central / USDA SR28 food record: Carrot",
+          "publisher": "USDA Agricultural Research Service",
+          "sourceType": "composition_dataset",
+          "url": "https://fdc.nal.usda.gov/food-details/2258586/nutrients",
+          "accessedAt": "2026-11-13",
+          "supports": "Identifies the generic food item associated with the linked composition record(s). It does not establish how much of this ingredient is used in a packaged product.",
+          "licenseStatus": "open"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "ingredientId": "cashew",
+      "canonicalName": "cashew nuts, dry-roasted, unsalted",
+      "displayName": "Cashew nuts, dry-roasted, unsalted",
+      "category": "other",
+      "functions": [
+        "nut ingredient"
+      ],
+      "description": "Dry-roasted cashew nuts without added salt in the referenced record.",
+      "healthConsiderations": [],
+      "allergenInfo": [],
+      "nutrientCompositionRefs": [
+        "usda_fdc_cashew_roasted"
+      ],
+      "additiveRefs": [],
+      "evidence": [
+        {
+          "evidenceId": "usda-food-record-170571",
+          "sourceName": "USDA FoodData Central / USDA SR28 food record: Cashew nuts, dry-roasted, unsalted",
+          "publisher": "USDA Agricultural Research Service",
+          "sourceType": "composition_dataset",
+          "url": "https://fdc.nal.usda.gov/food-details/170571/nutrients",
+          "accessedAt": "2026-11-13",
+          "supports": "Identifies the generic food item associated with the linked composition record(s). It does not establish how much of this ingredient is used in a packaged product.",
+          "licenseStatus": "open"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "ingredientId": "chia_seed",
+      "canonicalName": "chia seeds",
+      "displayName": "Chia seeds",
+      "category": "other",
+      "functions": [
+        "seed ingredient"
+      ],
+      "description": "Dry raw chia seeds used as a seed ingredient.",
+      "healthConsiderations": [],
+      "allergenInfo": [],
+      "nutrientCompositionRefs": [
+        "usda_fdc_chia_raw"
+      ],
+      "additiveRefs": [],
+      "evidence": [
+        {
+          "evidenceId": "usda-food-record-2710819",
+          "sourceName": "USDA FoodData Central / USDA SR28 food record: Chia seeds",
+          "publisher": "USDA Agricultural Research Service",
+          "sourceType": "composition_dataset",
+          "url": "https://fdc.nal.usda.gov/food-details/2710819/nutrients",
+          "accessedAt": "2026-11-13",
+          "supports": "Identifies the generic food item associated with the linked composition record(s). It does not establish how much of this ingredient is used in a packaged product.",
+          "licenseStatus": "open"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "ingredientId": "cocoa_powder_unsweetened",
+      "canonicalName": "unsweetened cocoa powder",
+      "displayName": "Unsweetened cocoa powder",
+      "category": "cocoa_chocolate",
+      "functions": [
+        "flavouring ingredient"
+      ],
+      "description": "Unsweetened dry cocoa powder used in chocolate-flavoured foods.",
+      "healthConsiderations": [],
+      "allergenInfo": [],
+      "nutrientCompositionRefs": [
+        "usda_fdc_cocoa_unsweetened"
+      ],
+      "additiveRefs": [],
+      "evidence": [
+        {
+          "evidenceId": "usda-food-record-169593",
+          "sourceName": "USDA FoodData Central / USDA SR28 food record: Unsweetened cocoa powder",
+          "publisher": "USDA Agricultural Research Service",
+          "sourceType": "composition_dataset",
+          "url": "https://fdc.nal.usda.gov/food-details/169593/nutrients",
+          "accessedAt": "2026-11-13",
+          "supports": "Identifies the generic food item associated with the linked composition record(s). It does not establish how much of this ingredient is used in a packaged product.",
+          "licenseStatus": "open"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "ingredientId": "coconut_meat",
+      "canonicalName": "coconut meat",
+      "displayName": "Coconut meat",
+      "category": "fruit",
+      "functions": [
+        "fruit ingredient"
+      ],
+      "description": "Raw coconut meat used as a food ingredient.",
+      "healthConsiderations": [],
+      "allergenInfo": [],
+      "nutrientCompositionRefs": [
+        "usda_fdc_coconut_raw"
+      ],
+      "additiveRefs": [],
+      "evidence": [
+        {
+          "evidenceId": "usda-food-record-170169",
+          "sourceName": "USDA FoodData Central / USDA SR28 food record: Coconut meat",
+          "publisher": "USDA Agricultural Research Service",
+          "sourceType": "composition_dataset",
+          "url": "https://fdc.nal.usda.gov/food-details/170169/nutrients",
+          "accessedAt": "2026-11-13",
+          "supports": "Identifies the generic food item associated with the linked composition record(s). It does not establish how much of this ingredient is used in a packaged product.",
+          "licenseStatus": "open"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "ingredientId": "corn_masa_flour",
+      "canonicalName": "white corn masa flour",
+      "displayName": "White corn masa flour",
+      "category": "cereal_grain",
+      "functions": [
+        "flour ingredient"
+      ],
+      "description": "White masa corn flour used in food preparation.",
+      "healthConsiderations": [],
+      "allergenInfo": [],
+      "nutrientCompositionRefs": [
+        "usda_fdc_corn_masa_flour"
+      ],
+      "additiveRefs": [],
+      "evidence": [
+        {
+          "evidenceId": "usda-food-record-169696",
+          "sourceName": "USDA FoodData Central / USDA SR28 food record: White corn masa flour",
+          "publisher": "USDA Agricultural Research Service",
+          "sourceType": "composition_dataset",
+          "url": "https://fdc.nal.usda.gov/food-details/169696/nutrients",
+          "accessedAt": "2026-11-13",
+          "supports": "Identifies the generic food item associated with the linked composition record(s). It does not establish how much of this ingredient is used in a packaged product.",
+          "licenseStatus": "open"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "ingredientId": "dates_deglet_noor",
+      "canonicalName": "dates, deglet noor",
+      "displayName": "Dates, Deglet Noor",
+      "category": "fruit",
+      "functions": [
+        "fruit ingredient"
+      ],
+      "description": "Deglet Noor dates used as a fruit ingredient or sweetening food.",
+      "healthConsiderations": [],
+      "allergenInfo": [],
+      "nutrientCompositionRefs": [
+        "usda_fdc_dates_deglet_noor"
+      ],
+      "additiveRefs": [],
+      "evidence": [
+        {
+          "evidenceId": "usda-food-record-171726",
+          "sourceName": "USDA FoodData Central / USDA SR28 food record: Dates, Deglet Noor",
+          "publisher": "USDA Agricultural Research Service",
+          "sourceType": "composition_dataset",
+          "url": "https://fdc.nal.usda.gov/food-details/171726/nutrients",
+          "accessedAt": "2026-11-13",
+          "supports": "Identifies the generic food item associated with the linked composition record(s). It does not establish how much of this ingredient is used in a packaged product.",
+          "licenseStatus": "open"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "ingredientId": "flaxseed",
+      "canonicalName": "flaxseed, ground",
+      "displayName": "Flaxseed, ground",
+      "category": "other",
+      "functions": [
+        "seed ingredient"
+      ],
+      "description": "Ground flaxseed used as a seed ingredient.",
+      "healthConsiderations": [],
+      "allergenInfo": [],
+      "nutrientCompositionRefs": [
+        "usda_fdc_flaxseed_ground"
+      ],
+      "additiveRefs": [],
+      "evidence": [
+        {
+          "evidenceId": "usda-food-record-2262075",
+          "sourceName": "USDA FoodData Central / USDA SR28 food record: Flaxseed, ground",
+          "publisher": "USDA Agricultural Research Service",
+          "sourceType": "composition_dataset",
+          "url": "https://fdc.nal.usda.gov/food-details/2262075/nutrients",
+          "accessedAt": "2026-11-13",
+          "supports": "Identifies the generic food item associated with the linked composition record(s). It does not establish how much of this ingredient is used in a packaged product.",
+          "licenseStatus": "open"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "ingredientId": "garlic",
+      "canonicalName": "garlic",
+      "displayName": "Garlic",
+      "category": "vegetable",
+      "functions": [
+        "seasoning ingredient"
+      ],
+      "description": "Raw garlic used as a vegetable, seasoning or flavour ingredient.",
+      "healthConsiderations": [],
+      "allergenInfo": [],
+      "nutrientCompositionRefs": [
+        "usda_fdc_garlic_raw"
+      ],
+      "additiveRefs": [],
+      "evidence": [
+        {
+          "evidenceId": "usda-food-record-1104647",
+          "sourceName": "USDA FoodData Central / USDA SR28 food record: Garlic",
+          "publisher": "USDA Agricultural Research Service",
+          "sourceType": "composition_dataset",
+          "url": "https://fdc.nal.usda.gov/food-details/1104647/nutrients",
+          "accessedAt": "2026-11-13",
+          "supports": "Identifies the generic food item associated with the linked composition record(s). It does not establish how much of this ingredient is used in a packaged product.",
+          "licenseStatus": "open"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "ingredientId": "granulated_sugar",
+      "canonicalName": "granulated sugar",
+      "displayName": "Granulated sugar",
+      "category": "sweetener",
+      "functions": [
+        "sweetening ingredient"
+      ],
+      "description": "Granulated sugar used as a sweetening ingredient.",
+      "healthConsiderations": [],
+      "allergenInfo": [],
+      "nutrientCompositionRefs": [
+        "usda_fdc_granulated_sugar"
+      ],
+      "additiveRefs": [],
+      "evidence": [
+        {
+          "evidenceId": "usda-food-record-746784",
+          "sourceName": "USDA FoodData Central / USDA SR28 food record: Granulated sugar",
+          "publisher": "USDA Agricultural Research Service",
+          "sourceType": "composition_dataset",
+          "url": "https://fdc.nal.usda.gov/food-details/746784/nutrients",
+          "accessedAt": "2026-11-13",
+          "supports": "Identifies the generic food item associated with the linked composition record(s). It does not establish how much of this ingredient is used in a packaged product.",
+          "licenseStatus": "open"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "ingredientId": "honey",
+      "canonicalName": "honey",
+      "displayName": "Honey",
+      "category": "sweetener",
+      "functions": [
+        "sweetening ingredient"
+      ],
+      "description": "Honey used as a sweetening ingredient.",
+      "healthConsiderations": [],
+      "allergenInfo": [],
+      "nutrientCompositionRefs": [
+        "usda_fdc_honey"
+      ],
+      "additiveRefs": [],
+      "evidence": [
+        {
+          "evidenceId": "usda-food-record-169640",
+          "sourceName": "USDA FoodData Central / USDA SR28 food record: Honey",
+          "publisher": "USDA Agricultural Research Service",
+          "sourceType": "composition_dataset",
+          "url": "https://fdc.nal.usda.gov/food-details/169640/nutrients",
+          "accessedAt": "2026-11-13",
+          "supports": "Identifies the generic food item associated with the linked composition record(s). It does not establish how much of this ingredient is used in a packaged product.",
+          "licenseStatus": "open"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "ingredientId": "lentils",
+      "canonicalName": "lentils",
+      "displayName": "Lentils",
+      "category": "legume_pulse",
+      "functions": [
+        "pulse ingredient"
+      ],
+      "description": "Raw lentils used as a pulse or legume ingredient.",
+      "healthConsiderations": [],
+      "allergenInfo": [],
+      "nutrientCompositionRefs": [
+        "usda_fdc_lentils_raw"
+      ],
+      "additiveRefs": [],
+      "evidence": [
+        {
+          "evidenceId": "usda-food-record-172420",
+          "sourceName": "USDA FoodData Central / USDA SR28 food record: Lentils",
+          "publisher": "USDA Agricultural Research Service",
+          "sourceType": "composition_dataset",
+          "url": "https://fdc.nal.usda.gov/food-details/172420/nutrients",
+          "accessedAt": "2026-11-13",
+          "supports": "Identifies the generic food item associated with the linked composition record(s). It does not establish how much of this ingredient is used in a packaged product.",
+          "licenseStatus": "open"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "ingredientId": "oats",
+      "canonicalName": "oats",
+      "displayName": "Oats",
+      "category": "cereal_grain",
+      "functions": [
+        "cereal ingredient"
+      ],
+      "description": "Oats used as a cereal grain or ingredient in oat-based foods.",
+      "healthConsiderations": [],
+      "allergenInfo": [],
+      "nutrientCompositionRefs": [
+        "usda_sr28_oats_raw"
+      ],
+      "additiveRefs": [],
+      "evidence": [
+        {
+          "evidenceId": "usda-food-record-ndb-20038",
+          "sourceName": "USDA FoodData Central / USDA SR28 food record: Oats",
+          "publisher": "USDA Agricultural Research Service",
+          "sourceType": "composition_dataset",
+          "url": "https://fdc.nal.usda.gov/download-datasets/",
+          "accessedAt": "2026-11-13",
+          "supports": "Identifies the generic food item associated with the linked composition record(s). It does not establish how much of this ingredient is used in a packaged product.",
+          "licenseStatus": "open"
+        }
+      ],
+      "reviewStatus": "reviewed",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "ingredientId": "olive_oil",
+      "canonicalName": "olive oil",
+      "displayName": "Olive oil",
+      "category": "oil_fat",
+      "functions": [
+        "oil ingredient"
+      ],
+      "description": "Olive oil used as an edible oil or fat ingredient.",
+      "healthConsiderations": [],
+      "allergenInfo": [],
+      "nutrientCompositionRefs": [
+        "usda_fdc_olive_oil"
+      ],
+      "additiveRefs": [],
+      "evidence": [
+        {
+          "evidenceId": "usda-food-record-2710186",
+          "sourceName": "USDA FoodData Central / USDA SR28 food record: Olive oil",
+          "publisher": "USDA Agricultural Research Service",
+          "sourceType": "composition_dataset",
+          "url": "https://fdc.nal.usda.gov/food-details/2710186/nutrients",
+          "accessedAt": "2026-11-13",
+          "supports": "Identifies the generic food item associated with the linked composition record(s). It does not establish how much of this ingredient is used in a packaged product.",
+          "licenseStatus": "open"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "ingredientId": "onion",
+      "canonicalName": "onion",
+      "displayName": "Onion",
+      "category": "vegetable",
+      "functions": [
+        "vegetable ingredient"
+      ],
+      "description": "Raw onion used as a vegetable ingredient.",
+      "healthConsiderations": [],
+      "allergenInfo": [],
+      "nutrientCompositionRefs": [
+        "usda_fdc_onions_raw_survey"
+      ],
+      "additiveRefs": [],
+      "evidence": [
+        {
+          "evidenceId": "usda-food-record-2709795",
+          "sourceName": "USDA FoodData Central / USDA SR28 food record: Onion",
+          "publisher": "USDA Agricultural Research Service",
+          "sourceType": "composition_dataset",
+          "url": "https://fdc.nal.usda.gov/food-details/2709795/nutrients",
+          "accessedAt": "2026-11-13",
+          "supports": "Identifies the generic food item associated with the linked composition record(s). It does not establish how much of this ingredient is used in a packaged product.",
+          "licenseStatus": "open"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "ingredientId": "parmesan_cheese",
+      "canonicalName": "parmesan cheese, grated",
+      "displayName": "Parmesan cheese, grated",
+      "category": "dairy",
+      "functions": [
+        "dairy ingredient"
+      ],
+      "description": "Grated Parmesan cheese used as a dairy ingredient.",
+      "healthConsiderations": [],
+      "allergenInfo": [],
+      "nutrientCompositionRefs": [
+        "usda_fdc_parmesan"
+      ],
+      "additiveRefs": [],
+      "evidence": [
+        {
+          "evidenceId": "usda-food-record-325036",
+          "sourceName": "USDA FoodData Central / USDA SR28 food record: Parmesan cheese, grated",
+          "publisher": "USDA Agricultural Research Service",
+          "sourceType": "composition_dataset",
+          "url": "https://fdc.nal.usda.gov/food-details/325036/nutrients",
+          "accessedAt": "2026-11-13",
+          "supports": "Identifies the generic food item associated with the linked composition record(s). It does not establish how much of this ingredient is used in a packaged product.",
+          "licenseStatus": "open"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "ingredientId": "peanut",
+      "canonicalName": "peanuts",
+      "displayName": "Peanuts",
+      "category": "legume_pulse",
+      "functions": [
+        "nut/legume ingredient"
+      ],
+      "description": "Peanuts; composition records distinguish raw and dry-roasted forms.",
+      "healthConsiderations": [],
+      "allergenInfo": [],
+      "nutrientCompositionRefs": [
+        "usda_fdc_peanuts_raw",
+        "usda_fdc_peanuts_roasted"
+      ],
+      "additiveRefs": [],
+      "evidence": [
+        {
+          "evidenceId": "usda-food-record-2515376",
+          "sourceName": "USDA FoodData Central / USDA SR28 food record: Peanuts",
+          "publisher": "USDA Agricultural Research Service",
+          "sourceType": "composition_dataset",
+          "url": "https://fdc.nal.usda.gov/food-details/2515376/nutrients",
+          "accessedAt": "2026-11-13",
+          "supports": "Identifies the generic food item associated with the linked composition record(s). It does not establish how much of this ingredient is used in a packaged product.",
+          "licenseStatus": "open"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "ingredientId": "pecan",
+      "canonicalName": "pecans",
+      "displayName": "Pecans",
+      "category": "other",
+      "functions": [
+        "nut ingredient"
+      ],
+      "description": "Raw pecan halves used as a nut ingredient.",
+      "healthConsiderations": [],
+      "allergenInfo": [],
+      "nutrientCompositionRefs": [
+        "usda_fdc_pecans_raw"
+      ],
+      "additiveRefs": [],
+      "evidence": [
+        {
+          "evidenceId": "usda-food-record-2346395",
+          "sourceName": "USDA FoodData Central / USDA SR28 food record: Pecans",
+          "publisher": "USDA Agricultural Research Service",
+          "sourceType": "composition_dataset",
+          "url": "https://fdc.nal.usda.gov/food-details/2346395/nutrients",
+          "accessedAt": "2026-11-13",
+          "supports": "Identifies the generic food item associated with the linked composition record(s). It does not establish how much of this ingredient is used in a packaged product.",
+          "licenseStatus": "open"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "ingredientId": "pistachio",
+      "canonicalName": "pistachios, dry-roasted, unsalted",
+      "displayName": "Pistachios, dry-roasted, unsalted",
+      "category": "other",
+      "functions": [
+        "nut ingredient"
+      ],
+      "description": "Dry-roasted pistachio nuts without added salt in the referenced record.",
+      "healthConsiderations": [],
+      "allergenInfo": [],
+      "nutrientCompositionRefs": [
+        "usda_fdc_pistachio_roasted"
+      ],
+      "additiveRefs": [],
+      "evidence": [
+        {
+          "evidenceId": "usda-food-record-170185",
+          "sourceName": "USDA FoodData Central / USDA SR28 food record: Pistachios, dry-roasted, unsalted",
+          "publisher": "USDA Agricultural Research Service",
+          "sourceType": "composition_dataset",
+          "url": "https://fdc.nal.usda.gov/food-details/170185/nutrients",
+          "accessedAt": "2026-11-13",
+          "supports": "Identifies the generic food item associated with the linked composition record(s). It does not establish how much of this ingredient is used in a packaged product.",
+          "licenseStatus": "open"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "ingredientId": "potato",
+      "canonicalName": "potato",
+      "displayName": "Potato",
+      "category": "vegetable",
+      "functions": [
+        "vegetable ingredient"
+      ],
+      "description": "Raw potato with flesh and skin in the referenced record.",
+      "healthConsiderations": [],
+      "allergenInfo": [],
+      "nutrientCompositionRefs": [
+        "usda_fdc_potato_raw"
+      ],
+      "additiveRefs": [],
+      "evidence": [
+        {
+          "evidenceId": "usda-food-record-170026",
+          "sourceName": "USDA FoodData Central / USDA SR28 food record: Potato",
+          "publisher": "USDA Agricultural Research Service",
+          "sourceType": "composition_dataset",
+          "url": "https://fdc.nal.usda.gov/food-details/170026/nutrients",
+          "accessedAt": "2026-11-13",
+          "supports": "Identifies the generic food item associated with the linked composition record(s). It does not establish how much of this ingredient is used in a packaged product.",
+          "licenseStatus": "open"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "ingredientId": "soybean",
+      "canonicalName": "soybeans, mature, cooked",
+      "displayName": "Soybeans, mature, cooked",
+      "category": "legume_pulse",
+      "functions": [
+        "legume ingredient"
+      ],
+      "description": "Mature soybeans, boiled without salt in the referenced record.",
+      "healthConsiderations": [],
+      "allergenInfo": [],
+      "nutrientCompositionRefs": [
+        "usda_fdc_soybeans_boiled"
+      ],
+      "additiveRefs": [],
+      "evidence": [
+        {
+          "evidenceId": "usda-food-record-174271",
+          "sourceName": "USDA FoodData Central / USDA SR28 food record: Soybeans, mature, cooked",
+          "publisher": "USDA Agricultural Research Service",
+          "sourceType": "composition_dataset",
+          "url": "https://fdc.nal.usda.gov/food-details/174271/nutrients",
+          "accessedAt": "2026-11-13",
+          "supports": "Identifies the generic food item associated with the linked composition record(s). It does not establish how much of this ingredient is used in a packaged product.",
+          "licenseStatus": "open"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "ingredientId": "spinach",
+      "canonicalName": "spinach",
+      "displayName": "Spinach",
+      "category": "vegetable",
+      "functions": [
+        "vegetable ingredient"
+      ],
+      "description": "Mature raw spinach used as a leafy vegetable ingredient.",
+      "healthConsiderations": [],
+      "allergenInfo": [],
+      "nutrientCompositionRefs": [
+        "usda_fdc_spinach_mature"
+      ],
+      "additiveRefs": [],
+      "evidence": [
+        {
+          "evidenceId": "usda-food-record-1999633",
+          "sourceName": "USDA FoodData Central / USDA SR28 food record: Spinach",
+          "publisher": "USDA Agricultural Research Service",
+          "sourceType": "composition_dataset",
+          "url": "https://fdc.nal.usda.gov/food-details/1999633/nutrients",
+          "accessedAt": "2026-11-13",
+          "supports": "Identifies the generic food item associated with the linked composition record(s). It does not establish how much of this ingredient is used in a packaged product.",
+          "licenseStatus": "open"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "ingredientId": "sweet_potato",
+      "canonicalName": "sweet potato",
+      "displayName": "Sweet potato",
+      "category": "vegetable",
+      "functions": [
+        "vegetable ingredient"
+      ],
+      "description": "Raw sweet potato used as a vegetable ingredient.",
+      "healthConsiderations": [],
+      "allergenInfo": [],
+      "nutrientCompositionRefs": [
+        "usda_fdc_sweet_potato_raw"
+      ],
+      "additiveRefs": [],
+      "evidence": [
+        {
+          "evidenceId": "usda-food-record-168482",
+          "sourceName": "USDA FoodData Central / USDA SR28 food record: Sweet potato",
+          "publisher": "USDA Agricultural Research Service",
+          "sourceType": "composition_dataset",
+          "url": "https://fdc.nal.usda.gov/food-details/168482/nutrients",
+          "accessedAt": "2026-11-13",
+          "supports": "Identifies the generic food item associated with the linked composition record(s). It does not establish how much of this ingredient is used in a packaged product.",
+          "licenseStatus": "open"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "ingredientId": "tomato",
+      "canonicalName": "tomato",
+      "displayName": "Tomato",
+      "category": "vegetable",
+      "functions": [
+        "vegetable ingredient"
+      ],
+      "description": "Raw ripe tomato used as a vegetable ingredient.",
+      "healthConsiderations": [],
+      "allergenInfo": [],
+      "nutrientCompositionRefs": [
+        "usda_fdc_tomato_raw"
+      ],
+      "additiveRefs": [],
+      "evidence": [
+        {
+          "evidenceId": "usda-food-record-170457",
+          "sourceName": "USDA FoodData Central / USDA SR28 food record: Tomato",
+          "publisher": "USDA Agricultural Research Service",
+          "sourceType": "composition_dataset",
+          "url": "https://fdc.nal.usda.gov/food-details/170457/nutrients",
+          "accessedAt": "2026-11-13",
+          "supports": "Identifies the generic food item associated with the linked composition record(s). It does not establish how much of this ingredient is used in a packaged product.",
+          "licenseStatus": "open"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "ingredientId": "walnut",
+      "canonicalName": "walnuts",
+      "displayName": "Walnuts",
+      "category": "other",
+      "functions": [
+        "nut ingredient"
+      ],
+      "description": "Raw English walnut halves used as a nut ingredient.",
+      "healthConsiderations": [],
+      "allergenInfo": [],
+      "nutrientCompositionRefs": [
+        "usda_fdc_walnuts_raw"
+      ],
+      "additiveRefs": [],
+      "evidence": [
+        {
+          "evidenceId": "usda-food-record-2346394",
+          "sourceName": "USDA FoodData Central / USDA SR28 food record: Walnuts",
+          "publisher": "USDA Agricultural Research Service",
+          "sourceType": "composition_dataset",
+          "url": "https://fdc.nal.usda.gov/food-details/2346394/nutrients",
+          "accessedAt": "2026-11-13",
+          "supports": "Identifies the generic food item associated with the linked composition record(s). It does not establish how much of this ingredient is used in a packaged product.",
+          "licenseStatus": "open"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "ingredientId": "wheat_flour_all_purpose",
+      "canonicalName": "all-purpose wheat flour",
+      "displayName": "All-purpose wheat flour",
+      "category": "cereal_grain",
+      "functions": [
+        "flour ingredient"
+      ],
+      "description": "All-purpose wheat flour used in baking and food preparation.",
+      "healthConsiderations": [],
+      "allergenInfo": [],
+      "nutrientCompositionRefs": [
+        "usda_fdc_wheat_all_purpose"
+      ],
+      "additiveRefs": [],
+      "evidence": [
+        {
+          "evidenceId": "usda-food-record-790018",
+          "sourceName": "USDA FoodData Central / USDA SR28 food record: All-purpose wheat flour",
+          "publisher": "USDA Agricultural Research Service",
+          "sourceType": "composition_dataset",
+          "url": "https://fdc.nal.usda.gov/food-details/790018/nutrients",
+          "accessedAt": "2026-11-13",
+          "supports": "Identifies the generic food item associated with the linked composition record(s). It does not establish how much of this ingredient is used in a packaged product.",
+          "licenseStatus": "open"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "ingredientId": "white_rice",
+      "canonicalName": "white rice",
+      "displayName": "White rice",
+      "category": "cereal_grain",
+      "functions": [
+        "grain ingredient"
+      ],
+      "description": "Milled white long-grain rice, enriched in the referenced record.",
+      "healthConsiderations": [],
+      "allergenInfo": [],
+      "nutrientCompositionRefs": [
+        "usda_sr28_white_rice_raw"
+      ],
+      "additiveRefs": [],
+      "evidence": [
+        {
+          "evidenceId": "usda-food-record-ndb-20044",
+          "sourceName": "USDA FoodData Central / USDA SR28 food record: White rice",
+          "publisher": "USDA Agricultural Research Service",
+          "sourceType": "composition_dataset",
+          "url": "https://fdc.nal.usda.gov/download-datasets/",
+          "accessedAt": "2026-11-13",
+          "supports": "Identifies the generic food item associated with the linked composition record(s). It does not establish how much of this ingredient is used in a packaged product.",
+          "licenseStatus": "open"
+        }
+      ],
+      "reviewStatus": "reviewed",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "ingredientId": "whole_milk",
+      "canonicalName": "whole milk",
+      "displayName": "Whole milk",
+      "category": "dairy",
+      "functions": [
+        "dairy ingredient"
+      ],
+      "description": "Whole cow milk with 3.25 percent milkfat in the referenced record.",
+      "healthConsiderations": [],
+      "allergenInfo": [],
+      "nutrientCompositionRefs": [
+        "usda_fdc_whole_milk"
+      ],
+      "additiveRefs": [],
+      "evidence": [
+        {
+          "evidenceId": "usda-food-record-746782",
+          "sourceName": "USDA FoodData Central / USDA SR28 food record: Whole milk",
+          "publisher": "USDA Agricultural Research Service",
+          "sourceType": "composition_dataset",
+          "url": "https://fdc.nal.usda.gov/food-details/746782/nutrients",
+          "accessedAt": "2026-11-13",
+          "supports": "Identifies the generic food item associated with the linked composition record(s). It does not establish how much of this ingredient is used in a packaged product.",
+          "licenseStatus": "open"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "ingredientId": "whole_wheat_flour",
+      "canonicalName": "whole wheat flour",
+      "displayName": "Whole wheat flour",
+      "category": "cereal_grain",
+      "functions": [
+        "flour ingredient"
+      ],
+      "description": "Whole-grain wheat flour used in baking and food manufacture.",
+      "healthConsiderations": [],
+      "allergenInfo": [],
+      "nutrientCompositionRefs": [
+        "usda_sr28_whole_wheat_flour"
+      ],
+      "additiveRefs": [],
+      "evidence": [
+        {
+          "evidenceId": "usda-food-record-ndb-20080",
+          "sourceName": "USDA FoodData Central / USDA SR28 food record: Whole wheat flour",
+          "publisher": "USDA Agricultural Research Service",
+          "sourceType": "composition_dataset",
+          "url": "https://fdc.nal.usda.gov/download-datasets/",
+          "accessedAt": "2026-11-13",
+          "supports": "Identifies the generic food item associated with the linked composition record(s). It does not establish how much of this ingredient is used in a packaged product.",
+          "licenseStatus": "open"
+        }
+      ],
+      "reviewStatus": "reviewed",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "ingredientId": "yogurt",
+      "canonicalName": "plain greek yoghurt, non-fat",
+      "displayName": "Plain Greek yoghurt, non-fat",
+      "category": "dairy",
+      "functions": [
+        "dairy ingredient"
+      ],
+      "description": "Plain yoghurt; linked composition records distinguish non-fat Greek and whole-milk types.",
+      "healthConsiderations": [],
+      "allergenInfo": [],
+      "nutrientCompositionRefs": [
+        "usda_fdc_yogurt_greek_nonfat",
+        "usda_fdc_yogurt_plain_whole"
+      ],
+      "additiveRefs": [],
+      "evidence": [
+        {
+          "evidenceId": "usda-food-record-330137",
+          "sourceName": "USDA FoodData Central / USDA SR28 food record: Plain Greek yoghurt, non-fat",
+          "publisher": "USDA Agricultural Research Service",
+          "sourceType": "composition_dataset",
+          "url": "https://fdc.nal.usda.gov/food-details/330137/nutrients",
+          "accessedAt": "2026-11-13",
+          "supports": "Identifies the generic food item associated with the linked composition record(s). It does not establish how much of this ingredient is used in a packaged product.",
+          "licenseStatus": "open"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    }
+  ]
+}

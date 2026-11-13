@@ -1,0 +1,77 @@
+{
+  "schemaVersion": "1.0.0",
+  "recordId": "fixture-incomplete-8901234500000",
+  "identifiers": {
+    "gtin": {
+      "value": "8901234500000",
+      "status": "available",
+      "provenance": [
+        {
+          "sourceId": "fixture-incomplete",
+          "extractionMethod": "barcode_lookup",
+          "sourceField": "product.code"
+        }
+      ]
+    }
+  },
+  "productName": {
+    "value": null,
+    "status": "missing",
+    "provenance": []
+  },
+  "brand": {
+    "value": null,
+    "status": "missing",
+    "provenance": []
+  },
+  "packageQuantity": {
+    "rawText": null,
+    "value": null,
+    "unit": "unknown",
+    "status": "missing",
+    "provenance": []
+  },
+  "ingredients": {
+    "rawText": null,
+    "language": null,
+    "status": "missing",
+    "provenance": []
+  },
+  "nutrition": {
+    "declaredBasis": "unknown",
+    "servingSize": {
+      "rawText": null,
+      "value": null,
+      "unit": null,
+      "status": "missing",
+      "provenance": []
+    },
+    "nutrients": {}
+  },
+  "images": [],
+  "sourceRecords": [
+    {
+      "sourceId": "fixture-incomplete",
+      "sourceType": "open_food_facts",
+      "extractionMethod": "barcode_lookup",
+      "retrievedAt": "2026-11-12T00:00:00Z",
+      "externalRecordId": "8901234500000",
+      "sourceUri": null
+    }
+  ],
+  "conflicts": [],
+  "quality": {
+    "recordStatus": "insufficient",
+    "missingFields": [
+      "/brand",
+      "/ingredients",
+      "/identifiers/gtin",
+      "/nutrition/servingSize",
+      "/packageQuantity",
+      "/productName"
+    ],
+    "unverifiedFields": []
+  },
+  "createdAt": "2026-11-12T00:00:00Z",
+  "updatedAt": "2026-11-12T00:00:00Z"
+}

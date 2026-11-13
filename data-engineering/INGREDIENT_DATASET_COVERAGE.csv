@@ -1,0 +1,41 @@
+ingredientId,canonicalName,compositionRecords,compositionReviewStatus,sourceRecordIds,notes
+almonds,Almonds,1,needs_review,2346393,Identity/source record linked; health/allergen statements not assessed in Stage 4
+amaranth_grain,Amaranth grain,1,reviewed,NDB:20001,Identity/source record linked; health/allergen statements not assessed in Stage 4
+apple_with_skin,Apple with skin,1,needs_review,171688,Identity/source record linked; health/allergen statements not assessed in Stage 4
+avocado,Avocado,1,needs_review,171705,Identity/source record linked; health/allergen statements not assessed in Stage 4
+banana,Banana,1,needs_review,1105314,Identity/source record linked; health/allergen statements not assessed in Stage 4
+barley_flour,Barley flour,1,reviewed,NDB:20130,Identity/source record linked; health/allergen statements not assessed in Stage 4
+bread_flour_enriched,"Bread flour, enriched",1,needs_review,790146,Identity/source record linked; health/allergen statements not assessed in Stage 4
+broccoli,Broccoli,1,needs_review,747447,Identity/source record linked; health/allergen statements not assessed in Stage 4
+brown_rice,Brown rice,2,needs_review,NDB:20040;2512380,Identity/source record linked; health/allergen statements not assessed in Stage 4
+butter_salted,Salted butter,1,needs_review,173410,Identity/source record linked; health/allergen statements not assessed in Stage 4
+carrot,Carrot,1,needs_review,2258586,Identity/source record linked; health/allergen statements not assessed in Stage 4
+cashew,"Cashew nuts, dry-roasted, unsalted",1,needs_review,170571,Identity/source record linked; health/allergen statements not assessed in Stage 4
+chia_seed,Chia seeds,1,needs_review,2710819,Identity/source record linked; health/allergen statements not assessed in Stage 4
+cocoa_powder_unsweetened,Unsweetened cocoa powder,1,needs_review,169593,Identity/source record linked; health/allergen statements not assessed in Stage 4
+coconut_meat,Coconut meat,1,needs_review,170169,Identity/source record linked; health/allergen statements not assessed in Stage 4
+corn_masa_flour,White corn masa flour,1,needs_review,169696,Identity/source record linked; health/allergen statements not assessed in Stage 4
+dates_deglet_noor,"Dates, Deglet Noor",1,needs_review,171726,Identity/source record linked; health/allergen statements not assessed in Stage 4
+flaxseed,"Flaxseed, ground",1,needs_review,2262075,Identity/source record linked; health/allergen statements not assessed in Stage 4
+garlic,Garlic,1,needs_review,1104647,Identity/source record linked; health/allergen statements not assessed in Stage 4
+granulated_sugar,Granulated sugar,1,needs_review,746784,Identity/source record linked; health/allergen statements not assessed in Stage 4
+honey,Honey,1,needs_review,169640,Identity/source record linked; health/allergen statements not assessed in Stage 4
+lentils,Lentils,1,needs_review,172420,Identity/source record linked; health/allergen statements not assessed in Stage 4
+oats,Oats,1,reviewed,NDB:20038,Identity/source record linked; health/allergen statements not assessed in Stage 4
+olive_oil,Olive oil,1,needs_review,2710186,Identity/source record linked; health/allergen statements not assessed in Stage 4
+onion,Onion,1,needs_review,2709795,Identity/source record linked; health/allergen statements not assessed in Stage 4
+parmesan_cheese,"Parmesan cheese, grated",1,needs_review,325036,Identity/source record linked; health/allergen statements not assessed in Stage 4
+peanut,Peanuts,2,needs_review,2515376;173806,Identity/source record linked; health/allergen statements not assessed in Stage 4
+pecan,Pecans,1,needs_review,2346395,Identity/source record linked; health/allergen statements not assessed in Stage 4
+pistachio,"Pistachios, dry-roasted, unsalted",1,needs_review,170185,Identity/source record linked; health/allergen statements not assessed in Stage 4
+potato,Potato,1,needs_review,170026,Identity/source record linked; health/allergen statements not assessed in Stage 4
+soybean,"Soybeans, mature, cooked",1,needs_review,174271,Identity/source record linked; health/allergen statements not assessed in Stage 4
+spinach,Spinach,1,needs_review,1999633,Identity/source record linked; health/allergen statements not assessed in Stage 4
+sweet_potato,Sweet potato,1,needs_review,168482,Identity/source record linked; health/allergen statements not assessed in Stage 4
+tomato,Tomato,1,needs_review,170457,Identity/source record linked; health/allergen statements not assessed in Stage 4
+walnut,Walnuts,1,needs_review,2346394,Identity/source record linked; health/allergen statements not assessed in Stage 4
+wheat_flour_all_purpose,All-purpose wheat flour,1,needs_review,790018,Identity/source record linked; health/allergen statements not assessed in Stage 4
+white_rice,White rice,1,reviewed,NDB:20044,Identity/source record linked; health/allergen statements not assessed in Stage 4
+whole_milk,Whole milk,1,needs_review,746782,Identity/source record linked; health/allergen statements not assessed in Stage 4
+whole_wheat_flour,Whole wheat flour,1,reviewed,NDB:20080,Identity/source record linked; health/allergen statements not assessed in Stage 4
+yogurt,"Plain Greek yoghurt, non-fat",2,needs_review,330137;2259793,Identity/source record linked; health/allergen statements not assessed in Stage 4

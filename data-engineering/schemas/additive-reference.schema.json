@@ -1,0 +1,607 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://foodscanner.local/schemas/additive-reference.schema.json",
+  "title": "Food Scanner Food Additive Reference",
+  "description": "Additive identity with jurisdiction-specific regulatory entries and separate scientific ADI evaluations.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "additiveId",
+    "canonicalName",
+    "insNumber",
+    "casNumber",
+    "aliases",
+    "technologicalFunctions",
+    "fssaiAuthorisations",
+    "jecfaEvaluations",
+    "evidence",
+    "reviewStatus",
+    "createdAt",
+    "updatedAt"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "1.1.0"
+    },
+    "additiveId": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9._-]*$"
+    },
+    "canonicalName": {
+      "type": "string",
+      "minLength": 1
+    },
+    "insNumber": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[0-9]{3,4}[a-zA-Z]?$"
+    },
+    "casNumber": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[0-9]{2,7}-[0-9]{2}-[0-9]$"
+    },
+    "aliases": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "technologicalFunctions": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "fssaiAuthorisations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "jurisdiction",
+          "foodCategoryCode",
+          "foodCategoryName",
+          "status",
+          "maximumLevel",
+          "conditions",
+          "regulationTitle",
+          "notificationId",
+          "tableOrClause",
+          "effectiveFrom",
+          "effectiveTo",
+          "evidenceIds"
+        ],
+        "properties": {
+          "jurisdiction": {
+            "const": "India"
+          },
+          "foodCategoryCode": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "foodCategoryName": {
+            "type": "string",
+            "minLength": 1
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "permitted",
+              "conditional",
+              "not_permitted",
+              "not_assessed"
+            ]
+          },
+          "maximumLevel": {
+            "type": [
+              "object",
+              "null"
+            ],
+            "additionalProperties": false,
+            "required": [
+              "type",
+              "value",
+              "unit",
+              "basis"
+            ],
+            "properties": {
+              "type": {
+                "type": "string",
+                "enum": [
+                  "numeric",
+                  "quantum_satis",
+                  "good_manufacturing_practice",
+                  "other"
+                ]
+              },
+              "value": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "minimum": 0
+              },
+              "unit": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "basis": {
+                "type": "string",
+                "enum": [
+                  "mg_per_kg_food",
+                  "g_per_kg_food",
+                  "mg_per_litre",
+                  "g_per_litre",
+                  "quantum_satis",
+                  "good_manufacturing_practice",
+                  "other"
+                ]
+              }
+            },
+            "allOf": [
+              {
+                "if": {
+                  "properties": {
+                    "type": {
+                      "const": "numeric"
+                    }
+                  },
+                  "required": [
+                    "type"
+                  ]
+                },
+                "then": {
+                  "properties": {
+                    "value": {
+                      "type": "number"
+                    },
+                    "unit": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              {
+                "if": {
+                  "properties": {
+                    "type": {
+                      "enum": [
+                        "quantum_satis",
+                        "good_manufacturing_practice"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "type"
+                  ]
+                },
+                "then": {
+                  "properties": {
+                    "value": {
+                      "type": "null"
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          "conditions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "regulationTitle": {
+            "type": "string",
+            "minLength": 1
+          },
+          "notificationId": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "tableOrClause": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "effectiveFrom": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date"
+          },
+          "effectiveTo": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date"
+          },
+          "evidenceIds": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "status": {
+                  "enum": [
+                    "permitted",
+                    "conditional",
+                    "not_permitted"
+                  ]
+                }
+              },
+              "required": [
+                "status"
+              ]
+            },
+            "then": {
+              "properties": {
+                "evidenceIds": {
+                  "minItems": 1
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "status": {
+                  "const": "not_permitted"
+                }
+              },
+              "required": [
+                "status"
+              ]
+            },
+            "then": {
+              "properties": {
+                "maximumLevel": {
+                  "type": "null"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "jecfaEvaluations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "evaluationDate",
+          "meetingNumber",
+          "adiStatus",
+          "adi",
+          "groupName",
+          "evaluationNotes",
+          "evidenceIds"
+        ],
+        "properties": {
+          "evaluationDate": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date"
+          },
+          "meetingNumber": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": 1
+          },
+          "adiStatus": {
+            "type": "string",
+            "enum": [
+              "numeric",
+              "temporary_numeric",
+              "group_numeric",
+              "not_specified",
+              "not_allocated",
+              "not_established",
+              "withdrawn",
+              "not_available",
+              "not_limited"
+            ]
+          },
+          "adi": {
+            "type": [
+              "object",
+              "null"
+            ],
+            "additionalProperties": false,
+            "required": [
+              "lowerValue",
+              "upperValue",
+              "unit"
+            ],
+            "properties": {
+              "lowerValue": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "minimum": 0
+              },
+              "upperValue": {
+                "type": "number",
+                "minimum": 0
+              },
+              "unit": {
+                "const": "mg_per_kg_body_weight_per_day"
+              }
+            }
+          },
+          "groupName": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "evaluationNotes": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "evidenceIds": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "adiStatus": {
+                  "enum": [
+                    "numeric",
+                    "temporary_numeric",
+                    "group_numeric"
+                  ]
+                }
+              },
+              "required": [
+                "adiStatus"
+              ]
+            },
+            "then": {
+              "properties": {
+                "adi": {
+                  "type": "object"
+                },
+                "evidenceIds": {
+                  "minItems": 1
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "adiStatus": {
+                  "enum": [
+                    "not_specified",
+                    "not_allocated",
+                    "not_established",
+                    "withdrawn",
+                    "not_available",
+                    "not_limited"
+                  ]
+                }
+              },
+              "required": [
+                "adiStatus"
+              ]
+            },
+            "then": {
+              "properties": {
+                "adi": {
+                  "type": "null"
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "adiStatus": {
+                  "const": "group_numeric"
+                }
+              },
+              "required": [
+                "adiStatus"
+              ]
+            },
+            "then": {
+              "properties": {
+                "groupName": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "evidenceId",
+          "sourceName",
+          "publisher",
+          "sourceType",
+          "url",
+          "accessedAt",
+          "supports",
+          "licenseStatus"
+        ],
+        "properties": {
+          "evidenceId": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9._-]*$"
+          },
+          "sourceName": {
+            "type": "string",
+            "minLength": 1
+          },
+          "publisher": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sourceType": {
+            "type": "string",
+            "enum": [
+              "regulation",
+              "scientific_evaluation",
+              "dietary_guideline",
+              "composition_dataset",
+              "api_record",
+              "official_standard",
+              "other"
+            ]
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "documentId": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "jurisdiction": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "publicationDate": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date"
+          },
+          "effectiveFrom": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date"
+          },
+          "effectiveTo": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date"
+          },
+          "accessedAt": {
+            "type": "string",
+            "format": "date"
+          },
+          "locator": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "supports": {
+            "type": "string",
+            "minLength": 1
+          },
+          "licenseStatus": {
+            "type": "string",
+            "enum": [
+              "unknown",
+              "open",
+              "attribution_required",
+              "permission_required",
+              "restricted"
+            ]
+          }
+        }
+      }
+    },
+    "reviewStatus": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "needs_review",
+        "reviewed",
+        "approved",
+        "retired"
+      ]
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "reviewStatus": {
+            "enum": [
+              "reviewed",
+              "approved"
+            ]
+          }
+        },
+        "required": [
+          "reviewStatus"
+        ]
+      },
+      "then": {
+        "properties": {
+          "evidence": {
+            "minItems": 1
+          }
+        }
+      }
+    }
+  ],
+  "$comment": "FSSAI permissions are category- and jurisdiction-specific. JECFA ADI is a separate scientific evaluation. Neither indicates additive concentration in a scanned product. not_permitted requires explicit evidence for the exact category."
+}

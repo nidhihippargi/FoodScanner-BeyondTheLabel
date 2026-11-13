@@ -1,0 +1,844 @@
+[
+  {
+    "schemaVersion": "1.0.0",
+    "ingredientId": "ING-001",
+    "canonicalName": "sucrose",
+    "aliases": [
+      {
+        "name": "table sugar",
+        "language": "en",
+        "aliasType": "variant"
+      },
+      {
+        "name": "white sugar",
+        "language": "en",
+        "aliasType": "variant"
+      },
+      {
+        "name": "granulated sugar",
+        "language": "en",
+        "aliasType": "variant"
+      },
+      {
+        "name": "cane sugar",
+        "language": "en",
+        "aliasType": "variant"
+      },
+      {
+        "name": "beet sugar",
+        "language": "en",
+        "aliasType": "variant"
+      }
+    ],
+    "classification": {
+      "category": "sugar_or_syrup",
+      "reviewStatus": "verified",
+      "reviewNote": "Name recognition only. WHO identifies sucrose as a monosaccharide/disaccharide example and table sugar as a free-sugar source. Whether it is added in a particular food depends on context."
+    },
+    "evidence": [
+      {
+        "sourceName": "Healthy diet — sugars",
+        "publisher": "World Health Organization",
+        "url": "https://www.who.int/news-room/fact-sheets/detail/healthy-diet",
+        "accessedAt": "2026-11-12",
+        "supports": "Identifies sucrose as a disaccharide example and added sugars as sugars added by manufacturers, cooks or consumers."
+      },
+      {
+        "sourceName": "Added Sugars on the Nutrition Facts Label",
+        "publisher": "U.S. Food and Drug Administration",
+        "url": "https://www.fda.gov/food/nutrition-facts-label/added-sugars-nutrition-facts-label",
+        "accessedAt": "2026-11-12",
+        "supports": "Identifies table sugar as a packaged sweetener and sucrose as an example of added sugar."
+      }
+    ],
+    "notes": "Name recognition only. WHO identifies sucrose as a monosaccharide/disaccharide example and table sugar as a free-sugar source. Whether it is added in a particular food depends on context.",
+    "createdAt": "2026-11-12T00:00:00Z",
+    "updatedAt": "2026-11-12T00:00:00Z"
+  },
+  {
+    "schemaVersion": "1.0.0",
+    "ingredientId": "ING-002",
+    "canonicalName": "glucose",
+    "aliases": [
+      {
+        "name": "dextrose",
+        "language": "en",
+        "aliasType": "variant"
+      }
+    ],
+    "classification": {
+      "category": "sugar_or_syrup",
+      "reviewStatus": "verified",
+      "reviewNote": "Glucose/dextrose are simple-sugar name matches. A match does not quantify total sugars or establish whether the ingredient was added."
+    },
+    "evidence": [
+      {
+        "sourceName": "Healthy diet — sugars",
+        "publisher": "World Health Organization",
+        "url": "https://www.who.int/news-room/fact-sheets/detail/healthy-diet",
+        "accessedAt": "2026-11-12",
+        "supports": "Identifies glucose as an example of a monosaccharide included in free sugars when added."
+      },
+      {
+        "sourceName": "Added Sugars on the Nutrition Facts Label",
+        "publisher": "U.S. Food and Drug Administration",
+        "url": "https://www.fda.gov/food/nutrition-facts-label/added-sugars-nutrition-facts-label",
+        "accessedAt": "2026-11-12",
+        "supports": "Identifies dextrose as an example used in the added-sugars explanation."
+      }
+    ],
+    "notes": "Glucose/dextrose are simple-sugar name matches. A match does not quantify total sugars or establish whether the ingredient was added.",
+    "createdAt": "2026-11-12T00:00:00Z",
+    "updatedAt": "2026-11-12T00:00:00Z"
+  },
+  {
+    "schemaVersion": "1.0.0",
+    "ingredientId": "ING-003",
+    "canonicalName": "fructose",
+    "aliases": [
+      {
+        "name": "levulose",
+        "language": "en",
+        "aliasType": "variant"
+      }
+    ],
+    "classification": {
+      "category": "sugar_or_syrup",
+      "reviewStatus": "verified",
+      "reviewNote": "Fructose is a simple-sugar name match. Context determines whether it is naturally present or added."
+    },
+    "evidence": [
+      {
+        "sourceName": "Healthy diet — sugars",
+        "publisher": "World Health Organization",
+        "url": "https://www.who.int/news-room/fact-sheets/detail/healthy-diet",
+        "accessedAt": "2026-11-12",
+        "supports": "Identifies fructose as an example of a monosaccharide in its free-sugars definition."
+      }
+    ],
+    "notes": "Fructose is a simple-sugar name match. Context determines whether it is naturally present or added.",
+    "createdAt": "2026-11-12T00:00:00Z",
+    "updatedAt": "2026-11-12T00:00:00Z"
+  },
+  {
+    "schemaVersion": "1.0.0",
+    "ingredientId": "ING-004",
+    "canonicalName": "lactose",
+    "aliases": [
+      {
+        "name": "milk sugar",
+        "language": "en",
+        "aliasType": "variant"
+      }
+    ],
+    "classification": {
+      "category": "sugar_or_syrup",
+      "reviewStatus": "verified",
+      "reviewNote": "Lactose is a disaccharide, but lactose naturally present in milk is not automatically an added/free-sugar finding. Preserve context and do not infer added status from the word alone."
+    },
+    "evidence": [
+      {
+        "sourceName": "Food factsheet: Sugars and other sweet things",
+        "publisher": "WHO Regional Office for Africa",
+        "url": "https://www.afro.who.int/sites/default/files/2019-11/Food_Factsheets_06_EN.pdf",
+        "accessedAt": "2026-11-12",
+        "supports": "Identifies lactose as a common disaccharide and describes naturally occurring lactose in milk/dairy as intrinsic sugar."
+      },
+      {
+        "sourceName": "Healthy diet — sugars",
+        "publisher": "World Health Organization",
+        "url": "https://www.who.int/news-room/fact-sheets/detail/healthy-diet",
+        "accessedAt": "2026-11-12",
+        "supports": "Distinguishes free sugars from naturally occurring sugars in milk."
+      }
+    ],
+    "notes": "Lactose is a disaccharide, but lactose naturally present in milk is not automatically an added/free-sugar finding. Preserve context and do not infer added status from the word alone.",
+    "createdAt": "2026-11-12T00:00:00Z",
+    "updatedAt": "2026-11-12T00:00:00Z"
+  },
+  {
+    "schemaVersion": "1.0.0",
+    "ingredientId": "ING-005",
+    "canonicalName": "maltose",
+    "aliases": [
+      {
+        "name": "malt sugar",
+        "language": "en",
+        "aliasType": "variant"
+      }
+    ],
+    "classification": {
+      "category": "sugar_or_syrup",
+      "reviewStatus": "proposed",
+      "reviewNote": "Maltose is a disaccharide name; include for recognition but keep the project review status proposed until M3/M6 approve the MVP alias policy."
+    },
+    "evidence": [
+      {
+        "sourceName": "Food factsheet: Sugars and other sweet things",
+        "publisher": "WHO Regional Office for Africa",
+        "url": "https://www.afro.who.int/sites/default/files/2019-11/Food_Factsheets_06_EN.pdf",
+        "accessedAt": "2026-11-12",
+        "supports": "Explains that common sugars include mono- and disaccharides; this entry requires project-level alias approval."
+      }
+    ],
+    "notes": "Maltose is a disaccharide name; include for recognition but keep the project review status proposed until M3/M6 approve the MVP alias policy.",
+    "createdAt": "2026-11-12T00:00:00Z",
+    "updatedAt": "2026-11-12T00:00:00Z"
+  },
+  {
+    "schemaVersion": "1.0.0",
+    "ingredientId": "ING-006",
+    "canonicalName": "trehalose",
+    "aliases": [],
+    "classification": {
+      "category": "sugar_or_syrup",
+      "reviewStatus": "proposed",
+      "reviewNote": "Candidate disaccharide name for review. The MVP team should approve whether to include it in the first alias release."
+    },
+    "evidence": [
+      {
+        "sourceName": "Final Rules to Update the Nutrition Facts Label",
+        "publisher": "U.S. Food and Drug Administration",
+        "url": "https://www.fda.gov/media/98854/download",
+        "accessedAt": "2026-11-12",
+        "supports": "Lists trehalose in an example list of sugars; included as a proposed project alias pending review."
+      }
+    ],
+    "notes": "Candidate disaccharide name for review. The MVP team should approve whether to include it in the first alias release.",
+    "createdAt": "2026-11-12T00:00:00Z",
+    "updatedAt": "2026-11-12T00:00:00Z"
+  },
+  {
+    "schemaVersion": "1.0.0",
+    "ingredientId": "ING-007",
+    "canonicalName": "invert sugar",
+    "aliases": [],
+    "classification": {
+      "category": "sugar_or_syrup",
+      "reviewStatus": "verified",
+      "reviewNote": "Recognise the ingredient name; do not infer the amount of added sugar or its position in the ingredient list."
+    },
+    "evidence": [
+      {
+        "sourceName": "Final Rules to Update the Nutrition Facts Label",
+        "publisher": "U.S. Food and Drug Administration",
+        "url": "https://www.fda.gov/media/98854/download",
+        "accessedAt": "2026-11-12",
+        "supports": "Includes invert sugar in examples of added-sugar ingredient names."
+      }
+    ],
+    "notes": "Recognise the ingredient name; do not infer the amount of added sugar or its position in the ingredient list.",
+    "createdAt": "2026-11-12T00:00:00Z",
+    "updatedAt": "2026-11-12T00:00:00Z"
+  },
+  {
+    "schemaVersion": "1.0.0",
+    "ingredientId": "ING-008",
+    "canonicalName": "invert sugar syrup",
+    "aliases": [],
+    "classification": {
+      "category": "sugar_or_syrup",
+      "reviewStatus": "verified",
+      "reviewNote": "Syrup name recognition only. This is not an Indian regulatory determination."
+    },
+    "evidence": [
+      {
+        "sourceName": "Industry Resources on the Changes to the Nutrition Facts Label",
+        "publisher": "U.S. Food and Drug Administration",
+        "url": "https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/industry-resources-changes-nutrition-facts-label",
+        "accessedAt": "2026-11-12",
+        "supports": "FDA describes sugars from syrups as part of its added-sugars definition; exact invert-syrup naming should be reviewed against local labels."
+      }
+    ],
+    "notes": "Syrup name recognition only. This is not an Indian regulatory determination.",
+    "createdAt": "2026-11-12T00:00:00Z",
+    "updatedAt": "2026-11-12T00:00:00Z"
+  },
+  {
+    "schemaVersion": "1.0.0",
+    "ingredientId": "ING-009",
+    "canonicalName": "glucose syrup",
+    "aliases": [
+      {
+        "name": "corn glucose syrup",
+        "language": "en",
+        "aliasType": "variant"
+      }
+    ],
+    "classification": {
+      "category": "sugar_or_syrup",
+      "reviewStatus": "verified",
+      "reviewNote": "Syrup name recognition. Some labels may use more specific syrup source names; do not collapse distinct products without review."
+    },
+    "evidence": [
+      {
+        "sourceName": "Healthy diet — sugars",
+        "publisher": "World Health Organization",
+        "url": "https://www.who.int/news-room/fact-sheets/detail/healthy-diet",
+        "accessedAt": "2026-11-12",
+        "supports": "Includes sugars naturally present in syrups in its free-sugars definition."
+      },
+      {
+        "sourceName": "Industry Resources on the Changes to the Nutrition Facts Label",
+        "publisher": "U.S. Food and Drug Administration",
+        "url": "https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/industry-resources-changes-nutrition-facts-label",
+        "accessedAt": "2026-11-12",
+        "supports": "Includes sugars from syrups in FDA added-sugars definition."
+      }
+    ],
+    "notes": "Syrup name recognition. Some labels may use more specific syrup source names; do not collapse distinct products without review.",
+    "createdAt": "2026-11-12T00:00:00Z",
+    "updatedAt": "2026-11-12T00:00:00Z"
+  },
+  {
+    "schemaVersion": "1.0.0",
+    "ingredientId": "ING-010",
+    "canonicalName": "corn syrup",
+    "aliases": [
+      {
+        "name": "corn sweetener",
+        "language": "en",
+        "aliasType": "variant"
+      }
+    ],
+    "classification": {
+      "category": "sugar_or_syrup",
+      "reviewStatus": "verified",
+      "reviewNote": "Syrup ingredient name match; does not state syrup composition or fructose percentage."
+    },
+    "evidence": [
+      {
+        "sourceName": "Final Rules to Update the Nutrition Facts Label",
+        "publisher": "U.S. Food and Drug Administration",
+        "url": "https://www.fda.gov/media/98854/download",
+        "accessedAt": "2026-11-12",
+        "supports": "Lists corn sweetener and syrups among added-sugars examples."
+      }
+    ],
+    "notes": "Syrup ingredient name match; does not state syrup composition or fructose percentage.",
+    "createdAt": "2026-11-12T00:00:00Z",
+    "updatedAt": "2026-11-12T00:00:00Z"
+  },
+  {
+    "schemaVersion": "1.0.0",
+    "ingredientId": "ING-011",
+    "canonicalName": "high-fructose corn syrup",
+    "aliases": [
+      {
+        "name": "HFCS",
+        "language": "en",
+        "aliasType": "variant"
+      },
+      {
+        "name": "high fructose corn syrup",
+        "language": "en",
+        "aliasType": "variant"
+      }
+    ],
+    "classification": {
+      "category": "sugar_or_syrup",
+      "reviewStatus": "verified",
+      "reviewNote": "Common sweetener name variant. Do not infer an exact fructose percentage from the ingredient name."
+    },
+    "evidence": [
+      {
+        "sourceName": "Final Rules to Update the Nutrition Facts Label",
+        "publisher": "U.S. Food and Drug Administration",
+        "url": "https://www.fda.gov/media/98854/download",
+        "accessedAt": "2026-11-12",
+        "supports": "Lists high fructose corn syrup among added-sugars examples."
+      }
+    ],
+    "notes": "Common sweetener name variant. Do not infer an exact fructose percentage from the ingredient name.",
+    "createdAt": "2026-11-12T00:00:00Z",
+    "updatedAt": "2026-11-12T00:00:00Z"
+  },
+  {
+    "schemaVersion": "1.0.0",
+    "ingredientId": "ING-012",
+    "canonicalName": "brown sugar",
+    "aliases": [
+      {
+        "name": "light brown sugar",
+        "language": "en",
+        "aliasType": "variant"
+      },
+      {
+        "name": "dark brown sugar",
+        "language": "en",
+        "aliasType": "variant"
+      }
+    ],
+    "classification": {
+      "category": "sugar_or_syrup",
+      "reviewStatus": "verified",
+      "reviewNote": "Colour/grade variants retained as text aliases. Do not estimate composition from the name."
+    },
+    "evidence": [
+      {
+        "sourceName": "Final Rules to Update the Nutrition Facts Label",
+        "publisher": "U.S. Food and Drug Administration",
+        "url": "https://www.fda.gov/media/98854/download",
+        "accessedAt": "2026-11-12",
+        "supports": "Lists brown sugar among added-sugars examples."
+      }
+    ],
+    "notes": "Colour/grade variants retained as text aliases. Do not estimate composition from the name.",
+    "createdAt": "2026-11-12T00:00:00Z",
+    "updatedAt": "2026-11-12T00:00:00Z"
+  },
+  {
+    "schemaVersion": "1.0.0",
+    "ingredientId": "ING-013",
+    "canonicalName": "confectioners sugar",
+    "aliases": [
+      {
+        "name": "powdered sugar",
+        "language": "en",
+        "aliasType": "variant"
+      },
+      {
+        "name": "icing sugar",
+        "language": "en",
+        "aliasType": "variant"
+      }
+    ],
+    "classification": {
+      "category": "sugar_or_syrup",
+      "reviewStatus": "proposed",
+      "reviewNote": "Common label synonyms; some products contain starch/anti-caking agents. Treat this as name recognition only and review variants."
+    },
+    "evidence": [
+      {
+        "sourceName": "Food factsheet: Sugars and other sweet things",
+        "publisher": "WHO Regional Office for Africa",
+        "url": "https://www.afro.who.int/sites/default/files/2019-11/Food_Factsheets_06_EN.pdf",
+        "accessedAt": "2026-11-12",
+        "supports": "Supports the distinction between simple sugars and complex carbohydrates; this common commercial synonym group requires project approval."
+      }
+    ],
+    "notes": "Common label synonyms; some products contain starch/anti-caking agents. Treat this as name recognition only and review variants.",
+    "createdAt": "2026-11-12T00:00:00Z",
+    "updatedAt": "2026-11-12T00:00:00Z"
+  },
+  {
+    "schemaVersion": "1.0.0",
+    "ingredientId": "ING-014",
+    "canonicalName": "honey",
+    "aliases": [
+      {
+        "name": "pure honey",
+        "language": "en",
+        "aliasType": "variant"
+      }
+    ],
+    "classification": {
+      "category": "sugar_or_syrup",
+      "reviewStatus": "verified",
+      "reviewNote": "Honey contains naturally occurring sugars and is included in WHO free-sugars definitions. Presence in an ingredient list is a name match, not a health verdict."
+    },
+    "evidence": [
+      {
+        "sourceName": "Healthy diet — sugars",
+        "publisher": "World Health Organization",
+        "url": "https://www.who.int/news-room/fact-sheets/detail/healthy-diet",
+        "accessedAt": "2026-11-12",
+        "supports": "Includes sugars naturally present in honey in the free-sugars definition."
+      },
+      {
+        "sourceName": "Added Sugars on the Nutrition Facts Label",
+        "publisher": "U.S. Food and Drug Administration",
+        "url": "https://www.fda.gov/food/nutrition-facts-label/added-sugars-nutrition-facts-label",
+        "accessedAt": "2026-11-12",
+        "supports": "Identifies sugars from honey within the added-sugars labeling explanation."
+      }
+    ],
+    "notes": "Honey contains naturally occurring sugars and is included in WHO free-sugars definitions. Presence in an ingredient list is a name match, not a health verdict.",
+    "createdAt": "2026-11-12T00:00:00Z",
+    "updatedAt": "2026-11-12T00:00:00Z"
+  },
+  {
+    "schemaVersion": "1.0.0",
+    "ingredientId": "ING-015",
+    "canonicalName": "maple syrup",
+    "aliases": [
+      {
+        "name": "pure maple syrup",
+        "language": "en",
+        "aliasType": "variant"
+      }
+    ],
+    "classification": {
+      "category": "sugar_or_syrup",
+      "reviewStatus": "verified",
+      "reviewNote": "Syrup name recognition; do not infer quantity or a serving-based nutritional amount."
+    },
+    "evidence": [
+      {
+        "sourceName": "Healthy diet — sugars",
+        "publisher": "World Health Organization",
+        "url": "https://www.who.int/news-room/fact-sheets/detail/healthy-diet",
+        "accessedAt": "2026-11-12",
+        "supports": "Includes sugars naturally present in syrups in the free-sugars definition."
+      },
+      {
+        "sourceName": "Guidance for Industry: Declaration of Added Sugars on Honey, Maple Syrup...",
+        "publisher": "U.S. Food and Drug Administration",
+        "url": "https://www.fda.gov/Food/GuidanceRegulation/GuidanceDocumentsRegulatoryInformation/ucm595578.htm",
+        "accessedAt": "2026-11-12",
+        "supports": "Covers single-ingredient maple syrup in added-sugars labeling guidance."
+      }
+    ],
+    "notes": "Syrup name recognition; do not infer quantity or a serving-based nutritional amount.",
+    "createdAt": "2026-11-12T00:00:00Z",
+    "updatedAt": "2026-11-12T00:00:00Z"
+  },
+  {
+    "schemaVersion": "1.0.0",
+    "ingredientId": "ING-016",
+    "canonicalName": "agave syrup",
+    "aliases": [
+      {
+        "name": "agave nectar",
+        "language": "en",
+        "aliasType": "variant"
+      }
+    ],
+    "classification": {
+      "category": "sugar_or_syrup",
+      "reviewStatus": "proposed",
+      "reviewNote": "Candidate syrup names for recognition. Review alias equivalence and regional label frequency before treating as a production-approved alias."
+    },
+    "evidence": [
+      {
+        "sourceName": "Healthy diet — sugars",
+        "publisher": "World Health Organization",
+        "url": "https://www.who.int/news-room/fact-sheets/detail/healthy-diet",
+        "accessedAt": "2026-11-12",
+        "supports": "Includes sugars naturally present in syrups generally; exact product-name synonym needs project review."
+      }
+    ],
+    "notes": "Candidate syrup names for recognition. Review alias equivalence and regional label frequency before treating as a production-approved alias.",
+    "createdAt": "2026-11-12T00:00:00Z",
+    "updatedAt": "2026-11-12T00:00:00Z"
+  },
+  {
+    "schemaVersion": "1.0.0",
+    "ingredientId": "ING-017",
+    "canonicalName": "molasses",
+    "aliases": [
+      {
+        "name": "blackstrap molasses",
+        "language": "en",
+        "aliasType": "variant"
+      },
+      {
+        "name": "cane molasses",
+        "language": "en",
+        "aliasType": "variant"
+      }
+    ],
+    "classification": {
+      "category": "sugar_or_syrup",
+      "reviewStatus": "verified",
+      "reviewNote": "Molasses name recognition. Product composition varies; no amount or added-sugar conclusion is inferred."
+    },
+    "evidence": [
+      {
+        "sourceName": "Food factsheet: Sugars and other sweet things",
+        "publisher": "WHO Regional Office for Africa",
+        "url": "https://www.afro.who.int/sites/default/files/2019-11/Food_Factsheets_06_EN.pdf",
+        "accessedAt": "2026-11-12",
+        "supports": "Includes molasses in the list of free-sugar sources."
+      },
+      {
+        "sourceName": "Final Rules to Update the Nutrition Facts Label",
+        "publisher": "U.S. Food and Drug Administration",
+        "url": "https://www.fda.gov/media/98854/download",
+        "accessedAt": "2026-11-12",
+        "supports": "Lists molasses among examples of added sugars."
+      }
+    ],
+    "notes": "Molasses name recognition. Product composition varies; no amount or added-sugar conclusion is inferred.",
+    "createdAt": "2026-11-12T00:00:00Z",
+    "updatedAt": "2026-11-12T00:00:00Z"
+  },
+  {
+    "schemaVersion": "1.0.0",
+    "ingredientId": "ING-018",
+    "canonicalName": "rice syrup",
+    "aliases": [
+      {
+        "name": "rice malt syrup",
+        "language": "en",
+        "aliasType": "variant"
+      }
+    ],
+    "classification": {
+      "category": "sugar_or_syrup",
+      "reviewStatus": "proposed",
+      "reviewNote": "Candidate syrup term. Review exact equivalence of rice syrup/rice malt syrup on local labels before promoting to verified."
+    },
+    "evidence": [
+      {
+        "sourceName": "Healthy diet — sugars",
+        "publisher": "World Health Organization",
+        "url": "https://www.who.int/news-room/fact-sheets/detail/healthy-diet",
+        "accessedAt": "2026-11-12",
+        "supports": "Includes sugars naturally present in syrups in the free-sugars definition; specific rice-syrup naming needs review."
+      }
+    ],
+    "notes": "Candidate syrup term. Review exact equivalence of rice syrup/rice malt syrup on local labels before promoting to verified.",
+    "createdAt": "2026-11-12T00:00:00Z",
+    "updatedAt": "2026-11-12T00:00:00Z"
+  },
+  {
+    "schemaVersion": "1.0.0",
+    "ingredientId": "ING-019",
+    "canonicalName": "brown rice syrup",
+    "aliases": [
+      {
+        "name": "brown rice malt syrup",
+        "language": "en",
+        "aliasType": "variant"
+      }
+    ],
+    "classification": {
+      "category": "sugar_or_syrup",
+      "reviewStatus": "proposed",
+      "reviewNote": "Candidate commercial syrup name. Retain separately from rice syrup until project reviewers approve synonym equivalence."
+    },
+    "evidence": [
+      {
+        "sourceName": "Healthy diet — sugars",
+        "publisher": "World Health Organization",
+        "url": "https://www.who.int/news-room/fact-sheets/detail/healthy-diet",
+        "accessedAt": "2026-11-12",
+        "supports": "Includes sugars naturally present in syrups in the free-sugars definition; specific brown-rice-syrup naming needs review."
+      }
+    ],
+    "notes": "Candidate commercial syrup name. Retain separately from rice syrup until project reviewers approve synonym equivalence.",
+    "createdAt": "2026-11-12T00:00:00Z",
+    "updatedAt": "2026-11-12T00:00:00Z"
+  },
+  {
+    "schemaVersion": "1.0.0",
+    "ingredientId": "ING-020",
+    "canonicalName": "barley malt syrup",
+    "aliases": [
+      {
+        "name": "malt syrup",
+        "language": "en",
+        "aliasType": "variant"
+      }
+    ],
+    "classification": {
+      "category": "sugar_or_syrup",
+      "reviewStatus": "proposed",
+      "reviewNote": "Malt syrup may be compositionally variable. WHO lists malt syrups among free-sugar sources in a regional factsheet; retain proposed status pending label/domain review."
+    },
+    "evidence": [
+      {
+        "sourceName": "Food factsheet: Sugars and other sweet things",
+        "publisher": "WHO Regional Office for Africa",
+        "url": "https://www.afro.who.int/sites/default/files/2019-11/Food_Factsheets_06_EN.pdf",
+        "accessedAt": "2026-11-12",
+        "supports": "Lists malt extract, syrups and nectars as free-sugar sources; specific barley-malt-syrup equivalence requires project review."
+      }
+    ],
+    "notes": "Malt syrup may be compositionally variable. WHO lists malt syrups among free-sugar sources in a regional factsheet; retain proposed status pending label/domain review.",
+    "createdAt": "2026-11-12T00:00:00Z",
+    "updatedAt": "2026-11-12T00:00:00Z"
+  },
+  {
+    "schemaVersion": "1.0.0",
+    "ingredientId": "ING-021",
+    "canonicalName": "malt extract",
+    "aliases": [
+      {
+        "name": "barley malt extract",
+        "language": "en",
+        "aliasType": "variant"
+      }
+    ],
+    "classification": {
+      "category": "other_carbohydrate",
+      "reviewStatus": "proposed",
+      "reviewNote": "Do not assume malt extract is pure sugar or assign a quantity. WHO material includes malt extract among free-sugar sources, but ingredient composition depends on product."
+    },
+    "evidence": [
+      {
+        "sourceName": "Food factsheet: Sugars and other sweet things",
+        "publisher": "WHO Regional Office for Africa",
+        "url": "https://www.afro.who.int/sites/default/files/2019-11/Food_Factsheets_06_EN.pdf",
+        "accessedAt": "2026-11-12",
+        "supports": "Lists malt extract among free-sugar sources; entry remains proposed because composition and naming require review."
+      }
+    ],
+    "notes": "Do not assume malt extract is pure sugar or assign a quantity. WHO material includes malt extract among free-sugar sources, but ingredient composition depends on product.",
+    "createdAt": "2026-11-12T00:00:00Z",
+    "updatedAt": "2026-11-12T00:00:00Z"
+  },
+  {
+    "schemaVersion": "1.0.0",
+    "ingredientId": "ING-022",
+    "canonicalName": "date syrup",
+    "aliases": [
+      {
+        "name": "date nectar",
+        "language": "en",
+        "aliasType": "variant"
+      }
+    ],
+    "classification": {
+      "category": "sugar_or_syrup",
+      "reviewStatus": "proposed",
+      "reviewNote": "Candidate syrup name; verify synonym use and exact ingredient identity against project label samples."
+    },
+    "evidence": [
+      {
+        "sourceName": "Healthy diet — sugars",
+        "publisher": "World Health Organization",
+        "url": "https://www.who.int/news-room/fact-sheets/detail/healthy-diet",
+        "accessedAt": "2026-11-12",
+        "supports": "Includes sugars naturally present in syrups generally; date-syrup term requires project review."
+      }
+    ],
+    "notes": "Candidate syrup name; verify synonym use and exact ingredient identity against project label samples.",
+    "createdAt": "2026-11-12T00:00:00Z",
+    "updatedAt": "2026-11-12T00:00:00Z"
+  },
+  {
+    "schemaVersion": "1.0.0",
+    "ingredientId": "ING-023",
+    "canonicalName": "coconut sugar",
+    "aliases": [
+      {
+        "name": "coconut palm sugar",
+        "language": "en",
+        "aliasType": "variant"
+      }
+    ],
+    "classification": {
+      "category": "sugar_or_syrup",
+      "reviewStatus": "proposed",
+      "reviewNote": "Candidate sweetener name. WHO regional factsheet lists coconut sugar as a free-sugar source; retain proposed status until project review."
+    },
+    "evidence": [
+      {
+        "sourceName": "Food factsheet: Sugars and other sweet things",
+        "publisher": "WHO Regional Office for Africa",
+        "url": "https://www.afro.who.int/sites/default/files/2019-11/Food_Factsheets_06_EN.pdf",
+        "accessedAt": "2026-11-12",
+        "supports": "Lists coconut sugar among free-sugar sources; the dataset does not infer added-sugar quantity."
+      }
+    ],
+    "notes": "Candidate sweetener name. WHO regional factsheet lists coconut sugar as a free-sugar source; retain proposed status until project review.",
+    "createdAt": "2026-11-12T00:00:00Z",
+    "updatedAt": "2026-11-12T00:00:00Z"
+  },
+  {
+    "schemaVersion": "1.0.0",
+    "ingredientId": "ING-024",
+    "canonicalName": "golden syrup",
+    "aliases": [],
+    "classification": {
+      "category": "sugar_or_syrup",
+      "reviewStatus": "proposed",
+      "reviewNote": "Candidate syrup label name; verify regional usage and synonym policy with project reviewers."
+    },
+    "evidence": [
+      {
+        "sourceName": "Healthy diet — sugars",
+        "publisher": "World Health Organization",
+        "url": "https://www.who.int/news-room/fact-sheets/detail/healthy-diet",
+        "accessedAt": "2026-11-12",
+        "supports": "General syrup category supports further review; exact golden-syrup name is proposed."
+      }
+    ],
+    "notes": "Candidate syrup label name; verify regional usage and synonym policy with project reviewers.",
+    "createdAt": "2026-11-12T00:00:00Z",
+    "updatedAt": "2026-11-12T00:00:00Z"
+  },
+  {
+    "schemaVersion": "1.0.0",
+    "ingredientId": "ING-025",
+    "canonicalName": "corn syrup solids",
+    "aliases": [],
+    "classification": {
+      "category": "starch_or_dextrin",
+      "reviewStatus": "proposed",
+      "reviewNote": "Keep separate from simple sugars and syrups. Its ingredient form and composition need review; this record is only a name-recognition candidate."
+    },
+    "evidence": [
+      {
+        "sourceName": "EU Regulation 2017/1017 — feed materials catalogue",
+        "publisher": "European Union / EUR-Lex",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32017R1017",
+        "accessedAt": "2026-11-12",
+        "supports": "Provides definitions for starch hydrolysates and related carbohydrate materials; corn syrup solids entry remains proposed."
+      }
+    ],
+    "notes": "Keep separate from simple sugars and syrups. Its ingredient form and composition need review; this record is only a name-recognition candidate.",
+    "createdAt": "2026-11-12T00:00:00Z",
+    "updatedAt": "2026-11-12T00:00:00Z"
+  },
+  {
+    "schemaVersion": "1.0.0",
+    "ingredientId": "ING-026",
+    "canonicalName": "maltodextrin",
+    "aliases": [
+      {
+        "name": "maltodextrins",
+        "language": "en",
+        "aliasType": "variant"
+      }
+    ],
+    "classification": {
+      "category": "starch_or_dextrin",
+      "reviewStatus": "verified",
+      "reviewNote": "Important false-positive guard: maltodextrin is partially hydrolysed starch, not a synonym for sucrose or a mono-/disaccharide. Do not label it as added sugar solely by matching this entry."
+    },
+    "evidence": [
+      {
+        "sourceName": "EU Regulation 2017/1017 — feed materials catalogue",
+        "publisher": "European Union / EUR-Lex",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32017R1017",
+        "accessedAt": "2026-11-12",
+        "supports": "Defines maltodextrin as partially hydrolysed starch."
+      }
+    ],
+    "notes": "Important false-positive guard: maltodextrin is partially hydrolysed starch, not a synonym for sucrose or a mono-/disaccharide. Do not label it as added sugar solely by matching this entry.",
+    "createdAt": "2026-11-12T00:00:00Z",
+    "updatedAt": "2026-11-12T00:00:00Z"
+  },
+  {
+    "schemaVersion": "1.0.0",
+    "ingredientId": "ING-027",
+    "canonicalName": "dextrin",
+    "aliases": [
+      {
+        "name": "dextrins",
+        "language": "en",
+        "aliasType": "variant"
+      }
+    ],
+    "classification": {
+      "category": "starch_or_dextrin",
+      "reviewStatus": "verified",
+      "reviewNote": "Important false-positive guard: dextrin is partially acid-hydrolysed starch. Do not equate it to sucrose or assume a regulatory added-sugar classification."
+    },
+    "evidence": [
+      {
+        "sourceName": "EU Regulation 2017/1017 — feed materials catalogue",
+        "publisher": "European Union / EUR-Lex",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32017R1017",
+        "accessedAt": "2026-11-12",
+        "supports": "Defines dextrin as partially acid-hydrolysed starch."
+      }
+    ],
+    "notes": "Important false-positive guard: dextrin is partially acid-hydrolysed starch. Do not equate it to sucrose or assume a regulatory added-sugar classification.",
+    "createdAt": "2026-11-12T00:00:00Z",
+    "updatedAt": "2026-11-12T00:00:00Z"
+  }
+]

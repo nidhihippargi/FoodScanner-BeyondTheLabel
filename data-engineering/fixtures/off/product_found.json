@@ -1,0 +1,33 @@
+{
+  "status": "success",
+  "product": {
+    "code": "8901234567890",
+    "schema_version": 1004,
+    "product_type": "food",
+    "product_name": "Sample Oat Snack",
+    "brands": "Example Foods",
+    "quantity": "120 g",
+    "ingredients_text": "Oats, dates, almonds, cocoa powder",
+    "lang": "en",
+    "serving_size": "Per 3 chips",
+    "nutrition": {
+      "aggregated_set": {
+        "preparation": "as_sold",
+        "per": "100g",
+        "nutrients": {
+          "energy": { "value": 1650, "value_computed": 1650, "unit": "kJ", "source_per": "100g" },
+          "fat": { "value": 12.0, "value_computed": 12.0, "unit": "g", "source_per": "100g" },
+          "sugars": { "value": 9.5, "value_computed": 9.5, "unit": "g", "source_per": "100g" }
+        }
+      }
+    },
+    "images": {
+      "selected": {
+        "front": { "display": { "en": "https://images.example.invalid/sample-front.jpg" } }
+      }
+    },
+    "last_modified_t": 1794000000
+  },
+  "warnings": [],
+  "errors": []
+}

@@ -1,0 +1,8 @@
+{
+  "description": "Synthetic illustration of whitespace and Unicode normalization. The original label text remains preserved.",
+  "input": "  Oats,\u00a0 DATES  –  almonds  ",
+  "output": {
+    "originalText": "  Oats,\u00a0 DATES  –  almonds  ",
+    "normalizedText": "oats, dates - almonds"
+  }
+}

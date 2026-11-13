@@ -1,0 +1,2909 @@
+{
+  "datasetVersion": "1.0.0",
+  "description": "Generic USDA food composition records per 100 g. These values describe the referenced generic food, not quantities in a packaged product. See STAGE_4_DATASET_REPORT.md for provenance and review boundaries.",
+  "records": [
+    {
+      "schemaVersion": "1.0.0",
+      "nutrientCompositionId": "usda_sr28_amaranth_grain_raw",
+      "ingredientId": "amaranth_grain",
+      "source": {
+        "provider": "USDA_FDC",
+        "externalFoodId": "NDB:20001",
+        "description": "Amaranth grain, uncooked; Values transcribed from the official USDA SR28 table; this is a historical composition record.",
+        "dataType": "SR Legacy",
+        "datasetRelease": "USDA SR28 (revised May 2016; historical archive)",
+        "sourceUri": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/SR/SR28/reports/sr28fg20.pdf",
+        "retrievedAt": "2026-11-13T02:50:00+05:30",
+        "licenseStatus": "open",
+        "licenseName": "USDA public-domain historical nutrient data; cite USDA SR28 release"
+      },
+      "basis": {
+        "quantity": 100,
+        "unit": "g",
+        "description": "Per 100 g of the source-described food; exact edible-portion basis must be confirmed from the source record.",
+        "ediblePortionOnly": null
+      },
+      "preparationState": "raw",
+      "preparationDetails": null,
+      "nutrients": {
+        "energy_kcal": {
+          "nutrientName": "Energy",
+          "sourceNutrientId": null,
+          "value": 371,
+          "unit": "kcal",
+          "valueType": "calculated",
+          "sourceField": "USDA SR28 table (NDB number) — Energy",
+          "notes": "Transcribed from the historical USDA SR28 table; this nutrient is a calculated value under the source-table method."
+        },
+        "protein": {
+          "nutrientName": "Protein",
+          "sourceNutrientId": null,
+          "value": 13.56,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "USDA SR28 table (NDB number) — Protein",
+          "notes": "Transcribed from the cited historical USDA SR28 table; row-level analytical/derivation metadata is not copied into this starter record."
+        },
+        "total_fat": {
+          "nutrientName": "Total lipid (fat)",
+          "sourceNutrientId": null,
+          "value": 7.02,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "USDA SR28 table (NDB number) — Total lipid (fat)",
+          "notes": "Transcribed from the cited historical USDA SR28 table; row-level analytical/derivation metadata is not copied into this starter record."
+        },
+        "carbohydrate_by_difference": {
+          "nutrientName": "Carbohydrate, by difference",
+          "sourceNutrientId": null,
+          "value": 65.25,
+          "unit": "g",
+          "valueType": "calculated",
+          "sourceField": "USDA SR28 table (NDB number) — Carbohydrate, by difference",
+          "notes": "Transcribed from the historical USDA SR28 table; this nutrient is a calculated value under the source-table method."
+        },
+        "fiber": {
+          "nutrientName": "fiber",
+          "sourceNutrientId": null,
+          "value": 6.7,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "USDA SR28 table (NDB number) — fiber",
+          "notes": "Transcribed from the cited historical USDA SR28 table; row-level analytical/derivation metadata is not copied into this starter record."
+        },
+        "sugars": {
+          "nutrientName": "sugars",
+          "sourceNutrientId": null,
+          "value": 1.69,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "USDA SR28 table (NDB number) — sugars",
+          "notes": "Transcribed from the cited historical USDA SR28 table; row-level analytical/derivation metadata is not copied into this starter record."
+        }
+      },
+      "reviewStatus": "reviewed",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "nutrientCompositionId": "usda_sr28_oats_raw",
+      "ingredientId": "oats",
+      "source": {
+        "provider": "USDA_FDC",
+        "externalFoodId": "NDB:20038",
+        "description": "Oats, raw; Values transcribed from the official USDA SR28 table; this is a historical composition record.",
+        "dataType": "SR Legacy",
+        "datasetRelease": "USDA SR28 (revised May 2016; historical archive)",
+        "sourceUri": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/SR/SR28/reports/sr28fg20.pdf",
+        "retrievedAt": "2026-11-13T02:50:00+05:30",
+        "licenseStatus": "open",
+        "licenseName": "USDA public-domain historical nutrient data; cite USDA SR28 release"
+      },
+      "basis": {
+        "quantity": 100,
+        "unit": "g",
+        "description": "Per 100 g of the source-described food; exact edible-portion basis must be confirmed from the source record.",
+        "ediblePortionOnly": null
+      },
+      "preparationState": "raw",
+      "preparationDetails": null,
+      "nutrients": {
+        "energy_kcal": {
+          "nutrientName": "Energy",
+          "sourceNutrientId": null,
+          "value": 389,
+          "unit": "kcal",
+          "valueType": "calculated",
+          "sourceField": "USDA SR28 table (NDB number) — Energy",
+          "notes": "Transcribed from the historical USDA SR28 table; this nutrient is a calculated value under the source-table method."
+        },
+        "protein": {
+          "nutrientName": "Protein",
+          "sourceNutrientId": null,
+          "value": 16.89,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "USDA SR28 table (NDB number) — Protein",
+          "notes": "Transcribed from the cited historical USDA SR28 table; row-level analytical/derivation metadata is not copied into this starter record."
+        },
+        "total_fat": {
+          "nutrientName": "Total lipid (fat)",
+          "sourceNutrientId": null,
+          "value": 6.9,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "USDA SR28 table (NDB number) — Total lipid (fat)",
+          "notes": "Transcribed from the cited historical USDA SR28 table; row-level analytical/derivation metadata is not copied into this starter record."
+        },
+        "carbohydrate_by_difference": {
+          "nutrientName": "Carbohydrate, by difference",
+          "sourceNutrientId": null,
+          "value": 66.27,
+          "unit": "g",
+          "valueType": "calculated",
+          "sourceField": "USDA SR28 table (NDB number) — Carbohydrate, by difference",
+          "notes": "Transcribed from the historical USDA SR28 table; this nutrient is a calculated value under the source-table method."
+        },
+        "fiber": {
+          "nutrientName": "fiber",
+          "sourceNutrientId": null,
+          "value": 10.6,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "USDA SR28 table (NDB number) — fiber",
+          "notes": "Transcribed from the cited historical USDA SR28 table; row-level analytical/derivation metadata is not copied into this starter record."
+        }
+      },
+      "reviewStatus": "reviewed",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "nutrientCompositionId": "usda_sr28_barley_flour",
+      "ingredientId": "barley_flour",
+      "source": {
+        "provider": "USDA_FDC",
+        "externalFoodId": "NDB:20130",
+        "description": "Barley flour or meal; Values transcribed from the official USDA SR28 table; this is a historical composition record.",
+        "dataType": "SR Legacy",
+        "datasetRelease": "USDA SR28 (revised May 2016; historical archive)",
+        "sourceUri": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/SR/SR28/reports/sr28fg20.pdf",
+        "retrievedAt": "2026-11-13T02:50:00+05:30",
+        "licenseStatus": "open",
+        "licenseName": "USDA public-domain historical nutrient data; cite USDA SR28 release"
+      },
+      "basis": {
+        "quantity": 100,
+        "unit": "g",
+        "description": "Per 100 g of the source-described food; exact edible-portion basis must be confirmed from the source record.",
+        "ediblePortionOnly": null
+      },
+      "preparationState": "raw",
+      "preparationDetails": null,
+      "nutrients": {
+        "energy_kcal": {
+          "nutrientName": "Energy",
+          "sourceNutrientId": null,
+          "value": 345,
+          "unit": "kcal",
+          "valueType": "calculated",
+          "sourceField": "USDA SR28 table (NDB number) — Energy",
+          "notes": "Transcribed from the historical USDA SR28 table; this nutrient is a calculated value under the source-table method."
+        },
+        "protein": {
+          "nutrientName": "Protein",
+          "sourceNutrientId": null,
+          "value": 10.5,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "USDA SR28 table (NDB number) — Protein",
+          "notes": "Transcribed from the cited historical USDA SR28 table; row-level analytical/derivation metadata is not copied into this starter record."
+        },
+        "total_fat": {
+          "nutrientName": "Total lipid (fat)",
+          "sourceNutrientId": null,
+          "value": 1.6,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "USDA SR28 table (NDB number) — Total lipid (fat)",
+          "notes": "Transcribed from the cited historical USDA SR28 table; row-level analytical/derivation metadata is not copied into this starter record."
+        },
+        "carbohydrate_by_difference": {
+          "nutrientName": "Carbohydrate, by difference",
+          "sourceNutrientId": null,
+          "value": 74.52,
+          "unit": "g",
+          "valueType": "calculated",
+          "sourceField": "USDA SR28 table (NDB number) — Carbohydrate, by difference",
+          "notes": "Transcribed from the historical USDA SR28 table; this nutrient is a calculated value under the source-table method."
+        },
+        "fiber": {
+          "nutrientName": "fiber",
+          "sourceNutrientId": null,
+          "value": 10.1,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "USDA SR28 table (NDB number) — fiber",
+          "notes": "Transcribed from the cited historical USDA SR28 table; row-level analytical/derivation metadata is not copied into this starter record."
+        },
+        "sugars": {
+          "nutrientName": "sugars",
+          "sourceNutrientId": null,
+          "value": 0.8,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "USDA SR28 table (NDB number) — sugars",
+          "notes": "Transcribed from the cited historical USDA SR28 table; row-level analytical/derivation metadata is not copied into this starter record."
+        }
+      },
+      "reviewStatus": "reviewed",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "nutrientCompositionId": "usda_sr28_whole_wheat_flour",
+      "ingredientId": "whole_wheat_flour",
+      "source": {
+        "provider": "USDA_FDC",
+        "externalFoodId": "NDB:20080",
+        "description": "Wheat flour, whole-grain; Values transcribed from the official USDA SR28 table; this is a historical composition record.",
+        "dataType": "SR Legacy",
+        "datasetRelease": "USDA SR28 (revised May 2016; historical archive)",
+        "sourceUri": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/SR/SR28/reports/sr28fg20.pdf",
+        "retrievedAt": "2026-11-13T02:50:00+05:30",
+        "licenseStatus": "open",
+        "licenseName": "USDA public-domain historical nutrient data; cite USDA SR28 release"
+      },
+      "basis": {
+        "quantity": 100,
+        "unit": "g",
+        "description": "Per 100 g of the source-described food; exact edible-portion basis must be confirmed from the source record.",
+        "ediblePortionOnly": null
+      },
+      "preparationState": "raw",
+      "preparationDetails": null,
+      "nutrients": {
+        "energy_kcal": {
+          "nutrientName": "Energy",
+          "sourceNutrientId": null,
+          "value": 340,
+          "unit": "kcal",
+          "valueType": "calculated",
+          "sourceField": "USDA SR28 table (NDB number) — Energy",
+          "notes": "Transcribed from the historical USDA SR28 table; this nutrient is a calculated value under the source-table method."
+        },
+        "protein": {
+          "nutrientName": "Protein",
+          "sourceNutrientId": null,
+          "value": 13.21,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "USDA SR28 table (NDB number) — Protein",
+          "notes": "Transcribed from the cited historical USDA SR28 table; row-level analytical/derivation metadata is not copied into this starter record."
+        },
+        "total_fat": {
+          "nutrientName": "Total lipid (fat)",
+          "sourceNutrientId": null,
+          "value": 2.5,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "USDA SR28 table (NDB number) — Total lipid (fat)",
+          "notes": "Transcribed from the cited historical USDA SR28 table; row-level analytical/derivation metadata is not copied into this starter record."
+        },
+        "carbohydrate_by_difference": {
+          "nutrientName": "Carbohydrate, by difference",
+          "sourceNutrientId": null,
+          "value": 71.97,
+          "unit": "g",
+          "valueType": "calculated",
+          "sourceField": "USDA SR28 table (NDB number) — Carbohydrate, by difference",
+          "notes": "Transcribed from the historical USDA SR28 table; this nutrient is a calculated value under the source-table method."
+        },
+        "fiber": {
+          "nutrientName": "fiber",
+          "sourceNutrientId": null,
+          "value": 10.7,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "USDA SR28 table (NDB number) — fiber",
+          "notes": "Transcribed from the cited historical USDA SR28 table; row-level analytical/derivation metadata is not copied into this starter record."
+        },
+        "sugars": {
+          "nutrientName": "sugars",
+          "sourceNutrientId": null,
+          "value": 0.41,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "USDA SR28 table (NDB number) — sugars",
+          "notes": "Transcribed from the cited historical USDA SR28 table; row-level analytical/derivation metadata is not copied into this starter record."
+        }
+      },
+      "reviewStatus": "reviewed",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "nutrientCompositionId": "usda_sr28_white_rice_raw",
+      "ingredientId": "white_rice",
+      "source": {
+        "provider": "USDA_FDC",
+        "externalFoodId": "NDB:20044",
+        "description": "Rice, white, long-grain, regular, raw, enriched; Values transcribed from the official USDA SR28 table; this is a historical composition record.",
+        "dataType": "SR Legacy",
+        "datasetRelease": "USDA SR28 (revised May 2016; historical archive)",
+        "sourceUri": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/SR/SR28/reports/sr28fg20.pdf",
+        "retrievedAt": "2026-11-13T02:50:00+05:30",
+        "licenseStatus": "open",
+        "licenseName": "USDA public-domain historical nutrient data; cite USDA SR28 release"
+      },
+      "basis": {
+        "quantity": 100,
+        "unit": "g",
+        "description": "Per 100 g of the source-described food; exact edible-portion basis must be confirmed from the source record.",
+        "ediblePortionOnly": null
+      },
+      "preparationState": "raw",
+      "preparationDetails": null,
+      "nutrients": {
+        "energy_kcal": {
+          "nutrientName": "Energy",
+          "sourceNutrientId": null,
+          "value": 365,
+          "unit": "kcal",
+          "valueType": "calculated",
+          "sourceField": "USDA SR28 table (NDB number) — Energy",
+          "notes": "Transcribed from the historical USDA SR28 table; this nutrient is a calculated value under the source-table method."
+        },
+        "protein": {
+          "nutrientName": "Protein",
+          "sourceNutrientId": null,
+          "value": 7.13,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "USDA SR28 table (NDB number) — Protein",
+          "notes": "Transcribed from the cited historical USDA SR28 table; row-level analytical/derivation metadata is not copied into this starter record."
+        },
+        "total_fat": {
+          "nutrientName": "Total lipid (fat)",
+          "sourceNutrientId": null,
+          "value": 0.66,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "USDA SR28 table (NDB number) — Total lipid (fat)",
+          "notes": "Transcribed from the cited historical USDA SR28 table; row-level analytical/derivation metadata is not copied into this starter record."
+        },
+        "carbohydrate_by_difference": {
+          "nutrientName": "Carbohydrate, by difference",
+          "sourceNutrientId": null,
+          "value": 79.95,
+          "unit": "g",
+          "valueType": "calculated",
+          "sourceField": "USDA SR28 table (NDB number) — Carbohydrate, by difference",
+          "notes": "Transcribed from the historical USDA SR28 table; this nutrient is a calculated value under the source-table method."
+        },
+        "fiber": {
+          "nutrientName": "fiber",
+          "sourceNutrientId": null,
+          "value": 1.3,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "USDA SR28 table (NDB number) — fiber",
+          "notes": "Transcribed from the cited historical USDA SR28 table; row-level analytical/derivation metadata is not copied into this starter record."
+        },
+        "sugars": {
+          "nutrientName": "sugars",
+          "sourceNutrientId": null,
+          "value": 0.12,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "USDA SR28 table (NDB number) — sugars",
+          "notes": "Transcribed from the cited historical USDA SR28 table; row-level analytical/derivation metadata is not copied into this starter record."
+        },
+        "sodium": {
+          "nutrientName": "sodium",
+          "sourceNutrientId": null,
+          "value": 5,
+          "unit": "mg",
+          "valueType": "unknown",
+          "sourceField": "USDA SR28 table (NDB number) — sodium",
+          "notes": "Transcribed from the cited historical USDA SR28 table; row-level analytical/derivation metadata is not copied into this starter record."
+        }
+      },
+      "reviewStatus": "reviewed",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "nutrientCompositionId": "usda_sr28_brown_rice_medium_raw",
+      "ingredientId": "brown_rice",
+      "source": {
+        "provider": "USDA_FDC",
+        "externalFoodId": "NDB:20040",
+        "description": "Rice, brown, medium-grain, raw; Values transcribed from the official USDA SR28 table; this is a historical composition record.",
+        "dataType": "SR Legacy",
+        "datasetRelease": "USDA SR28 (revised May 2016; historical archive)",
+        "sourceUri": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/SR/SR28/reports/sr28fg20.pdf",
+        "retrievedAt": "2026-11-13T02:50:00+05:30",
+        "licenseStatus": "open",
+        "licenseName": "USDA public-domain historical nutrient data; cite USDA SR28 release"
+      },
+      "basis": {
+        "quantity": 100,
+        "unit": "g",
+        "description": "Per 100 g of the source-described food; exact edible-portion basis must be confirmed from the source record.",
+        "ediblePortionOnly": null
+      },
+      "preparationState": "raw",
+      "preparationDetails": null,
+      "nutrients": {
+        "energy_kcal": {
+          "nutrientName": "Energy",
+          "sourceNutrientId": null,
+          "value": 362,
+          "unit": "kcal",
+          "valueType": "calculated",
+          "sourceField": "USDA SR28 table (NDB number) — Energy",
+          "notes": "Transcribed from the historical USDA SR28 table; this nutrient is a calculated value under the source-table method."
+        },
+        "protein": {
+          "nutrientName": "Protein",
+          "sourceNutrientId": null,
+          "value": 7.5,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "USDA SR28 table (NDB number) — Protein",
+          "notes": "Transcribed from the cited historical USDA SR28 table; row-level analytical/derivation metadata is not copied into this starter record."
+        },
+        "total_fat": {
+          "nutrientName": "Total lipid (fat)",
+          "sourceNutrientId": null,
+          "value": 2.68,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "USDA SR28 table (NDB number) — Total lipid (fat)",
+          "notes": "Transcribed from the cited historical USDA SR28 table; row-level analytical/derivation metadata is not copied into this starter record."
+        },
+        "carbohydrate_by_difference": {
+          "nutrientName": "Carbohydrate, by difference",
+          "sourceNutrientId": null,
+          "value": 76.17,
+          "unit": "g",
+          "valueType": "calculated",
+          "sourceField": "USDA SR28 table (NDB number) — Carbohydrate, by difference",
+          "notes": "Transcribed from the historical USDA SR28 table; this nutrient is a calculated value under the source-table method."
+        },
+        "fiber": {
+          "nutrientName": "fiber",
+          "sourceNutrientId": null,
+          "value": 3.4,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "USDA SR28 table (NDB number) — fiber",
+          "notes": "Transcribed from the cited historical USDA SR28 table; row-level analytical/derivation metadata is not copied into this starter record."
+        },
+        "sodium": {
+          "nutrientName": "sodium",
+          "sourceNutrientId": null,
+          "value": 4,
+          "unit": "mg",
+          "valueType": "unknown",
+          "sourceField": "USDA SR28 table (NDB number) — sodium",
+          "notes": "Transcribed from the cited historical USDA SR28 table; row-level analytical/derivation metadata is not copied into this starter record."
+        }
+      },
+      "reviewStatus": "reviewed",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "nutrientCompositionId": "usda_fdc_almonds_raw",
+      "ingredientId": "almonds",
+      "source": {
+        "provider": "USDA_FDC",
+        "externalFoodId": "2346393",
+        "description": "Nuts, almonds, whole, raw; Secondary index page attributes these values to USDA FDC 2346393; directly verify against official FDC API or October 2026 download before approval.",
+        "dataType": "Foundation Foods",
+        "datasetRelease": "Foundation Foods 2026-04-30 (as displayed in third-party index; direct current FDC verification pending)",
+        "sourceUri": "https://nutrientgraph.com/foods/nuts-almonds-whole-raw-fdc-2346393/",
+        "retrievedAt": "2026-11-13T02:50:00+05:30",
+        "licenseStatus": "open",
+        "licenseName": "USDA FoodData Central source data is public domain/CC0; secondary index presentation is not copied as a dataset"
+      },
+      "basis": {
+        "quantity": 100,
+        "unit": "g",
+        "description": "Per 100 g of the source-described food; exact edible-portion basis must be confirmed from the source record.",
+        "ediblePortionOnly": null
+      },
+      "preparationState": "raw",
+      "preparationDetails": null,
+      "nutrients": {
+        "energy_kcal": {
+          "nutrientName": "Energy",
+          "sourceNutrientId": null,
+          "value": 583.597,
+          "unit": "kcal",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Energy",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "protein": {
+          "nutrientName": "Protein",
+          "sourceNutrientId": null,
+          "value": 21.45,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Protein",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "total_fat": {
+          "nutrientName": "Total lipid (fat)",
+          "sourceNutrientId": null,
+          "value": 51.09,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Total lipid (fat)",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "carbohydrate_by_difference": {
+          "nutrientName": "Carbohydrate, by difference",
+          "sourceNutrientId": null,
+          "value": 20.035,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Carbohydrate, by difference",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        }
+      },
+      "reviewStatus": "needs_review",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "nutrientCompositionId": "usda_fdc_wheat_all_purpose",
+      "ingredientId": "wheat_flour_all_purpose",
+      "source": {
+        "provider": "USDA_FDC",
+        "externalFoodId": "790018",
+        "description": "Flour, wheat, all-purpose, unenriched, unbleached; Secondary index page attributes these values to USDA FDC 790018; directly verify against official FDC API or October 2026 download before approval.",
+        "dataType": "Foundation Foods",
+        "datasetRelease": "Foundation Foods 2026-04-30 (as displayed in third-party index; direct current FDC verification pending)",
+        "sourceUri": "https://nutrientgraph.com/foods/flour-wheat-all-purpose-unenriched-unbleached-fdc-790018/",
+        "retrievedAt": "2026-11-13T02:50:00+05:30",
+        "licenseStatus": "open",
+        "licenseName": "USDA FoodData Central source data is public domain/CC0; secondary index presentation is not copied as a dataset"
+      },
+      "basis": {
+        "quantity": 100,
+        "unit": "g",
+        "description": "Per 100 g of the source-described food; exact edible-portion basis must be confirmed from the source record.",
+        "ediblePortionOnly": null
+      },
+      "preparationState": "as_sold",
+      "preparationDetails": null,
+      "nutrients": {
+        "energy_kcal": {
+          "nutrientName": "Energy",
+          "sourceNutrientId": null,
+          "value": 362,
+          "unit": "kcal",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Energy",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "protein": {
+          "nutrientName": "Protein",
+          "sourceNutrientId": null,
+          "value": 12,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Protein",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "total_fat": {
+          "nutrientName": "Total lipid (fat)",
+          "sourceNutrientId": null,
+          "value": 1.7,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Total lipid (fat)",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "carbohydrate_by_difference": {
+          "nutrientName": "Carbohydrate, by difference",
+          "sourceNutrientId": null,
+          "value": 74.6,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Carbohydrate, by difference",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        }
+      },
+      "reviewStatus": "needs_review",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "nutrientCompositionId": "usda_fdc_lentils_raw",
+      "ingredientId": "lentils",
+      "source": {
+        "provider": "USDA_FDC",
+        "externalFoodId": "172420",
+        "description": "Lentils, raw; Secondary index page attributes these values to USDA FDC 172420; directly verify against official FDC API/download before approval.",
+        "dataType": "SR Legacy",
+        "datasetRelease": "SR Legacy 2018-04 (as displayed in third-party index; direct current FDC verification pending)",
+        "sourceUri": "https://nutrientgraph.com/foods/lentils-raw-fdc-172420/",
+        "retrievedAt": "2026-11-13T02:50:00+05:30",
+        "licenseStatus": "open",
+        "licenseName": "USDA FoodData Central source data is public domain/CC0; secondary index presentation is not copied as a dataset"
+      },
+      "basis": {
+        "quantity": 100,
+        "unit": "g",
+        "description": "Per 100 g of the source-described food; exact edible-portion basis must be confirmed from the source record.",
+        "ediblePortionOnly": null
+      },
+      "preparationState": "raw",
+      "preparationDetails": null,
+      "nutrients": {
+        "energy_kcal": {
+          "nutrientName": "Energy",
+          "sourceNutrientId": null,
+          "value": 352,
+          "unit": "kcal",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Energy",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "protein": {
+          "nutrientName": "Protein",
+          "sourceNutrientId": null,
+          "value": 24.63,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Protein",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "total_fat": {
+          "nutrientName": "Total lipid (fat)",
+          "sourceNutrientId": null,
+          "value": 1.06,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Total lipid (fat)",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "carbohydrate_by_difference": {
+          "nutrientName": "Carbohydrate, by difference",
+          "sourceNutrientId": null,
+          "value": 63.35,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Carbohydrate, by difference",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        }
+      },
+      "reviewStatus": "needs_review",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "nutrientCompositionId": "usda_fdc_cocoa_unsweetened",
+      "ingredientId": "cocoa_powder_unsweetened",
+      "source": {
+        "provider": "USDA_FDC",
+        "externalFoodId": "169593",
+        "description": "Cocoa, dry powder, unsweetened; Secondary index page attributes these values to USDA FDC 169593; directly verify against official FDC API/download before approval.",
+        "dataType": "SR Legacy",
+        "datasetRelease": "SR Legacy 2018-04 (as displayed in third-party index; direct current FDC verification pending)",
+        "sourceUri": "https://nutrientgraph.com/foods/cocoa-dry-powder-unsweetened-fdc-169593/",
+        "retrievedAt": "2026-11-13T02:50:00+05:30",
+        "licenseStatus": "open",
+        "licenseName": "USDA FoodData Central source data is public domain/CC0; secondary index presentation is not copied as a dataset"
+      },
+      "basis": {
+        "quantity": 100,
+        "unit": "g",
+        "description": "Per 100 g of the source-described food; exact edible-portion basis must be confirmed from the source record.",
+        "ediblePortionOnly": null
+      },
+      "preparationState": "dried",
+      "preparationDetails": null,
+      "nutrients": {
+        "energy_kcal": {
+          "nutrientName": "Energy",
+          "sourceNutrientId": null,
+          "value": 228,
+          "unit": "kcal",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Energy",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "protein": {
+          "nutrientName": "Protein",
+          "sourceNutrientId": null,
+          "value": 19.6,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Protein",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "total_fat": {
+          "nutrientName": "Total lipid (fat)",
+          "sourceNutrientId": null,
+          "value": 13.7,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Total lipid (fat)",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "carbohydrate_by_difference": {
+          "nutrientName": "Carbohydrate, by difference",
+          "sourceNutrientId": null,
+          "value": 57.9,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Carbohydrate, by difference",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        }
+      },
+      "reviewStatus": "needs_review",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "nutrientCompositionId": "usda_fdc_peanuts_raw",
+      "ingredientId": "peanut",
+      "source": {
+        "provider": "USDA_FDC",
+        "externalFoodId": "2515376",
+        "description": "Peanuts, raw; Secondary food page identifies USDA FDC 2515376; directly verify against official FDC API or October 2026 download before approval.",
+        "dataType": "Foundation Foods",
+        "datasetRelease": "Foundation Foods 2026-04-30 (as displayed in third-party index; direct current FDC verification pending)",
+        "sourceUri": "https://getfoodfacts.com/food/peanuts-raw-2515376",
+        "retrievedAt": "2026-11-13T02:50:00+05:30",
+        "licenseStatus": "open",
+        "licenseName": "USDA FoodData Central source data is public domain/CC0; secondary index presentation is not copied as a dataset"
+      },
+      "basis": {
+        "quantity": 100,
+        "unit": "g",
+        "description": "Per 100 g of the source-described food; exact edible-portion basis must be confirmed from the source record.",
+        "ediblePortionOnly": null
+      },
+      "preparationState": "raw",
+      "preparationDetails": null,
+      "nutrients": {
+        "energy_kcal": {
+          "nutrientName": "Energy",
+          "sourceNutrientId": null,
+          "value": 550,
+          "unit": "kcal",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Energy",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "protein": {
+          "nutrientName": "Protein",
+          "sourceNutrientId": null,
+          "value": 23.2,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Protein",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "total_fat": {
+          "nutrientName": "Total lipid (fat)",
+          "sourceNutrientId": null,
+          "value": 43,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Total lipid (fat)",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "carbohydrate_by_difference": {
+          "nutrientName": "Carbohydrate, by difference",
+          "sourceNutrientId": null,
+          "value": 26,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Carbohydrate, by difference",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        }
+      },
+      "reviewStatus": "needs_review",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "nutrientCompositionId": "usda_fdc_brown_rice_long_raw",
+      "ingredientId": "brown_rice",
+      "source": {
+        "provider": "USDA_FDC",
+        "externalFoodId": "2512380",
+        "description": "Rice, brown, long grain, unenriched, raw; Secondary index page attributes these values to USDA FDC 2512380; directly verify against official FDC API or October 2026 download before approval.",
+        "dataType": "Foundation Foods",
+        "datasetRelease": "Foundation Foods 2026-04-30 (as displayed in third-party index; direct current FDC verification pending)",
+        "sourceUri": "https://nutrientgraph.com/foods/rice-brown-long-grain-unenriched-raw-fdc-2512380/",
+        "retrievedAt": "2026-11-13T02:50:00+05:30",
+        "licenseStatus": "open",
+        "licenseName": "USDA FoodData Central source data is public domain/CC0; secondary index presentation is not copied as a dataset"
+      },
+      "basis": {
+        "quantity": 100,
+        "unit": "g",
+        "description": "Per 100 g of the source-described food; exact edible-portion basis must be confirmed from the source record.",
+        "ediblePortionOnly": null
+      },
+      "preparationState": "raw",
+      "preparationDetails": null,
+      "nutrients": {
+        "energy_kcal": {
+          "nutrientName": "Energy",
+          "sourceNutrientId": null,
+          "value": 368.358,
+          "unit": "kcal",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Energy",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "protein": {
+          "nutrientName": "Protein",
+          "sourceNutrientId": null,
+          "value": 7.253,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Protein",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "total_fat": {
+          "nutrientName": "Total lipid (fat)",
+          "sourceNutrientId": null,
+          "value": 3.306,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Total lipid (fat)",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "carbohydrate_by_difference": {
+          "nutrientName": "Carbohydrate, by difference",
+          "sourceNutrientId": null,
+          "value": 76.688,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Carbohydrate, by difference",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        }
+      },
+      "reviewStatus": "needs_review",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "nutrientCompositionId": "usda_fdc_banana_raw",
+      "ingredientId": "banana",
+      "source": {
+        "provider": "USDA_FDC",
+        "externalFoodId": "1105314",
+        "description": "Bananas, ripe and slightly ripe, raw; Secondary index page attributes these values to USDA FDC 1105314; directly verify against official FDC API or October 2026 download before approval.",
+        "dataType": "Foundation Foods",
+        "datasetRelease": "Foundation Foods 2026-04-30 (as displayed in third-party index; direct current FDC verification pending)",
+        "sourceUri": "https://nutrientgraph.com/foods/bananas-ripe-and-slightly-ripe-raw-fdc-1105314/",
+        "retrievedAt": "2026-11-13T02:50:00+05:30",
+        "licenseStatus": "open",
+        "licenseName": "USDA FoodData Central source data is public domain/CC0; secondary index presentation is not copied as a dataset"
+      },
+      "basis": {
+        "quantity": 100,
+        "unit": "g",
+        "description": "Per 100 g of the source-described food; exact edible-portion basis must be confirmed from the source record.",
+        "ediblePortionOnly": null
+      },
+      "preparationState": "raw",
+      "preparationDetails": null,
+      "nutrients": {
+        "energy_kcal": {
+          "nutrientName": "Energy",
+          "sourceNutrientId": null,
+          "value": 97,
+          "unit": "kcal",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Energy",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "protein": {
+          "nutrientName": "Protein",
+          "sourceNutrientId": null,
+          "value": 0.74,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Protein",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "total_fat": {
+          "nutrientName": "Total lipid (fat)",
+          "sourceNutrientId": null,
+          "value": 0.29,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Total lipid (fat)",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "carbohydrate_by_difference": {
+          "nutrientName": "Carbohydrate, by difference",
+          "sourceNutrientId": null,
+          "value": 23,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Carbohydrate, by difference",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        }
+      },
+      "reviewStatus": "needs_review",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "nutrientCompositionId": "usda_fdc_broccoli_raw",
+      "ingredientId": "broccoli",
+      "source": {
+        "provider": "USDA_FDC",
+        "externalFoodId": "747447",
+        "description": "Broccoli, raw; Secondary index page attributes these values to USDA FDC 747447; directly verify against official FDC API or October 2026 download before approval.",
+        "dataType": "Foundation Foods",
+        "datasetRelease": "Foundation Foods 2026-04-30 (as displayed in third-party index; direct current FDC verification pending)",
+        "sourceUri": "https://nutrientgraph.com/foods/broccoli-raw-fdc-747447/",
+        "retrievedAt": "2026-11-13T02:50:00+05:30",
+        "licenseStatus": "open",
+        "licenseName": "USDA FoodData Central source data is public domain/CC0; secondary index presentation is not copied as a dataset"
+      },
+      "basis": {
+        "quantity": 100,
+        "unit": "g",
+        "description": "Per 100 g of the source-described food; exact edible-portion basis must be confirmed from the source record.",
+        "ediblePortionOnly": null
+      },
+      "preparationState": "raw",
+      "preparationDetails": null,
+      "nutrients": {
+        "energy_kcal": {
+          "nutrientName": "Energy",
+          "sourceNutrientId": null,
+          "value": 31,
+          "unit": "kcal",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Energy",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "protein": {
+          "nutrientName": "Protein",
+          "sourceNutrientId": null,
+          "value": 2.57,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Protein",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "total_fat": {
+          "nutrientName": "Total lipid (fat)",
+          "sourceNutrientId": null,
+          "value": 0.34,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Total lipid (fat)",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "carbohydrate_by_difference": {
+          "nutrientName": "Carbohydrate, by difference",
+          "sourceNutrientId": null,
+          "value": 6.27,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Carbohydrate, by difference",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        }
+      },
+      "reviewStatus": "needs_review",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "nutrientCompositionId": "usda_fdc_dates_deglet_noor",
+      "ingredientId": "dates_deglet_noor",
+      "source": {
+        "provider": "USDA_FDC",
+        "externalFoodId": "171726",
+        "description": "Dates, Deglet Noor; Secondary index page attributes these values to USDA FDC 171726; directly verify against official FDC API/download before approval.",
+        "dataType": "SR Legacy",
+        "datasetRelease": "SR Legacy 2018-04 (as displayed in third-party index; direct current FDC verification pending)",
+        "sourceUri": "https://nutrientgraph.com/foods/dates-deglet-noor-fdc-171726/",
+        "retrievedAt": "2026-11-13T02:50:00+05:30",
+        "licenseStatus": "open",
+        "licenseName": "USDA FoodData Central source data is public domain/CC0; secondary index presentation is not copied as a dataset"
+      },
+      "basis": {
+        "quantity": 100,
+        "unit": "g",
+        "description": "Per 100 g of the source-described food; exact edible-portion basis must be confirmed from the source record.",
+        "ediblePortionOnly": null
+      },
+      "preparationState": "as_sold",
+      "preparationDetails": null,
+      "nutrients": {
+        "energy_kcal": {
+          "nutrientName": "Energy",
+          "sourceNutrientId": null,
+          "value": 282,
+          "unit": "kcal",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Energy",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "protein": {
+          "nutrientName": "Protein",
+          "sourceNutrientId": null,
+          "value": 2.45,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Protein",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "total_fat": {
+          "nutrientName": "Total lipid (fat)",
+          "sourceNutrientId": null,
+          "value": 0.39,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Total lipid (fat)",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "carbohydrate_by_difference": {
+          "nutrientName": "Carbohydrate, by difference",
+          "sourceNutrientId": null,
+          "value": 75.03,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Carbohydrate, by difference",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        }
+      },
+      "reviewStatus": "needs_review",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "nutrientCompositionId": "usda_fdc_tomato_raw",
+      "ingredientId": "tomato",
+      "source": {
+        "provider": "USDA_FDC",
+        "externalFoodId": "170457",
+        "description": "Tomatoes, red, ripe, raw, year round average; Secondary index page attributes these values to USDA FDC 170457; directly verify against official FDC API/download before approval.",
+        "dataType": "SR Legacy",
+        "datasetRelease": "SR Legacy 2018-04 (as displayed in third-party index; direct current FDC verification pending)",
+        "sourceUri": "https://nutrientgraph.com/foods/tomatoes-red-ripe-raw-year-round-average-fdc-170457/",
+        "retrievedAt": "2026-11-13T02:50:00+05:30",
+        "licenseStatus": "open",
+        "licenseName": "USDA FoodData Central source data is public domain/CC0; secondary index presentation is not copied as a dataset"
+      },
+      "basis": {
+        "quantity": 100,
+        "unit": "g",
+        "description": "Per 100 g of the source-described food; exact edible-portion basis must be confirmed from the source record.",
+        "ediblePortionOnly": null
+      },
+      "preparationState": "raw",
+      "preparationDetails": null,
+      "nutrients": {
+        "energy_kcal": {
+          "nutrientName": "Energy",
+          "sourceNutrientId": null,
+          "value": 18,
+          "unit": "kcal",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Energy",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "protein": {
+          "nutrientName": "Protein",
+          "sourceNutrientId": null,
+          "value": 0.88,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Protein",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "total_fat": {
+          "nutrientName": "Total lipid (fat)",
+          "sourceNutrientId": null,
+          "value": 0.2,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Total lipid (fat)",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "carbohydrate_by_difference": {
+          "nutrientName": "Carbohydrate, by difference",
+          "sourceNutrientId": null,
+          "value": 3.89,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Carbohydrate, by difference",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        }
+      },
+      "reviewStatus": "needs_review",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "nutrientCompositionId": "usda_fdc_olive_oil",
+      "ingredientId": "olive_oil",
+      "source": {
+        "provider": "USDA_FDC",
+        "externalFoodId": "2710186",
+        "description": "Olive oil; Secondary index page attributes these values to USDA FDC 2710186; verify exact food record and nutrient values against the official FNDDS release/API before approval.",
+        "dataType": "FNDDS",
+        "datasetRelease": "FNDDS 2021-2023 release 2024-10-31 (as displayed in third-party index; direct verification pending)",
+        "sourceUri": "https://nutrientgraph.com/foods/olive-oil-fdc-2710186/",
+        "retrievedAt": "2026-11-13T02:50:00+05:30",
+        "licenseStatus": "open",
+        "licenseName": "USDA FoodData Central source data is public domain/CC0; secondary index presentation is not copied as a dataset"
+      },
+      "basis": {
+        "quantity": 100,
+        "unit": "g",
+        "description": "Per 100 g of the source-described food; exact edible-portion basis must be confirmed from the source record.",
+        "ediblePortionOnly": null
+      },
+      "preparationState": "as_sold",
+      "preparationDetails": null,
+      "nutrients": {
+        "energy_kcal": {
+          "nutrientName": "Energy",
+          "sourceNutrientId": null,
+          "value": 900,
+          "unit": "kcal",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Energy",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "protein": {
+          "nutrientName": "Protein",
+          "sourceNutrientId": null,
+          "value": 0,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Protein",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "total_fat": {
+          "nutrientName": "Total lipid (fat)",
+          "sourceNutrientId": null,
+          "value": 100,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Total lipid (fat)",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "carbohydrate_by_difference": {
+          "nutrientName": "Carbohydrate, by difference",
+          "sourceNutrientId": null,
+          "value": 0,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Carbohydrate, by difference",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        }
+      },
+      "reviewStatus": "needs_review",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "nutrientCompositionId": "usda_fdc_granulated_sugar",
+      "ingredientId": "granulated_sugar",
+      "source": {
+        "provider": "USDA_FDC",
+        "externalFoodId": "746784",
+        "description": "Sugars, granulated; Secondary index page attributes these values to USDA FDC 746784; directly verify against official FDC API or October 2026 download before approval.",
+        "dataType": "Foundation Foods",
+        "datasetRelease": "Foundation Foods 2026-04-30 (as displayed in third-party index; direct current FDC verification pending)",
+        "sourceUri": "https://nutrientgraph.com/foods/sugars-granulated-fdc-746784/",
+        "retrievedAt": "2026-11-13T02:50:00+05:30",
+        "licenseStatus": "open",
+        "licenseName": "USDA FoodData Central source data is public domain/CC0; secondary index presentation is not copied as a dataset"
+      },
+      "basis": {
+        "quantity": 100,
+        "unit": "g",
+        "description": "Per 100 g of the source-described food; exact edible-portion basis must be confirmed from the source record.",
+        "ediblePortionOnly": null
+      },
+      "preparationState": "as_sold",
+      "preparationDetails": null,
+      "nutrients": {
+        "energy_kcal": {
+          "nutrientName": "Energy",
+          "sourceNutrientId": null,
+          "value": 385,
+          "unit": "kcal",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Energy",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "protein": {
+          "nutrientName": "Protein",
+          "sourceNutrientId": null,
+          "value": 0,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Protein",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "total_fat": {
+          "nutrientName": "Total lipid (fat)",
+          "sourceNutrientId": null,
+          "value": 0.32,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Total lipid (fat)",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "carbohydrate_by_difference": {
+          "nutrientName": "Carbohydrate, by difference",
+          "sourceNutrientId": null,
+          "value": 99.6,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Carbohydrate, by difference",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        }
+      },
+      "reviewStatus": "needs_review",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "nutrientCompositionId": "usda_fdc_whole_milk",
+      "ingredientId": "whole_milk",
+      "source": {
+        "provider": "USDA_FDC",
+        "externalFoodId": "746782",
+        "description": "Milk, whole, 3.25% milkfat, with added vitamin D; Secondary index page attributes these values to USDA FDC 746782; directly verify against official FDC API or October 2026 download before approval.",
+        "dataType": "Foundation Foods",
+        "datasetRelease": "Foundation Foods 2026-04-30 (as displayed in third-party index; direct current FDC verification pending)",
+        "sourceUri": "https://nutrientgraph.com/foods/milk-whole-3-25-pct-milkfat-with-added-vitamin-d-fdc-746782/",
+        "retrievedAt": "2026-11-13T02:50:00+05:30",
+        "licenseStatus": "open",
+        "licenseName": "USDA FoodData Central source data is public domain/CC0; secondary index presentation is not copied as a dataset"
+      },
+      "basis": {
+        "quantity": 100,
+        "unit": "g",
+        "description": "Per 100 g of the source-described food; exact edible-portion basis must be confirmed from the source record.",
+        "ediblePortionOnly": null
+      },
+      "preparationState": "as_sold",
+      "preparationDetails": null,
+      "nutrients": {
+        "energy_kcal": {
+          "nutrientName": "Energy",
+          "sourceNutrientId": null,
+          "value": 60,
+          "unit": "kcal",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Energy",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "protein": {
+          "nutrientName": "Protein",
+          "sourceNutrientId": null,
+          "value": 3.27,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Protein",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "total_fat": {
+          "nutrientName": "Total lipid (fat)",
+          "sourceNutrientId": null,
+          "value": 3.2,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Total lipid (fat)",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "carbohydrate_by_difference": {
+          "nutrientName": "Carbohydrate, by difference",
+          "sourceNutrientId": null,
+          "value": 4.63,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Carbohydrate, by difference",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        }
+      },
+      "reviewStatus": "needs_review",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "nutrientCompositionId": "usda_fdc_corn_masa_flour",
+      "ingredientId": "corn_masa_flour",
+      "source": {
+        "provider": "USDA_FDC",
+        "externalFoodId": "169696",
+        "description": "Corn flour, masa, unenriched, white; Secondary index page attributes these values to USDA FDC 169696; directly verify against official FDC API/download before approval.",
+        "dataType": "SR Legacy",
+        "datasetRelease": "SR Legacy 2018-04 (as displayed in third-party index; direct current FDC verification pending)",
+        "sourceUri": "https://nutrientgraph.com/foods/corn-flour-masa-unenriched-white-fdc-169696/",
+        "retrievedAt": "2026-11-13T02:50:00+05:30",
+        "licenseStatus": "open",
+        "licenseName": "USDA FoodData Central source data is public domain/CC0; secondary index presentation is not copied as a dataset"
+      },
+      "basis": {
+        "quantity": 100,
+        "unit": "g",
+        "description": "Per 100 g of the source-described food; exact edible-portion basis must be confirmed from the source record.",
+        "ediblePortionOnly": null
+      },
+      "preparationState": "as_sold",
+      "preparationDetails": null,
+      "nutrients": {
+        "energy_kcal": {
+          "nutrientName": "Energy",
+          "sourceNutrientId": null,
+          "value": 363,
+          "unit": "kcal",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Energy",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "protein": {
+          "nutrientName": "Protein",
+          "sourceNutrientId": null,
+          "value": 8.46,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Protein",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "total_fat": {
+          "nutrientName": "Total lipid (fat)",
+          "sourceNutrientId": null,
+          "value": 3.69,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Total lipid (fat)",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "carbohydrate_by_difference": {
+          "nutrientName": "Carbohydrate, by difference",
+          "sourceNutrientId": null,
+          "value": 76.59,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Carbohydrate, by difference",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        }
+      },
+      "reviewStatus": "needs_review",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "nutrientCompositionId": "usda_fdc_potato_raw",
+      "ingredientId": "potato",
+      "source": {
+        "provider": "USDA_FDC",
+        "externalFoodId": "170026",
+        "description": "Potatoes, flesh and skin, raw; Secondary index page attributes these values to USDA FDC 170026; directly verify against official FDC API/download before approval.",
+        "dataType": "SR Legacy",
+        "datasetRelease": "SR Legacy 2018-04 (as displayed in third-party index; direct current FDC verification pending)",
+        "sourceUri": "https://nutrientgraph.com/foods/potatoes-flesh-and-skin-raw-fdc-170026/",
+        "retrievedAt": "2026-11-13T02:50:00+05:30",
+        "licenseStatus": "open",
+        "licenseName": "USDA FoodData Central source data is public domain/CC0; secondary index presentation is not copied as a dataset"
+      },
+      "basis": {
+        "quantity": 100,
+        "unit": "g",
+        "description": "Per 100 g of the source-described food; exact edible-portion basis must be confirmed from the source record.",
+        "ediblePortionOnly": null
+      },
+      "preparationState": "raw",
+      "preparationDetails": null,
+      "nutrients": {
+        "energy_kcal": {
+          "nutrientName": "Energy",
+          "sourceNutrientId": null,
+          "value": 77,
+          "unit": "kcal",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Energy",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "protein": {
+          "nutrientName": "Protein",
+          "sourceNutrientId": null,
+          "value": 2.05,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Protein",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "total_fat": {
+          "nutrientName": "Total lipid (fat)",
+          "sourceNutrientId": null,
+          "value": 0.09,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Total lipid (fat)",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "carbohydrate_by_difference": {
+          "nutrientName": "Carbohydrate, by difference",
+          "sourceNutrientId": null,
+          "value": 17.49,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Carbohydrate, by difference",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        }
+      },
+      "reviewStatus": "needs_review",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "nutrientCompositionId": "usda_fdc_carrot_raw",
+      "ingredientId": "carrot",
+      "source": {
+        "provider": "USDA_FDC",
+        "externalFoodId": "2258586",
+        "description": "Carrots, mature, raw; Secondary index page attributes these values to USDA FDC 2258586; directly verify against official FDC API or October 2026 download before approval.",
+        "dataType": "Foundation Foods",
+        "datasetRelease": "Foundation Foods 2026-04-30 (as displayed in third-party index; direct current FDC verification pending)",
+        "sourceUri": "https://nutrientgraph.com/foods/carrots-mature-raw-fdc-2258586/",
+        "retrievedAt": "2026-11-13T02:50:00+05:30",
+        "licenseStatus": "open",
+        "licenseName": "USDA FoodData Central source data is public domain/CC0; secondary index presentation is not copied as a dataset"
+      },
+      "basis": {
+        "quantity": 100,
+        "unit": "g",
+        "description": "Per 100 g of the source-described food; exact edible-portion basis must be confirmed from the source record.",
+        "ediblePortionOnly": null
+      },
+      "preparationState": "raw",
+      "preparationDetails": null,
+      "nutrients": {
+        "energy_kcal": {
+          "nutrientName": "Energy",
+          "sourceNutrientId": null,
+          "value": 44.979,
+          "unit": "kcal",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Energy",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "protein": {
+          "nutrientName": "Protein",
+          "sourceNutrientId": null,
+          "value": 0.941,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Protein",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "total_fat": {
+          "nutrientName": "Total lipid (fat)",
+          "sourceNutrientId": null,
+          "value": 0.351,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Total lipid (fat)",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "carbohydrate_by_difference": {
+          "nutrientName": "Carbohydrate, by difference",
+          "sourceNutrientId": null,
+          "value": 10.268,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Carbohydrate, by difference",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        }
+      },
+      "reviewStatus": "needs_review",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "nutrientCompositionId": "usda_fdc_coconut_raw",
+      "ingredientId": "coconut_meat",
+      "source": {
+        "provider": "USDA_FDC",
+        "externalFoodId": "170169",
+        "description": "Nuts, coconut meat, raw; Secondary index page attributes these values to USDA FDC 170169; directly verify against official FDC API/download before approval.",
+        "dataType": "SR Legacy",
+        "datasetRelease": "SR Legacy 2018-04 (as displayed in third-party index; direct current FDC verification pending)",
+        "sourceUri": "https://nutrientgraph.com/foods/nuts-coconut-meat-raw-fdc-170169/",
+        "retrievedAt": "2026-11-13T02:50:00+05:30",
+        "licenseStatus": "open",
+        "licenseName": "USDA FoodData Central source data is public domain/CC0; secondary index presentation is not copied as a dataset"
+      },
+      "basis": {
+        "quantity": 100,
+        "unit": "g",
+        "description": "Per 100 g of the source-described food; exact edible-portion basis must be confirmed from the source record.",
+        "ediblePortionOnly": null
+      },
+      "preparationState": "raw",
+      "preparationDetails": null,
+      "nutrients": {
+        "energy_kcal": {
+          "nutrientName": "Energy",
+          "sourceNutrientId": null,
+          "value": 354,
+          "unit": "kcal",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Energy",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "protein": {
+          "nutrientName": "Protein",
+          "sourceNutrientId": null,
+          "value": 3.33,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Protein",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "total_fat": {
+          "nutrientName": "Total lipid (fat)",
+          "sourceNutrientId": null,
+          "value": 33.49,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Total lipid (fat)",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "carbohydrate_by_difference": {
+          "nutrientName": "Carbohydrate, by difference",
+          "sourceNutrientId": null,
+          "value": 15.23,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Carbohydrate, by difference",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        }
+      },
+      "reviewStatus": "needs_review",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "nutrientCompositionId": "usda_fdc_avocado_raw",
+      "ingredientId": "avocado",
+      "source": {
+        "provider": "USDA_FDC",
+        "externalFoodId": "171705",
+        "description": "Avocados, raw, all commercial varieties; Secondary index page attributes these values to USDA FDC 171705; directly verify against official FDC API/download before approval.",
+        "dataType": "SR Legacy",
+        "datasetRelease": "SR Legacy 2018-04 (as displayed in third-party index; direct current FDC verification pending)",
+        "sourceUri": "https://nutrientgraph.com/foods/avocados-raw-all-commercial-varieties-fdc-171705/",
+        "retrievedAt": "2026-11-13T02:50:00+05:30",
+        "licenseStatus": "open",
+        "licenseName": "USDA FoodData Central source data is public domain/CC0; secondary index presentation is not copied as a dataset"
+      },
+      "basis": {
+        "quantity": 100,
+        "unit": "g",
+        "description": "Per 100 g of the source-described food; exact edible-portion basis must be confirmed from the source record.",
+        "ediblePortionOnly": null
+      },
+      "preparationState": "raw",
+      "preparationDetails": null,
+      "nutrients": {
+        "energy_kcal": {
+          "nutrientName": "Energy",
+          "sourceNutrientId": null,
+          "value": 160,
+          "unit": "kcal",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Energy",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "protein": {
+          "nutrientName": "Protein",
+          "sourceNutrientId": null,
+          "value": 2,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Protein",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "total_fat": {
+          "nutrientName": "Total lipid (fat)",
+          "sourceNutrientId": null,
+          "value": 14.66,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Total lipid (fat)",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "carbohydrate_by_difference": {
+          "nutrientName": "Carbohydrate, by difference",
+          "sourceNutrientId": null,
+          "value": 8.53,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Carbohydrate, by difference",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        }
+      },
+      "reviewStatus": "needs_review",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "nutrientCompositionId": "usda_fdc_butter_salted",
+      "ingredientId": "butter_salted",
+      "source": {
+        "provider": "USDA_FDC",
+        "externalFoodId": "173410",
+        "description": "Butter, salted; Secondary index page attributes these values to USDA FDC 173410; directly verify against official FDC API/download before approval.",
+        "dataType": "SR Legacy",
+        "datasetRelease": "SR Legacy 2018-04 (as displayed in third-party index; direct current FDC verification pending)",
+        "sourceUri": "https://nutrientgraph.com/foods/butter-salted-fdc-173410/",
+        "retrievedAt": "2026-11-13T02:50:00+05:30",
+        "licenseStatus": "open",
+        "licenseName": "USDA FoodData Central source data is public domain/CC0; secondary index presentation is not copied as a dataset"
+      },
+      "basis": {
+        "quantity": 100,
+        "unit": "g",
+        "description": "Per 100 g of the source-described food; exact edible-portion basis must be confirmed from the source record.",
+        "ediblePortionOnly": null
+      },
+      "preparationState": "as_sold",
+      "preparationDetails": null,
+      "nutrients": {
+        "energy_kcal": {
+          "nutrientName": "Energy",
+          "sourceNutrientId": null,
+          "value": 717,
+          "unit": "kcal",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Energy",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "protein": {
+          "nutrientName": "Protein",
+          "sourceNutrientId": null,
+          "value": 0.85,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Protein",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "total_fat": {
+          "nutrientName": "Total lipid (fat)",
+          "sourceNutrientId": null,
+          "value": 81.11,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Total lipid (fat)",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "carbohydrate_by_difference": {
+          "nutrientName": "Carbohydrate, by difference",
+          "sourceNutrientId": null,
+          "value": 0.06,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Carbohydrate, by difference",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        }
+      },
+      "reviewStatus": "needs_review",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "nutrientCompositionId": "usda_fdc_honey",
+      "ingredientId": "honey",
+      "source": {
+        "provider": "USDA_FDC",
+        "externalFoodId": "169640",
+        "description": "Honey; Secondary index page attributes these values to USDA FDC 169640; directly verify against official FDC API/download before approval.",
+        "dataType": "SR Legacy",
+        "datasetRelease": "SR Legacy 2018-04 (as displayed in third-party index; direct current FDC verification pending)",
+        "sourceUri": "https://nutrientgraph.com/foods/honey-fdc-169640/",
+        "retrievedAt": "2026-11-13T02:50:00+05:30",
+        "licenseStatus": "open",
+        "licenseName": "USDA FoodData Central source data is public domain/CC0; secondary index presentation is not copied as a dataset"
+      },
+      "basis": {
+        "quantity": 100,
+        "unit": "g",
+        "description": "Per 100 g of the source-described food; exact edible-portion basis must be confirmed from the source record.",
+        "ediblePortionOnly": null
+      },
+      "preparationState": "as_sold",
+      "preparationDetails": null,
+      "nutrients": {
+        "energy_kcal": {
+          "nutrientName": "Energy",
+          "sourceNutrientId": null,
+          "value": 304,
+          "unit": "kcal",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Energy",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "protein": {
+          "nutrientName": "Protein",
+          "sourceNutrientId": null,
+          "value": 0.3,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Protein",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "total_fat": {
+          "nutrientName": "Total lipid (fat)",
+          "sourceNutrientId": null,
+          "value": 0,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Total lipid (fat)",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "carbohydrate_by_difference": {
+          "nutrientName": "Carbohydrate, by difference",
+          "sourceNutrientId": null,
+          "value": 82.4,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Carbohydrate, by difference",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        }
+      },
+      "reviewStatus": "needs_review",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "nutrientCompositionId": "usda_fdc_apple_raw",
+      "ingredientId": "apple_with_skin",
+      "source": {
+        "provider": "USDA_FDC",
+        "externalFoodId": "171688",
+        "description": "Apples, raw, with skin; Secondary index page attributes these values to USDA FDC 171688; directly verify against official FDC API/download before approval.",
+        "dataType": "SR Legacy",
+        "datasetRelease": "SR Legacy 2018-04 (as displayed in third-party index; direct current FDC verification pending)",
+        "sourceUri": "https://nutrientgraph.com/fr/aliments/pommes-crues-avec-peau-inclut-les-aliments-du-programme-de-distribution-alimentaire-de-fdc-171688/",
+        "retrievedAt": "2026-11-13T02:50:00+05:30",
+        "licenseStatus": "open",
+        "licenseName": "USDA FoodData Central source data is public domain/CC0; secondary index presentation is not copied as a dataset"
+      },
+      "basis": {
+        "quantity": 100,
+        "unit": "g",
+        "description": "Per 100 g of the source-described food; exact edible-portion basis must be confirmed from the source record.",
+        "ediblePortionOnly": null
+      },
+      "preparationState": "raw",
+      "preparationDetails": null,
+      "nutrients": {
+        "energy_kcal": {
+          "nutrientName": "Energy",
+          "sourceNutrientId": null,
+          "value": 52,
+          "unit": "kcal",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Energy",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "protein": {
+          "nutrientName": "Protein",
+          "sourceNutrientId": null,
+          "value": 0.26,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Protein",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "total_fat": {
+          "nutrientName": "Total lipid (fat)",
+          "sourceNutrientId": null,
+          "value": 0.17,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Total lipid (fat)",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "carbohydrate_by_difference": {
+          "nutrientName": "Carbohydrate, by difference",
+          "sourceNutrientId": null,
+          "value": 13.81,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Carbohydrate, by difference",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        }
+      },
+      "reviewStatus": "needs_review",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "nutrientCompositionId": "usda_fdc_bread_flour",
+      "ingredientId": "bread_flour_enriched",
+      "source": {
+        "provider": "USDA_FDC",
+        "externalFoodId": "790146",
+        "description": "Bread flour, white, enriched, unbleached; Secondary index page attributes these values to USDA FDC 790146; directly verify against official FDC API or October 2026 download before approval.",
+        "dataType": "Foundation Foods",
+        "datasetRelease": "Foundation Foods 2026-04-30 (as displayed in third-party index; direct current FDC verification pending)",
+        "sourceUri": "https://nutrientgraph.com/foods/flour-bread-white-enriched-unbleached-fdc-790146/",
+        "retrievedAt": "2026-11-13T02:50:00+05:30",
+        "licenseStatus": "open",
+        "licenseName": "USDA FoodData Central source data is public domain/CC0; secondary index presentation is not copied as a dataset"
+      },
+      "basis": {
+        "quantity": 100,
+        "unit": "g",
+        "description": "Per 100 g of the source-described food; exact edible-portion basis must be confirmed from the source record.",
+        "ediblePortionOnly": null
+      },
+      "preparationState": "as_sold",
+      "preparationDetails": null,
+      "nutrients": {
+        "energy_kcal": {
+          "nutrientName": "Energy",
+          "sourceNutrientId": null,
+          "value": 363,
+          "unit": "kcal",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Energy",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "protein": {
+          "nutrientName": "Protein",
+          "sourceNutrientId": null,
+          "value": 14.3,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Protein",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "total_fat": {
+          "nutrientName": "Total lipid (fat)",
+          "sourceNutrientId": null,
+          "value": 1.65,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Total lipid (fat)",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "carbohydrate_by_difference": {
+          "nutrientName": "Carbohydrate, by difference",
+          "sourceNutrientId": null,
+          "value": 72.8,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Carbohydrate, by difference",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        }
+      },
+      "reviewStatus": "needs_review",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "nutrientCompositionId": "usda_fdc_onions_raw_survey",
+      "ingredientId": "onion",
+      "source": {
+        "provider": "USDA_FDC",
+        "externalFoodId": "2709795",
+        "description": "Onions, raw; Secondary index page attributes these values to USDA FDC 2709795; verify exact food record and values in official FNDDS download/API.",
+        "dataType": "FNDDS",
+        "datasetRelease": "FNDDS 2021-2023 release 2024-10-31 (as displayed in third-party index; direct verification pending)",
+        "sourceUri": "https://nutrientgraph.com/foods/onions-raw-fdc-2709795/",
+        "retrievedAt": "2026-11-13T02:50:00+05:30",
+        "licenseStatus": "open",
+        "licenseName": "USDA FoodData Central source data is public domain/CC0; secondary index presentation is not copied as a dataset"
+      },
+      "basis": {
+        "quantity": 100,
+        "unit": "g",
+        "description": "Per 100 g of the source-described food; exact edible-portion basis must be confirmed from the source record.",
+        "ediblePortionOnly": null
+      },
+      "preparationState": "raw",
+      "preparationDetails": null,
+      "nutrients": {
+        "energy_kcal": {
+          "nutrientName": "Energy",
+          "sourceNutrientId": null,
+          "value": 38,
+          "unit": "kcal",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Energy",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "protein": {
+          "nutrientName": "Protein",
+          "sourceNutrientId": null,
+          "value": 0.86,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Protein",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "total_fat": {
+          "nutrientName": "Total lipid (fat)",
+          "sourceNutrientId": null,
+          "value": 0.08,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Total lipid (fat)",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "carbohydrate_by_difference": {
+          "nutrientName": "Carbohydrate, by difference",
+          "sourceNutrientId": null,
+          "value": 8.46,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Carbohydrate, by difference",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        }
+      },
+      "reviewStatus": "needs_review",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "nutrientCompositionId": "usda_fdc_garlic_raw",
+      "ingredientId": "garlic",
+      "source": {
+        "provider": "USDA_FDC",
+        "externalFoodId": "1104647",
+        "description": "Garlic, raw; Secondary index page attributes these values to USDA FDC 1104647; directly verify against official FDC API or October 2026 download before approval.",
+        "dataType": "Foundation Foods",
+        "datasetRelease": "Foundation Foods 2026-04-30 (as displayed in third-party index; direct current FDC verification pending)",
+        "sourceUri": "https://nutrientgraph.com/foods/garlic-raw-fdc-1104647/",
+        "retrievedAt": "2026-11-13T02:50:00+05:30",
+        "licenseStatus": "open",
+        "licenseName": "USDA FoodData Central source data is public domain/CC0; secondary index presentation is not copied as a dataset"
+      },
+      "basis": {
+        "quantity": 100,
+        "unit": "g",
+        "description": "Per 100 g of the source-described food; exact edible-portion basis must be confirmed from the source record.",
+        "ediblePortionOnly": null
+      },
+      "preparationState": "raw",
+      "preparationDetails": null,
+      "nutrients": {
+        "energy_kcal": {
+          "nutrientName": "Energy",
+          "sourceNutrientId": null,
+          "value": 143,
+          "unit": "kcal",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Energy",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "protein": {
+          "nutrientName": "Protein",
+          "sourceNutrientId": null,
+          "value": 6.62,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Protein",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "total_fat": {
+          "nutrientName": "Total lipid (fat)",
+          "sourceNutrientId": null,
+          "value": 0.38,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Total lipid (fat)",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "carbohydrate_by_difference": {
+          "nutrientName": "Carbohydrate, by difference",
+          "sourceNutrientId": null,
+          "value": 28.2,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Carbohydrate, by difference",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        }
+      },
+      "reviewStatus": "needs_review",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "nutrientCompositionId": "usda_fdc_flaxseed_ground",
+      "ingredientId": "flaxseed",
+      "source": {
+        "provider": "USDA_FDC",
+        "externalFoodId": "2262075",
+        "description": "Flaxseed, ground; Secondary index page attributes these values to USDA FDC 2262075; directly verify against official FDC API or October 2026 download before approval.",
+        "dataType": "Foundation Foods",
+        "datasetRelease": "Foundation Foods 2026-04-30 (as displayed in third-party index; direct current FDC verification pending)",
+        "sourceUri": "https://nutrientgraph.com/foods/flaxseed-ground-fdc-2262075/",
+        "retrievedAt": "2026-11-13T02:50:00+05:30",
+        "licenseStatus": "open",
+        "licenseName": "USDA FoodData Central source data is public domain/CC0; secondary index presentation is not copied as a dataset"
+      },
+      "basis": {
+        "quantity": 100,
+        "unit": "g",
+        "description": "Per 100 g of the source-described food; exact edible-portion basis must be confirmed from the source record.",
+        "ediblePortionOnly": null
+      },
+      "preparationState": "other",
+      "preparationDetails": "Ground form",
+      "nutrients": {
+        "energy_kcal": {
+          "nutrientName": "Energy",
+          "sourceNutrientId": null,
+          "value": 514.443,
+          "unit": "kcal",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Energy",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "protein": {
+          "nutrientName": "Protein",
+          "sourceNutrientId": null,
+          "value": 18.036,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Protein",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "total_fat": {
+          "nutrientName": "Total lipid (fat)",
+          "sourceNutrientId": null,
+          "value": 37.28,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Total lipid (fat)",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "carbohydrate_by_difference": {
+          "nutrientName": "Carbohydrate, by difference",
+          "sourceNutrientId": null,
+          "value": 34.355,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Carbohydrate, by difference",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        }
+      },
+      "reviewStatus": "needs_review",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "nutrientCompositionId": "usda_fdc_chia_raw",
+      "ingredientId": "chia_seed",
+      "source": {
+        "provider": "USDA_FDC",
+        "externalFoodId": "2710819",
+        "description": "Chia seeds, dry, raw; Secondary index page attributes these values to USDA FDC 2710819; directly verify against official FDC API or October 2026 download before approval.",
+        "dataType": "Foundation Foods",
+        "datasetRelease": "Foundation Foods 2026-04-30 (as displayed in third-party index; direct current FDC verification pending)",
+        "sourceUri": "https://nutrientgraph.com/foods/chia-seeds-dry-raw-fdc-2710819/",
+        "retrievedAt": "2026-11-13T02:50:00+05:30",
+        "licenseStatus": "open",
+        "licenseName": "USDA FoodData Central source data is public domain/CC0; secondary index presentation is not copied as a dataset"
+      },
+      "basis": {
+        "quantity": 100,
+        "unit": "g",
+        "description": "Per 100 g of the source-described food; exact edible-portion basis must be confirmed from the source record.",
+        "ediblePortionOnly": null
+      },
+      "preparationState": "raw",
+      "preparationDetails": null,
+      "nutrients": {
+        "energy_kcal": {
+          "nutrientName": "Energy",
+          "sourceNutrientId": null,
+          "value": 490.096,
+          "unit": "kcal",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Energy",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "protein": {
+          "nutrientName": "Protein",
+          "sourceNutrientId": null,
+          "value": 17.013,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Protein",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "total_fat": {
+          "nutrientName": "Total lipid (fat)",
+          "sourceNutrientId": null,
+          "value": 32.89,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Total lipid (fat)",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "carbohydrate_by_difference": {
+          "nutrientName": "Carbohydrate, by difference",
+          "sourceNutrientId": null,
+          "value": 38.273,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Carbohydrate, by difference",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        }
+      },
+      "reviewStatus": "needs_review",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "nutrientCompositionId": "usda_fdc_walnuts_raw",
+      "ingredientId": "walnut",
+      "source": {
+        "provider": "USDA_FDC",
+        "externalFoodId": "2346394",
+        "description": "Nuts, walnuts, English, halves, raw; Secondary index page attributes these values to USDA FDC 2346394; directly verify against official FDC API or October 2026 download before approval.",
+        "dataType": "Foundation Foods",
+        "datasetRelease": "Foundation Foods 2026-04-30 (as displayed in third-party index; direct current FDC verification pending)",
+        "sourceUri": "https://nutrientgraph.com/foods/nuts-walnuts-english-halves-raw-fdc-2346394/",
+        "retrievedAt": "2026-11-13T02:50:00+05:30",
+        "licenseStatus": "open",
+        "licenseName": "USDA FoodData Central source data is public domain/CC0; secondary index presentation is not copied as a dataset"
+      },
+      "basis": {
+        "quantity": 100,
+        "unit": "g",
+        "description": "Per 100 g of the source-described food; exact edible-portion basis must be confirmed from the source record.",
+        "ediblePortionOnly": null
+      },
+      "preparationState": "raw",
+      "preparationDetails": null,
+      "nutrients": {
+        "energy_kcal": {
+          "nutrientName": "Energy",
+          "sourceNutrientId": null,
+          "value": 678.664,
+          "unit": "kcal",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Energy",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "protein": {
+          "nutrientName": "Protein",
+          "sourceNutrientId": null,
+          "value": 14.564,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Protein",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "total_fat": {
+          "nutrientName": "Total lipid (fat)",
+          "sourceNutrientId": null,
+          "value": 69.74,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Total lipid (fat)",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "carbohydrate_by_difference": {
+          "nutrientName": "Carbohydrate, by difference",
+          "sourceNutrientId": null,
+          "value": 10.91,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Carbohydrate, by difference",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        }
+      },
+      "reviewStatus": "needs_review",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "nutrientCompositionId": "usda_fdc_sweet_potato_raw",
+      "ingredientId": "sweet_potato",
+      "source": {
+        "provider": "USDA_FDC",
+        "externalFoodId": "168482",
+        "description": "Sweet potato, raw, unprepared; Secondary index page attributes these values to USDA FDC 168482; directly verify against official FDC API/download before approval.",
+        "dataType": "SR Legacy",
+        "datasetRelease": "SR Legacy 2018-04 (as displayed in third-party index; direct current FDC verification pending)",
+        "sourceUri": "https://nutrientgraph.com/foods/sweet-potato-raw-unprepared-includes-foods-for-usda-s-food-fdc-168482/",
+        "retrievedAt": "2026-11-13T02:50:00+05:30",
+        "licenseStatus": "open",
+        "licenseName": "USDA FoodData Central source data is public domain/CC0; secondary index presentation is not copied as a dataset"
+      },
+      "basis": {
+        "quantity": 100,
+        "unit": "g",
+        "description": "Per 100 g of the source-described food; exact edible-portion basis must be confirmed from the source record.",
+        "ediblePortionOnly": null
+      },
+      "preparationState": "raw",
+      "preparationDetails": null,
+      "nutrients": {
+        "energy_kcal": {
+          "nutrientName": "Energy",
+          "sourceNutrientId": null,
+          "value": 86,
+          "unit": "kcal",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Energy",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "protein": {
+          "nutrientName": "Protein",
+          "sourceNutrientId": null,
+          "value": 1.57,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Protein",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "total_fat": {
+          "nutrientName": "Total lipid (fat)",
+          "sourceNutrientId": null,
+          "value": 0.05,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Total lipid (fat)",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "carbohydrate_by_difference": {
+          "nutrientName": "Carbohydrate, by difference",
+          "sourceNutrientId": null,
+          "value": 20.12,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Carbohydrate, by difference",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        }
+      },
+      "reviewStatus": "needs_review",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "nutrientCompositionId": "usda_fdc_spinach_mature",
+      "ingredientId": "spinach",
+      "source": {
+        "provider": "USDA_FDC",
+        "externalFoodId": "1999633",
+        "description": "Spinach, mature; Secondary index page attributes these values to USDA FDC 1999633; directly verify against official FDC API or October 2026 download before approval.",
+        "dataType": "Foundation Foods",
+        "datasetRelease": "Foundation Foods 2026-04-30 (as displayed in third-party index; direct current FDC verification pending)",
+        "sourceUri": "https://nutrientgraph.com/foods/spinach-mature-fdc-1999633/",
+        "retrievedAt": "2026-11-13T02:50:00+05:30",
+        "licenseStatus": "open",
+        "licenseName": "USDA FoodData Central source data is public domain/CC0; secondary index presentation is not copied as a dataset"
+      },
+      "basis": {
+        "quantity": 100,
+        "unit": "g",
+        "description": "Per 100 g of the source-described food; exact edible-portion basis must be confirmed from the source record.",
+        "ediblePortionOnly": null
+      },
+      "preparationState": "raw",
+      "preparationDetails": null,
+      "nutrients": {
+        "energy_kcal": {
+          "nutrientName": "Energy",
+          "sourceNutrientId": null,
+          "value": 21.58,
+          "unit": "kcal",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Energy",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "protein": {
+          "nutrientName": "Protein",
+          "sourceNutrientId": null,
+          "value": 2.906,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Protein",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "total_fat": {
+          "nutrientName": "Total lipid (fat)",
+          "sourceNutrientId": null,
+          "value": 0.604,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Total lipid (fat)",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "carbohydrate_by_difference": {
+          "nutrientName": "Carbohydrate, by difference",
+          "sourceNutrientId": null,
+          "value": 2.641,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Carbohydrate, by difference",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        }
+      },
+      "reviewStatus": "needs_review",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "nutrientCompositionId": "usda_fdc_yogurt_greek_nonfat",
+      "ingredientId": "yogurt",
+      "source": {
+        "provider": "USDA_FDC",
+        "externalFoodId": "330137",
+        "description": "Yogurt, Greek, plain, nonfat; Secondary index page attributes these values to USDA FDC 330137; directly verify against official FDC API or October 2026 download before approval.",
+        "dataType": "Foundation Foods",
+        "datasetRelease": "Foundation Foods 2026-04-30 (as displayed in third-party index; direct current FDC verification pending)",
+        "sourceUri": "https://nutrientgraph.com/foods/yogurt-greek-plain-nonfat-fdc-330137/",
+        "retrievedAt": "2026-11-13T02:50:00+05:30",
+        "licenseStatus": "open",
+        "licenseName": "USDA FoodData Central source data is public domain/CC0; secondary index presentation is not copied as a dataset"
+      },
+      "basis": {
+        "quantity": 100,
+        "unit": "g",
+        "description": "Per 100 g of the source-described food; exact edible-portion basis must be confirmed from the source record.",
+        "ediblePortionOnly": null
+      },
+      "preparationState": "as_sold",
+      "preparationDetails": null,
+      "nutrients": {
+        "energy_kcal": {
+          "nutrientName": "Energy",
+          "sourceNutrientId": null,
+          "value": 61,
+          "unit": "kcal",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Energy",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "protein": {
+          "nutrientName": "Protein",
+          "sourceNutrientId": null,
+          "value": 10.3,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Protein",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "total_fat": {
+          "nutrientName": "Total lipid (fat)",
+          "sourceNutrientId": null,
+          "value": 0.37,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Total lipid (fat)",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "carbohydrate_by_difference": {
+          "nutrientName": "Carbohydrate, by difference",
+          "sourceNutrientId": null,
+          "value": 3.64,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Carbohydrate, by difference",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        }
+      },
+      "reviewStatus": "needs_review",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "nutrientCompositionId": "usda_fdc_yogurt_plain_whole",
+      "ingredientId": "yogurt",
+      "source": {
+        "provider": "USDA_FDC",
+        "externalFoodId": "2259793",
+        "description": "Yogurt, plain, whole milk; Secondary index page attributes these values to USDA FDC 2259793; directly verify against official FDC API or October 2026 download before approval.",
+        "dataType": "Foundation Foods",
+        "datasetRelease": "Foundation Foods 2026-04-30 (as displayed in third-party index; direct current FDC verification pending)",
+        "sourceUri": "https://nutrientgraph.com/foods/yogurt-plain-whole-milk-fdc-2259793/",
+        "retrievedAt": "2026-11-13T02:50:00+05:30",
+        "licenseStatus": "open",
+        "licenseName": "USDA FoodData Central source data is public domain/CC0; secondary index presentation is not copied as a dataset"
+      },
+      "basis": {
+        "quantity": 100,
+        "unit": "g",
+        "description": "Per 100 g of the source-described food; exact edible-portion basis must be confirmed from the source record.",
+        "ediblePortionOnly": null
+      },
+      "preparationState": "as_sold",
+      "preparationDetails": null,
+      "nutrients": {
+        "energy_kcal": {
+          "nutrientName": "Energy",
+          "sourceNutrientId": null,
+          "value": 77.319,
+          "unit": "kcal",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Energy",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "protein": {
+          "nutrientName": "Protein",
+          "sourceNutrientId": null,
+          "value": 3.824,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Protein",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "total_fat": {
+          "nutrientName": "Total lipid (fat)",
+          "sourceNutrientId": null,
+          "value": 4.484,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Total lipid (fat)",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "carbohydrate_by_difference": {
+          "nutrientName": "Carbohydrate, by difference",
+          "sourceNutrientId": null,
+          "value": 5.575,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Carbohydrate, by difference",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        }
+      },
+      "reviewStatus": "needs_review",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "nutrientCompositionId": "usda_fdc_peanuts_roasted",
+      "ingredientId": "peanut",
+      "source": {
+        "provider": "USDA_FDC",
+        "externalFoodId": "173806",
+        "description": "Peanuts, all types, dry-roasted, without salt; Secondary index page attributes these values to USDA FDC 173806; directly verify against official FDC API/download before approval.",
+        "dataType": "SR Legacy",
+        "datasetRelease": "SR Legacy 2018-04 (as displayed in third-party index; direct current FDC verification pending)",
+        "sourceUri": "https://nutrientgraph.com/foods/peanuts-all-types-dry-roasted-without-salt-fdc-173806/",
+        "retrievedAt": "2026-11-13T02:50:00+05:30",
+        "licenseStatus": "open",
+        "licenseName": "USDA FoodData Central source data is public domain/CC0; secondary index presentation is not copied as a dataset"
+      },
+      "basis": {
+        "quantity": 100,
+        "unit": "g",
+        "description": "Per 100 g of the source-described food; exact edible-portion basis must be confirmed from the source record.",
+        "ediblePortionOnly": null
+      },
+      "preparationState": "roasted",
+      "preparationDetails": null,
+      "nutrients": {
+        "energy_kcal": {
+          "nutrientName": "Energy",
+          "sourceNutrientId": null,
+          "value": 587,
+          "unit": "kcal",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Energy",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "protein": {
+          "nutrientName": "Protein",
+          "sourceNutrientId": null,
+          "value": 24.35,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Protein",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "total_fat": {
+          "nutrientName": "Total lipid (fat)",
+          "sourceNutrientId": null,
+          "value": 49.66,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Total lipid (fat)",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "carbohydrate_by_difference": {
+          "nutrientName": "Carbohydrate, by difference",
+          "sourceNutrientId": null,
+          "value": 21.26,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Carbohydrate, by difference",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        }
+      },
+      "reviewStatus": "needs_review",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "nutrientCompositionId": "usda_fdc_pistachio_roasted",
+      "ingredientId": "pistachio",
+      "source": {
+        "provider": "USDA_FDC",
+        "externalFoodId": "170185",
+        "description": "Pistachio nuts, dry-roasted, without salt added; Secondary index page attributes these values to USDA FDC 170185; directly verify against official FDC API/download before approval.",
+        "dataType": "SR Legacy",
+        "datasetRelease": "SR Legacy 2018-04 (as displayed in third-party index; direct current FDC verification pending)",
+        "sourceUri": "https://nutrientgraph.com/foods/nuts-pistachio-nuts-dry-roasted-without-salt-added-fdc-170185/",
+        "retrievedAt": "2026-11-13T02:50:00+05:30",
+        "licenseStatus": "open",
+        "licenseName": "USDA FoodData Central source data is public domain/CC0; secondary index presentation is not copied as a dataset"
+      },
+      "basis": {
+        "quantity": 100,
+        "unit": "g",
+        "description": "Per 100 g of the source-described food; exact edible-portion basis must be confirmed from the source record.",
+        "ediblePortionOnly": null
+      },
+      "preparationState": "roasted",
+      "preparationDetails": null,
+      "nutrients": {
+        "energy_kcal": {
+          "nutrientName": "Energy",
+          "sourceNutrientId": null,
+          "value": 572,
+          "unit": "kcal",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Energy",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "protein": {
+          "nutrientName": "Protein",
+          "sourceNutrientId": null,
+          "value": 21.05,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Protein",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "total_fat": {
+          "nutrientName": "Total lipid (fat)",
+          "sourceNutrientId": null,
+          "value": 45.82,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Total lipid (fat)",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "carbohydrate_by_difference": {
+          "nutrientName": "Carbohydrate, by difference",
+          "sourceNutrientId": null,
+          "value": 28.28,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Carbohydrate, by difference",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        }
+      },
+      "reviewStatus": "needs_review",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "nutrientCompositionId": "usda_fdc_pecans_raw",
+      "ingredientId": "pecan",
+      "source": {
+        "provider": "USDA_FDC",
+        "externalFoodId": "2346395",
+        "description": "Nuts, pecans, halves, raw; Secondary index page attributes these values to USDA FDC 2346395; directly verify against official FDC API or October 2026 download before approval.",
+        "dataType": "Foundation Foods",
+        "datasetRelease": "Foundation Foods 2026-04-30 (as displayed in third-party index; direct current FDC verification pending)",
+        "sourceUri": "https://nutrientgraph.com/foods/nuts-pecans-halves-raw-fdc-2346395/",
+        "retrievedAt": "2026-11-13T02:50:00+05:30",
+        "licenseStatus": "open",
+        "licenseName": "USDA FoodData Central source data is public domain/CC0; secondary index presentation is not copied as a dataset"
+      },
+      "basis": {
+        "quantity": 100,
+        "unit": "g",
+        "description": "Per 100 g of the source-described food; exact edible-portion basis must be confirmed from the source record.",
+        "ediblePortionOnly": null
+      },
+      "preparationState": "raw",
+      "preparationDetails": null,
+      "nutrients": {
+        "energy_kcal": {
+          "nutrientName": "Energy",
+          "sourceNutrientId": null,
+          "value": 699.596,
+          "unit": "kcal",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Energy",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "protein": {
+          "nutrientName": "Protein",
+          "sourceNutrientId": null,
+          "value": 9.959,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Protein",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "total_fat": {
+          "nutrientName": "Total lipid (fat)",
+          "sourceNutrientId": null,
+          "value": 73.28,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Total lipid (fat)",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "carbohydrate_by_difference": {
+          "nutrientName": "Carbohydrate, by difference",
+          "sourceNutrientId": null,
+          "value": 12.699,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Carbohydrate, by difference",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        }
+      },
+      "reviewStatus": "needs_review",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "nutrientCompositionId": "usda_fdc_cashew_roasted",
+      "ingredientId": "cashew",
+      "source": {
+        "provider": "USDA_FDC",
+        "externalFoodId": "170571",
+        "description": "Cashew nuts, dry-roasted, without salt added; Secondary index page attributes these values to USDA FDC 170571; directly verify against official FDC API/download before approval.",
+        "dataType": "SR Legacy",
+        "datasetRelease": "SR Legacy 2018-04 (as displayed in third-party index; direct current FDC verification pending)",
+        "sourceUri": "https://nutrientgraph.com/foods/nuts-cashew-nuts-dry-roasted-without-salt-added-fdc-170571/",
+        "retrievedAt": "2026-11-13T02:50:00+05:30",
+        "licenseStatus": "open",
+        "licenseName": "USDA FoodData Central source data is public domain/CC0; secondary index presentation is not copied as a dataset"
+      },
+      "basis": {
+        "quantity": 100,
+        "unit": "g",
+        "description": "Per 100 g of the source-described food; exact edible-portion basis must be confirmed from the source record.",
+        "ediblePortionOnly": null
+      },
+      "preparationState": "roasted",
+      "preparationDetails": null,
+      "nutrients": {
+        "energy_kcal": {
+          "nutrientName": "Energy",
+          "sourceNutrientId": null,
+          "value": 574,
+          "unit": "kcal",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Energy",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "protein": {
+          "nutrientName": "Protein",
+          "sourceNutrientId": null,
+          "value": 15.31,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Protein",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "total_fat": {
+          "nutrientName": "Total lipid (fat)",
+          "sourceNutrientId": null,
+          "value": 46.35,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Total lipid (fat)",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "carbohydrate_by_difference": {
+          "nutrientName": "Carbohydrate, by difference",
+          "sourceNutrientId": null,
+          "value": 32.69,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Carbohydrate, by difference",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        }
+      },
+      "reviewStatus": "needs_review",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "nutrientCompositionId": "usda_fdc_parmesan",
+      "ingredientId": "parmesan_cheese",
+      "source": {
+        "provider": "USDA_FDC",
+        "externalFoodId": "325036",
+        "description": "Cheese, Parmesan, grated; Secondary index page attributes these values to USDA FDC 325036; directly verify against official FDC API or October 2026 download before approval.",
+        "dataType": "Foundation Foods",
+        "datasetRelease": "Foundation Foods 2026-04-30 (as displayed in third-party index; direct current FDC verification pending)",
+        "sourceUri": "https://nutrientgraph.com/foods/cheese-parmesan-grated-fdc-325036/",
+        "retrievedAt": "2026-11-13T02:50:00+05:30",
+        "licenseStatus": "open",
+        "licenseName": "USDA FoodData Central source data is public domain/CC0; secondary index presentation is not copied as a dataset"
+      },
+      "basis": {
+        "quantity": 100,
+        "unit": "g",
+        "description": "Per 100 g of the source-described food; exact edible-portion basis must be confirmed from the source record.",
+        "ediblePortionOnly": null
+      },
+      "preparationState": "as_sold",
+      "preparationDetails": null,
+      "nutrients": {
+        "energy_kcal": {
+          "nutrientName": "Energy",
+          "sourceNutrientId": null,
+          "value": 421,
+          "unit": "kcal",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Energy",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "protein": {
+          "nutrientName": "Protein",
+          "sourceNutrientId": null,
+          "value": 29.6,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Protein",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "total_fat": {
+          "nutrientName": "Total lipid (fat)",
+          "sourceNutrientId": null,
+          "value": 28,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Total lipid (fat)",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "carbohydrate_by_difference": {
+          "nutrientName": "Carbohydrate, by difference",
+          "sourceNutrientId": null,
+          "value": 12.4,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Carbohydrate, by difference",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        }
+      },
+      "reviewStatus": "needs_review",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "nutrientCompositionId": "usda_fdc_soybeans_boiled",
+      "ingredientId": "soybean",
+      "source": {
+        "provider": "USDA_FDC",
+        "externalFoodId": "174271",
+        "description": "Soybeans, mature, cooked, boiled, without salt; Secondary index page attributes these values to USDA FDC 174271; directly verify against official FDC API/download before approval.",
+        "dataType": "SR Legacy",
+        "datasetRelease": "SR Legacy 2018-04 (as displayed in third-party index; direct current FDC verification pending)",
+        "sourceUri": "https://nutrientgraph.com/foods/soybeans-mature-cooked-boiled-without-salt-fdc-174271/",
+        "retrievedAt": "2026-11-13T02:50:00+05:30",
+        "licenseStatus": "open",
+        "licenseName": "USDA FoodData Central source data is public domain/CC0; secondary index presentation is not copied as a dataset"
+      },
+      "basis": {
+        "quantity": 100,
+        "unit": "g",
+        "description": "Per 100 g of the source-described food; exact edible-portion basis must be confirmed from the source record.",
+        "ediblePortionOnly": null
+      },
+      "preparationState": "boiled",
+      "preparationDetails": null,
+      "nutrients": {
+        "energy_kcal": {
+          "nutrientName": "Energy",
+          "sourceNutrientId": null,
+          "value": 172,
+          "unit": "kcal",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Energy",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "protein": {
+          "nutrientName": "Protein",
+          "sourceNutrientId": null,
+          "value": 18.21,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Protein",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "total_fat": {
+          "nutrientName": "Total lipid (fat)",
+          "sourceNutrientId": null,
+          "value": 8.97,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Total lipid (fat)",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        },
+        "carbohydrate_by_difference": {
+          "nutrientName": "Carbohydrate, by difference",
+          "sourceNutrientId": null,
+          "value": 8.36,
+          "unit": "g",
+          "valueType": "unknown",
+          "sourceField": "Third-party index display attributing values to USDA FoodData Central; direct official revalidation pending — Carbohydrate, by difference",
+          "notes": "Source-specific nutrient identifier and value derivation type require direct official record revalidation."
+        }
+      },
+      "reviewStatus": "needs_review",
+      "createdAt": "2026-11-13T02:50:00+05:30",
+      "updatedAt": "2026-11-13T02:50:00+05:30"
+    }
+  ]
+}

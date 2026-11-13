@@ -1,0 +1,366 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://foodscanner.local/schemas/dietary-guideline.schema.json",
+  "title": "Food Scanner Dietary Guideline Reference",
+  "description": "Sourced nutrient/dietary recommendation scoped to an authority, jurisdiction and defined population.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "guidelineId",
+    "nutrientOrTopic",
+    "authority",
+    "jurisdiction",
+    "population",
+    "recommendation",
+    "conditions",
+    "source",
+    "validFrom",
+    "validTo",
+    "reviewStatus",
+    "createdAt",
+    "updatedAt"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0.0"
+    },
+    "guidelineId": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9._-]*$"
+    },
+    "nutrientOrTopic": {
+      "type": "string",
+      "minLength": 1
+    },
+    "authority": {
+      "type": "string",
+      "minLength": 1
+    },
+    "jurisdiction": {
+      "type": "string",
+      "minLength": 1
+    },
+    "population": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "description",
+        "lifeStage",
+        "sex",
+        "minimumAge",
+        "maximumAge",
+        "ageUnit",
+        "conditions"
+      ],
+      "properties": {
+        "description": {
+          "type": "string",
+          "minLength": 1
+        },
+        "lifeStage": {
+          "type": "string",
+          "enum": [
+            "infant",
+            "child",
+            "adolescent",
+            "adult",
+            "older_adult",
+            "pregnancy",
+            "lactation",
+            "all_population",
+            "other",
+            "unspecified"
+          ]
+        },
+        "sex": {
+          "type": "string",
+          "enum": [
+            "all",
+            "female",
+            "male",
+            "other",
+            "unspecified"
+          ]
+        },
+        "minimumAge": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "maximumAge": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "ageUnit": {
+          "type": "string",
+          "enum": [
+            "days",
+            "months",
+            "years",
+            "not_applicable"
+          ]
+        },
+        "conditions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "recommendation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "recommendationType",
+        "operator",
+        "value",
+        "lowerValue",
+        "upperValue",
+        "unit",
+        "basis"
+      ],
+      "properties": {
+        "recommendationType": {
+          "type": "string",
+          "enum": [
+            "limit",
+            "target",
+            "minimum",
+            "adequate_intake",
+            "range",
+            "qualitative_guidance",
+            "other"
+          ]
+        },
+        "operator": {
+          "type": "string",
+          "enum": [
+            "less_than",
+            "at_most",
+            "at_least",
+            "range",
+            "qualitative"
+          ]
+        },
+        "value": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "lowerValue": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "upperValue": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "unit": {
+          "type": "string",
+          "minLength": 1
+        },
+        "basis": {
+          "type": "string",
+          "minLength": 1
+        },
+        "referenceEnergyKcal": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "exclusiveMinimum": 0
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "operator": {
+                "enum": [
+                  "less_than",
+                  "at_most",
+                  "at_least"
+                ]
+              }
+            },
+            "required": [
+              "operator"
+            ]
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "type": "number"
+              },
+              "lowerValue": {
+                "type": "null"
+              },
+              "upperValue": {
+                "type": "null"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "operator": {
+                "const": "range"
+              }
+            },
+            "required": [
+              "operator"
+            ]
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "type": "null"
+              },
+              "lowerValue": {
+                "type": "number"
+              },
+              "upperValue": {
+                "type": "number"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "operator": {
+                "const": "qualitative"
+              }
+            },
+            "required": [
+              "operator"
+            ]
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "type": "null"
+              },
+              "lowerValue": {
+                "type": "null"
+              },
+              "upperValue": {
+                "type": "null"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "conditions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "sourceName",
+        "publisher",
+        "url",
+        "publicationDate",
+        "accessedAt",
+        "locator",
+        "documentVersion",
+        "supports"
+      ],
+      "properties": {
+        "sourceName": {
+          "type": "string",
+          "minLength": 1
+        },
+        "publisher": {
+          "type": "string",
+          "minLength": 1
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "publicationDate": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "accessedAt": {
+          "type": "string",
+          "format": "date"
+        },
+        "locator": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "documentVersion": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "supports": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "validFrom": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "validTo": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "reviewStatus": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "needs_review",
+        "reviewed",
+        "approved",
+        "retired"
+      ]
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "$comment": "A dietary recommendation must retain its exact population, jurisdiction, unit and denominator/basis. It is not an ingredient-specific limit unless the cited authority explicitly says so."
+}

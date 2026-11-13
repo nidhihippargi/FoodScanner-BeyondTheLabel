@@ -1,20 +1,31 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
+  "description": "Food Scanner backend with integrated Data Engine",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=20.0.0"
+  },
   "scripts": {
     "test": "node src/services/testClaimService.js && node src/services/testIngredientService.js && node src/services/testNutritionService.js && node src/services/testPersonalizationService.js && node src/services/testProductAnalysisService.js && jest --runInBand",
     "start": "node src/server.js",
-    "dev": "nodemon src/server.js"
+    "dev": "nodemon src/server.js",
+    "test:data-engine": "node --test",
+    "test:data-engine:unit": "node --test test/*.test.js",
+    "test:data-engine:integration": "node --test test/integration/*.test.js",
+    "migrate": "node src/data-engine/storage/migrate.js",
+    "seed:aliases": "node src/data-engine/storage/migrations/002_seed_aliases.js",
+    "validate:static": "node scripts/validate-static-data.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
     "cors": "^2.8.6",
     "dotenv": "^18.0.10",
     "express": "^4.22.3",
+    "mongodb": "^6.10.0",
     "mongoose": "^8.24.8"
   },
   "devDependencies": {

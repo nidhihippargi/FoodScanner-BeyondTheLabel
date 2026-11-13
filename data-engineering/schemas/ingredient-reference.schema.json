@@ -1,0 +1,348 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://foodscanner.local/schemas/ingredient-reference.schema.json",
+  "title": "Food Scanner Ingredient Reference Profile",
+  "description": "Source-backed identity and explanatory information for one canonical ingredient. Does not store product-specific quantities or a product health rating.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "ingredientId",
+    "canonicalName",
+    "displayName",
+    "category",
+    "functions",
+    "description",
+    "healthConsiderations",
+    "allergenInfo",
+    "nutrientCompositionRefs",
+    "additiveRefs",
+    "evidence",
+    "reviewStatus",
+    "createdAt",
+    "updatedAt"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0.0"
+    },
+    "ingredientId": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9._-]*$"
+    },
+    "canonicalName": {
+      "type": "string",
+      "minLength": 1
+    },
+    "displayName": {
+      "type": "string",
+      "minLength": 1
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "cereal_grain",
+        "legume_pulse",
+        "fruit",
+        "vegetable",
+        "dairy",
+        "meat_fish_egg",
+        "oil_fat",
+        "sweetener",
+        "cocoa_chocolate",
+        "herb_spice",
+        "food_additive",
+        "other",
+        "unknown"
+      ]
+    },
+    "functions": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1
+    },
+    "healthConsiderations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "topic",
+          "statement",
+          "interpretation",
+          "populationScope",
+          "evidenceIds"
+        ],
+        "properties": {
+          "topic": {
+            "type": "string",
+            "minLength": 1
+          },
+          "statement": {
+            "type": "string",
+            "minLength": 1
+          },
+          "interpretation": {
+            "type": "string",
+            "enum": [
+              "context_dependent",
+              "nutritional_context",
+              "allergen_related",
+              "safety_evaluation",
+              "regulatory_context",
+              "other",
+              "unknown"
+            ]
+          },
+          "populationScope": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "conditions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "evidenceIds": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "allergenInfo": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "allergenId",
+          "relationship",
+          "evidenceIds"
+        ],
+        "properties": {
+          "allergenId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "relationship": {
+            "type": "string",
+            "enum": [
+              "contains",
+              "derived_from",
+              "may_contain_in_source_context",
+              "unknown"
+            ]
+          },
+          "notes": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "evidenceIds": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "nutrientCompositionRefs": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "additiveRefs": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "evidenceId",
+          "sourceName",
+          "publisher",
+          "sourceType",
+          "url",
+          "accessedAt",
+          "supports",
+          "licenseStatus"
+        ],
+        "properties": {
+          "evidenceId": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9._-]*$"
+          },
+          "sourceName": {
+            "type": "string",
+            "minLength": 1
+          },
+          "publisher": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sourceType": {
+            "type": "string",
+            "enum": [
+              "regulation",
+              "scientific_evaluation",
+              "dietary_guideline",
+              "composition_dataset",
+              "api_record",
+              "official_standard",
+              "other"
+            ]
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "documentId": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "jurisdiction": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "publicationDate": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date"
+          },
+          "effectiveFrom": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date"
+          },
+          "effectiveTo": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date"
+          },
+          "accessedAt": {
+            "type": "string",
+            "format": "date"
+          },
+          "locator": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "supports": {
+            "type": "string",
+            "minLength": 1
+          },
+          "licenseStatus": {
+            "type": "string",
+            "enum": [
+              "unknown",
+              "open",
+              "attribution_required",
+              "permission_required",
+              "restricted"
+            ]
+          }
+        }
+      }
+    },
+    "reviewStatus": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "needs_review",
+        "reviewed",
+        "approved",
+        "retired"
+      ]
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "reviewStatus": {
+            "const": "reviewed"
+          }
+        },
+        "required": [
+          "reviewStatus"
+        ]
+      },
+      "then": {
+        "properties": {
+          "evidence": {
+            "minItems": 1
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "reviewStatus": {
+            "const": "approved"
+          }
+        },
+        "required": [
+          "reviewStatus"
+        ]
+      },
+      "then": {
+        "properties": {
+          "evidence": {
+            "minItems": 1
+          }
+        }
+      }
+    }
+  ],
+  "$comment": "Alias strings are maintained in the existing ingredient_aliases dataset. M3 owns mapping OCR mentions to ingredientId. EvidenceIds must resolve to evidence[].evidenceId at application validation time."
+}

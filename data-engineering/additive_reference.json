@@ -1,0 +1,1494 @@
+[
+  {
+    "schemaVersion": "1.1.0",
+    "additiveId": "sodium_benzoate",
+    "canonicalName": "Sodium benzoate",
+    "insNumber": "211",
+    "casNumber": "532-32-1",
+    "aliases": [
+      "sodium salt of benzoic acid"
+    ],
+    "technologicalFunctions": [
+      "preservative"
+    ],
+    "fssaiAuthorisations": [
+      {
+        "jurisdiction": "India",
+        "foodCategoryCode": "4.1.2.6",
+        "foodCategoryName": "Fruit-based spreads (e.g. chutney) excluding products specified separately",
+        "status": "permitted",
+        "maximumLevel": {
+          "type": "numeric",
+          "value": 250,
+          "unit": "mg/kg",
+          "basis": "mg_per_kg_food"
+        },
+        "conditions": [
+          "Appendix A row is the group entry BENZOATES, not a separate sodium-benzoate row.",
+          "Maximum level is expressed as benzoic acid equivalents (Note 13).",
+          "This record is specific to category 4.1.2.6 only; confirm product category and original Gazette notification before compliance interpretation."
+        ],
+        "regulationTitle": "Food Safety and Standards (Food Products Standards and Food Additives) Regulations, 2011 — Appendix A consolidated compendium",
+        "notificationId": "FSSAI Appendix A Version 3 (01.08.2025); verify original Gazette notification before compliance use",
+        "tableOrClause": "Appendix A, Table 4 (Fruits and vegetables), category 4.1.2.6; Note 13",
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "evidenceIds": [
+          "fssai-appendix-a-v3-2025",
+          "fssai-compendium-not-legal-notice"
+        ]
+      }
+    ],
+    "jecfaEvaluations": [
+      {
+        "evaluationDate": null,
+        "meetingNumber": 92,
+        "adiStatus": "group_numeric",
+        "adi": {
+          "lowerValue": 0,
+          "upperValue": 20,
+          "unit": "mg_per_kg_body_weight_per_day"
+        },
+        "groupName": "Benzoic acid and benzoates (expressed as benzoic acid equivalents)",
+        "evaluationNotes": "JECFA 2021 group ADI 0–20 mg/kg bw/day applies to benzoic acid and benzoate salts including sodium benzoate, expressed as benzoic acid equivalents. This is not a measured concentration in a product.",
+        "evidenceIds": [
+          "jecfa-sodium_benzoate"
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "evidenceId": "jecfa-sodium_benzoate",
+        "sourceName": "JECFA evaluation: Sodium benzoate (2021)",
+        "publisher": "Joint FAO/WHO Expert Committee on Food Additives (JECFA), hosted by WHO",
+        "sourceType": "scientific_evaluation",
+        "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1098",
+        "documentId": "JECFA evaluation year 2021; meeting 92",
+        "jurisdiction": "International scientific evaluation",
+        "publicationDate": null,
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "accessedAt": "2026-11-13",
+        "locator": "Evaluations section; 2021 entry",
+        "supports": "JECFA 2021 group ADI 0–20 mg/kg bw/day applies to benzoic acid and benzoate salts including sodium benzoate, expressed as benzoic acid equivalents. This is not a measured concentration in a product.",
+        "licenseStatus": "unknown"
+      },
+      {
+        "evidenceId": "fssai-appendix-a-v3-2025",
+        "sourceName": "Appendix A: Food Category System and Use of Additives, Version 3 (01.08.2025)",
+        "publisher": "Food Safety and Standards Authority of India (FSSAI)",
+        "sourceType": "regulation",
+        "url": "https://fssai.gov.in/upload/uploadfiles/files/Appendix%20A%284%29.pdf",
+        "documentId": "Appendix A, Version 3, 01.08.2025",
+        "jurisdiction": "India",
+        "publicationDate": "2025-08-01",
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "accessedAt": "2026-11-13",
+        "locator": "Appendix A; category tables and additive/INS index; specific table/category locators recorded on each authorization",
+        "supports": "Consolidated reference table lists food categories, additive/group names, INS identifiers and recommended maximum levels. FSSAI states the compendium is not itself a legal document; original Gazette notifications prevail.",
+        "licenseStatus": "unknown"
+      },
+      {
+        "evidenceId": "fssai-compendium-not-legal-notice",
+        "sourceName": "FSSAI Food Products Standards and Food Additives compendium page",
+        "publisher": "Food Safety and Standards Authority of India (FSSAI)",
+        "sourceType": "official_standard",
+        "url": "https://www.fssai.gov.in/food-law/regulations/compendium/food-products-standards",
+        "documentId": "Compendium notice",
+        "jurisdiction": "India",
+        "publicationDate": null,
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "accessedAt": "2026-11-13",
+        "locator": "Notice above compendium downloads",
+        "supports": "FSSAI says the compendium is a ready-reference document, not a legal document, and that original Gazette notifications/amendments prevail in case of error or overlap.",
+        "licenseStatus": "unknown"
+      },
+      {
+        "evidenceId": "fssai-fps-fa-amendment-register",
+        "sourceName": "Food Products Standards and Food Additives amendment register",
+        "publisher": "Food Safety and Standards Authority of India (FSSAI)",
+        "sourceType": "regulation",
+        "url": "https://fssai.gov.in/food-law/regulations/amendments/food-products-standards",
+        "documentId": "Amendment register; Amendment No. 84 dated 10.07.2025 shown as latest entry on access date",
+        "jurisdiction": "India",
+        "publicationDate": null,
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "accessedAt": "2026-11-13",
+        "locator": "Amendment list at top of page",
+        "supports": "The register displayed 85 amendments, with Amendment No. 84 dated 10 July 2025 as its newest listed entry on 13 November 2026. Check this register and original notifications again before any regulatory decision.",
+        "licenseStatus": "unknown"
+      }
+    ],
+    "reviewStatus": "needs_review",
+    "createdAt": "2026-11-13T00:00:00Z",
+    "updatedAt": "2026-11-13T00:00:00Z"
+  },
+  {
+    "schemaVersion": "1.1.0",
+    "additiveId": "potassium_sorbate",
+    "canonicalName": "Potassium sorbate",
+    "insNumber": "202",
+    "casNumber": "24634-61-5",
+    "aliases": [
+      "potassium salt of sorbic acid"
+    ],
+    "technologicalFunctions": [
+      "preservative"
+    ],
+    "fssaiAuthorisations": [],
+    "jecfaEvaluations": [
+      {
+        "evaluationDate": null,
+        "meetingNumber": 17,
+        "adiStatus": "group_numeric",
+        "adi": {
+          "lowerValue": 0,
+          "upperValue": 25,
+          "unit": "mg_per_kg_body_weight_per_day"
+        },
+        "groupName": "Sorbic acid and calcium, potassium and sodium sorbates (expressed as sorbic acid)",
+        "evaluationNotes": "JECFA group ADI is the sum of sorbic acid and calcium, potassium and sodium sorbates, expressed as sorbic acid. The JECFA record lists the evaluation year as 1973.",
+        "evidenceIds": [
+          "jecfa-potassium_sorbate"
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "evidenceId": "jecfa-potassium_sorbate",
+        "sourceName": "JECFA evaluation: Potassium sorbate (1973)",
+        "publisher": "Joint FAO/WHO Expert Committee on Food Additives (JECFA), hosted by WHO",
+        "sourceType": "scientific_evaluation",
+        "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2724",
+        "documentId": "JECFA evaluation year 1973; meeting 17",
+        "jurisdiction": "International scientific evaluation",
+        "publicationDate": null,
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "accessedAt": "2026-11-13",
+        "locator": "Evaluations section; 1973 entry",
+        "supports": "JECFA group ADI is the sum of sorbic acid and calcium, potassium and sodium sorbates, expressed as sorbic acid. The JECFA record lists the evaluation year as 1973.",
+        "licenseStatus": "unknown"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "createdAt": "2026-11-13T00:00:00Z",
+    "updatedAt": "2026-11-13T00:00:00Z"
+  },
+  {
+    "schemaVersion": "1.1.0",
+    "additiveId": "tartrazine",
+    "canonicalName": "Tartrazine",
+    "insNumber": "102",
+    "casNumber": "1934-21-0",
+    "aliases": [
+      "CI Food Yellow 4",
+      "FD&C Yellow No. 5"
+    ],
+    "technologicalFunctions": [
+      "colour"
+    ],
+    "fssaiAuthorisations": [],
+    "jecfaEvaluations": [
+      {
+        "evaluationDate": null,
+        "meetingNumber": 82,
+        "adiStatus": "numeric",
+        "adi": {
+          "lowerValue": 0,
+          "upperValue": 10,
+          "unit": "mg_per_kg_body_weight_per_day"
+        },
+        "groupName": null,
+        "evaluationNotes": "JECFA established an ADI of 0–10 mg/kg bw/day in 2016 and withdrew the previous 0–7.5 mg/kg bw/day ADI.",
+        "evidenceIds": [
+          "jecfa-tartrazine"
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "evidenceId": "jecfa-tartrazine",
+        "sourceName": "JECFA evaluation: Tartrazine (2016)",
+        "publisher": "Joint FAO/WHO Expert Committee on Food Additives (JECFA), hosted by WHO",
+        "sourceType": "scientific_evaluation",
+        "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3885",
+        "documentId": "JECFA evaluation year 2016; meeting 82",
+        "jurisdiction": "International scientific evaluation",
+        "publicationDate": null,
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "accessedAt": "2026-11-13",
+        "locator": "Evaluations section; 2016 entry",
+        "supports": "JECFA established an ADI of 0–10 mg/kg bw/day in 2016 and withdrew the previous 0–7.5 mg/kg bw/day ADI.",
+        "licenseStatus": "unknown"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "createdAt": "2026-11-13T00:00:00Z",
+    "updatedAt": "2026-11-13T00:00:00Z"
+  },
+  {
+    "schemaVersion": "1.1.0",
+    "additiveId": "acesulfame_potassium",
+    "canonicalName": "Acesulfame potassium",
+    "insNumber": "950",
+    "casNumber": "55589-62-3",
+    "aliases": [
+      "acesulfame K",
+      "Ace-K"
+    ],
+    "technologicalFunctions": [
+      "sweetener",
+      "flavour enhancer"
+    ],
+    "fssaiAuthorisations": [
+      {
+        "jurisdiction": "India",
+        "foodCategoryCode": "4.1.2.8",
+        "foodCategoryName": "Fruit preparations, including fruit pulp, purees, fruit toppings and coconut milk",
+        "status": "permitted",
+        "maximumLevel": {
+          "type": "numeric",
+          "value": 350,
+          "unit": "mg/kg",
+          "basis": "mg_per_kg_food"
+        },
+        "conditions": [
+          "The FSSAI table entry specifies acesulfame potassium INS 950 and Note 188.",
+          "Maximum level applies only to food category 4.1.2.8."
+        ],
+        "regulationTitle": "Food Safety and Standards (Food Products Standards and Food Additives) Regulations, 2011 — Appendix A consolidated compendium",
+        "notificationId": "FSSAI Appendix A Version 3 (01.08.2025); verify original Gazette notification before compliance use",
+        "tableOrClause": "Appendix A, Table 4 (Fruits and vegetables), category 4.1.2.8; Note 188",
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "evidenceIds": [
+          "fssai-appendix-a-v3-2025",
+          "fssai-compendium-not-legal-notice"
+        ]
+      },
+      {
+        "jurisdiction": "India",
+        "foodCategoryCode": "11.6",
+        "foodCategoryName": "Table-top sweeteners including those containing high-intensity sweeteners",
+        "status": "permitted",
+        "maximumLevel": {
+          "type": "good_manufacturing_practice",
+          "value": null,
+          "unit": null,
+          "basis": "good_manufacturing_practice"
+        },
+        "conditions": [
+          "Listed as Good Manufacturing Practice (GMP) for this specific category.",
+          "GMP is not a numeric maximum."
+        ],
+        "regulationTitle": "Food Safety and Standards (Food Products Standards and Food Additives) Regulations, 2011 — Appendix A consolidated compendium",
+        "notificationId": "FSSAI Appendix A Version 3 (01.08.2025); verify original Gazette notification before compliance use",
+        "tableOrClause": "Appendix A, Table 11 (Sweeteners including honey), category 11.6",
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "evidenceIds": [
+          "fssai-appendix-a-v3-2025",
+          "fssai-compendium-not-legal-notice"
+        ]
+      }
+    ],
+    "jecfaEvaluations": [
+      {
+        "evaluationDate": null,
+        "meetingNumber": 46,
+        "adiStatus": "numeric",
+        "adi": {
+          "lowerValue": 0,
+          "upperValue": 15,
+          "unit": "mg_per_kg_body_weight_per_day"
+        },
+        "groupName": null,
+        "evaluationNotes": "JECFA record lists an ADI of 0–15 mg/kg bw/day (1990 evaluation).",
+        "evidenceIds": [
+          "jecfa-acesulfame_potassium"
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "evidenceId": "jecfa-acesulfame_potassium",
+        "sourceName": "JECFA evaluation: Acesulfame K (1990)",
+        "publisher": "Joint FAO/WHO Expert Committee on Food Additives (JECFA), hosted by WHO",
+        "sourceType": "scientific_evaluation",
+        "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3613",
+        "documentId": "JECFA evaluation year 1990; meeting 46",
+        "jurisdiction": "International scientific evaluation",
+        "publicationDate": null,
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "accessedAt": "2026-11-13",
+        "locator": "Evaluations section; 1990 entry",
+        "supports": "JECFA record lists an ADI of 0–15 mg/kg bw/day (1990 evaluation).",
+        "licenseStatus": "unknown"
+      },
+      {
+        "evidenceId": "fssai-appendix-a-v3-2025",
+        "sourceName": "Appendix A: Food Category System and Use of Additives, Version 3 (01.08.2025)",
+        "publisher": "Food Safety and Standards Authority of India (FSSAI)",
+        "sourceType": "regulation",
+        "url": "https://fssai.gov.in/upload/uploadfiles/files/Appendix%20A%284%29.pdf",
+        "documentId": "Appendix A, Version 3, 01.08.2025",
+        "jurisdiction": "India",
+        "publicationDate": "2025-08-01",
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "accessedAt": "2026-11-13",
+        "locator": "Appendix A; category tables and additive/INS index; specific table/category locators recorded on each authorization",
+        "supports": "Consolidated reference table lists food categories, additive/group names, INS identifiers and recommended maximum levels. FSSAI states the compendium is not itself a legal document; original Gazette notifications prevail.",
+        "licenseStatus": "unknown"
+      },
+      {
+        "evidenceId": "fssai-compendium-not-legal-notice",
+        "sourceName": "FSSAI Food Products Standards and Food Additives compendium page",
+        "publisher": "Food Safety and Standards Authority of India (FSSAI)",
+        "sourceType": "official_standard",
+        "url": "https://www.fssai.gov.in/food-law/regulations/compendium/food-products-standards",
+        "documentId": "Compendium notice",
+        "jurisdiction": "India",
+        "publicationDate": null,
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "accessedAt": "2026-11-13",
+        "locator": "Notice above compendium downloads",
+        "supports": "FSSAI says the compendium is a ready-reference document, not a legal document, and that original Gazette notifications/amendments prevail in case of error or overlap.",
+        "licenseStatus": "unknown"
+      },
+      {
+        "evidenceId": "fssai-fps-fa-amendment-register",
+        "sourceName": "Food Products Standards and Food Additives amendment register",
+        "publisher": "Food Safety and Standards Authority of India (FSSAI)",
+        "sourceType": "regulation",
+        "url": "https://fssai.gov.in/food-law/regulations/amendments/food-products-standards",
+        "documentId": "Amendment register; Amendment No. 84 dated 10.07.2025 shown as latest entry on access date",
+        "jurisdiction": "India",
+        "publicationDate": null,
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "accessedAt": "2026-11-13",
+        "locator": "Amendment list at top of page",
+        "supports": "The register displayed 85 amendments, with Amendment No. 84 dated 10 July 2025 as its newest listed entry on 13 November 2026. Check this register and original notifications again before any regulatory decision.",
+        "licenseStatus": "unknown"
+      }
+    ],
+    "reviewStatus": "needs_review",
+    "createdAt": "2026-11-13T00:00:00Z",
+    "updatedAt": "2026-11-13T00:00:00Z"
+  },
+  {
+    "schemaVersion": "1.1.0",
+    "additiveId": "aspartame",
+    "canonicalName": "Aspartame",
+    "insNumber": "951",
+    "casNumber": "22389-47-0",
+    "aliases": [
+      "aspartyl phenylalanine methyl ester"
+    ],
+    "technologicalFunctions": [
+      "sweetener"
+    ],
+    "fssaiAuthorisations": [
+      {
+        "jurisdiction": "India",
+        "foodCategoryCode": "4.1.2.6",
+        "foodCategoryName": "Fruit-based spreads (e.g. chutney) excluding products specified separately",
+        "status": "conditional",
+        "maximumLevel": {
+          "type": "numeric",
+          "value": 1000,
+          "unit": "mg/kg",
+          "basis": "mg_per_kg_food"
+        },
+        "conditions": [
+          "FSSAI row specifies aspartame INS 951 and Note 191.",
+          "Maximum level applies only to category 4.1.2.6; Note 191 must be checked in the original notification."
+        ],
+        "regulationTitle": "Food Safety and Standards (Food Products Standards and Food Additives) Regulations, 2011 — Appendix A consolidated compendium",
+        "notificationId": "FSSAI Appendix A Version 3 (01.08.2025); verify original Gazette notification before compliance use",
+        "tableOrClause": "Appendix A, Table 4 (Fruits and vegetables), category 4.1.2.6; Note 191",
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "evidenceIds": [
+          "fssai-appendix-a-v3-2025",
+          "fssai-compendium-not-legal-notice"
+        ]
+      },
+      {
+        "jurisdiction": "India",
+        "foodCategoryCode": "11.6",
+        "foodCategoryName": "Table-top sweeteners including those containing high-intensity sweeteners",
+        "status": "permitted",
+        "maximumLevel": {
+          "type": "good_manufacturing_practice",
+          "value": null,
+          "unit": null,
+          "basis": "good_manufacturing_practice"
+        },
+        "conditions": [
+          "FSSAI row lists aspartame INS 951 with Note 191 and GMP for this specific category.",
+          "GMP is not a numeric maximum."
+        ],
+        "regulationTitle": "Food Safety and Standards (Food Products Standards and Food Additives) Regulations, 2011 — Appendix A consolidated compendium",
+        "notificationId": "FSSAI Appendix A Version 3 (01.08.2025); verify original Gazette notification before compliance use",
+        "tableOrClause": "Appendix A, Table 11 (Sweeteners including honey), category 11.6; Note 191",
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "evidenceIds": [
+          "fssai-appendix-a-v3-2025",
+          "fssai-compendium-not-legal-notice"
+        ]
+      }
+    ],
+    "jecfaEvaluations": [
+      {
+        "evaluationDate": null,
+        "meetingNumber": null,
+        "adiStatus": "numeric",
+        "adi": {
+          "lowerValue": 0,
+          "upperValue": 40,
+          "unit": "mg_per_kg_body_weight_per_day"
+        },
+        "groupName": null,
+        "evaluationNotes": "JECFA reaffirmed an ADI of 0–40 mg/kg bw/day in its 2023 evaluation. The JECFA database page supplies evaluation year but this record does not assume an exact meeting number.",
+        "evidenceIds": [
+          "jecfa-aspartame"
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "evidenceId": "jecfa-aspartame",
+        "sourceName": "JECFA evaluation: Aspartame (JECFA page title: Aspartyl phenylalanine methyl ester) (2023)",
+        "publisher": "Joint FAO/WHO Expert Committee on Food Additives (JECFA), hosted by WHO",
+        "sourceType": "scientific_evaluation",
+        "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1850",
+        "documentId": "JECFA evaluation year 2023; meeting not captured",
+        "jurisdiction": "International scientific evaluation",
+        "publicationDate": null,
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "accessedAt": "2026-11-13",
+        "locator": "Evaluations section; 2023 entry",
+        "supports": "JECFA reaffirmed an ADI of 0–40 mg/kg bw/day in its 2023 evaluation. The JECFA database page supplies evaluation year but this record does not assume an exact meeting number.",
+        "licenseStatus": "unknown"
+      },
+      {
+        "evidenceId": "fssai-appendix-a-v3-2025",
+        "sourceName": "Appendix A: Food Category System and Use of Additives, Version 3 (01.08.2025)",
+        "publisher": "Food Safety and Standards Authority of India (FSSAI)",
+        "sourceType": "regulation",
+        "url": "https://fssai.gov.in/upload/uploadfiles/files/Appendix%20A%284%29.pdf",
+        "documentId": "Appendix A, Version 3, 01.08.2025",
+        "jurisdiction": "India",
+        "publicationDate": "2025-08-01",
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "accessedAt": "2026-11-13",
+        "locator": "Appendix A; category tables and additive/INS index; specific table/category locators recorded on each authorization",
+        "supports": "Consolidated reference table lists food categories, additive/group names, INS identifiers and recommended maximum levels. FSSAI states the compendium is not itself a legal document; original Gazette notifications prevail.",
+        "licenseStatus": "unknown"
+      },
+      {
+        "evidenceId": "fssai-compendium-not-legal-notice",
+        "sourceName": "FSSAI Food Products Standards and Food Additives compendium page",
+        "publisher": "Food Safety and Standards Authority of India (FSSAI)",
+        "sourceType": "official_standard",
+        "url": "https://www.fssai.gov.in/food-law/regulations/compendium/food-products-standards",
+        "documentId": "Compendium notice",
+        "jurisdiction": "India",
+        "publicationDate": null,
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "accessedAt": "2026-11-13",
+        "locator": "Notice above compendium downloads",
+        "supports": "FSSAI says the compendium is a ready-reference document, not a legal document, and that original Gazette notifications/amendments prevail in case of error or overlap.",
+        "licenseStatus": "unknown"
+      },
+      {
+        "evidenceId": "fssai-fps-fa-amendment-register",
+        "sourceName": "Food Products Standards and Food Additives amendment register",
+        "publisher": "Food Safety and Standards Authority of India (FSSAI)",
+        "sourceType": "regulation",
+        "url": "https://fssai.gov.in/food-law/regulations/amendments/food-products-standards",
+        "documentId": "Amendment register; Amendment No. 84 dated 10.07.2025 shown as latest entry on access date",
+        "jurisdiction": "India",
+        "publicationDate": null,
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "accessedAt": "2026-11-13",
+        "locator": "Amendment list at top of page",
+        "supports": "The register displayed 85 amendments, with Amendment No. 84 dated 10 July 2025 as its newest listed entry on 13 November 2026. Check this register and original notifications again before any regulatory decision.",
+        "licenseStatus": "unknown"
+      }
+    ],
+    "reviewStatus": "needs_review",
+    "createdAt": "2026-11-13T00:00:00Z",
+    "updatedAt": "2026-11-13T00:00:00Z"
+  },
+  {
+    "schemaVersion": "1.1.0",
+    "additiveId": "sucralose",
+    "canonicalName": "Sucralose",
+    "insNumber": "955",
+    "casNumber": "56038-13-2",
+    "aliases": [
+      "trichlorogalactosucrose"
+    ],
+    "technologicalFunctions": [
+      "sweetener"
+    ],
+    "fssaiAuthorisations": [
+      {
+        "jurisdiction": "India",
+        "foodCategoryCode": "11.6",
+        "foodCategoryName": "Table-top sweeteners including those containing high-intensity sweeteners",
+        "status": "permitted",
+        "maximumLevel": {
+          "type": "good_manufacturing_practice",
+          "value": null,
+          "unit": null,
+          "basis": "good_manufacturing_practice"
+        },
+        "conditions": [
+          "FSSAI table lists sucralose INS 955 with GMP for this specific category.",
+          "GMP is not a numeric maximum."
+        ],
+        "regulationTitle": "Food Safety and Standards (Food Products Standards and Food Additives) Regulations, 2011 — Appendix A consolidated compendium",
+        "notificationId": "FSSAI Appendix A Version 3 (01.08.2025); verify original Gazette notification before compliance use",
+        "tableOrClause": "Appendix A, Table 11 (Sweeteners including honey), category 11.6",
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "evidenceIds": [
+          "fssai-appendix-a-v3-2025",
+          "fssai-compendium-not-legal-notice"
+        ]
+      }
+    ],
+    "jecfaEvaluations": [
+      {
+        "evaluationDate": null,
+        "meetingNumber": 37,
+        "adiStatus": "numeric",
+        "adi": {
+          "lowerValue": 0,
+          "upperValue": 15,
+          "unit": "mg_per_kg_body_weight_per_day"
+        },
+        "groupName": null,
+        "evaluationNotes": "JECFA record lists an ADI of 0–15 mg/kg bw/day (1990 evaluation).",
+        "evidenceIds": [
+          "jecfa-sucralose"
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "evidenceId": "jecfa-sucralose",
+        "sourceName": "JECFA evaluation: Sucralose (1990)",
+        "publisher": "Joint FAO/WHO Expert Committee on Food Additives (JECFA), hosted by WHO",
+        "sourceType": "scientific_evaluation",
+        "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2340",
+        "documentId": "JECFA evaluation year 1990; meeting 37",
+        "jurisdiction": "International scientific evaluation",
+        "publicationDate": null,
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "accessedAt": "2026-11-13",
+        "locator": "Evaluations section; 1990 entry",
+        "supports": "JECFA record lists an ADI of 0–15 mg/kg bw/day (1990 evaluation).",
+        "licenseStatus": "unknown"
+      },
+      {
+        "evidenceId": "fssai-appendix-a-v3-2025",
+        "sourceName": "Appendix A: Food Category System and Use of Additives, Version 3 (01.08.2025)",
+        "publisher": "Food Safety and Standards Authority of India (FSSAI)",
+        "sourceType": "regulation",
+        "url": "https://fssai.gov.in/upload/uploadfiles/files/Appendix%20A%284%29.pdf",
+        "documentId": "Appendix A, Version 3, 01.08.2025",
+        "jurisdiction": "India",
+        "publicationDate": "2025-08-01",
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "accessedAt": "2026-11-13",
+        "locator": "Appendix A; category tables and additive/INS index; specific table/category locators recorded on each authorization",
+        "supports": "Consolidated reference table lists food categories, additive/group names, INS identifiers and recommended maximum levels. FSSAI states the compendium is not itself a legal document; original Gazette notifications prevail.",
+        "licenseStatus": "unknown"
+      },
+      {
+        "evidenceId": "fssai-compendium-not-legal-notice",
+        "sourceName": "FSSAI Food Products Standards and Food Additives compendium page",
+        "publisher": "Food Safety and Standards Authority of India (FSSAI)",
+        "sourceType": "official_standard",
+        "url": "https://www.fssai.gov.in/food-law/regulations/compendium/food-products-standards",
+        "documentId": "Compendium notice",
+        "jurisdiction": "India",
+        "publicationDate": null,
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "accessedAt": "2026-11-13",
+        "locator": "Notice above compendium downloads",
+        "supports": "FSSAI says the compendium is a ready-reference document, not a legal document, and that original Gazette notifications/amendments prevail in case of error or overlap.",
+        "licenseStatus": "unknown"
+      },
+      {
+        "evidenceId": "fssai-fps-fa-amendment-register",
+        "sourceName": "Food Products Standards and Food Additives amendment register",
+        "publisher": "Food Safety and Standards Authority of India (FSSAI)",
+        "sourceType": "regulation",
+        "url": "https://fssai.gov.in/food-law/regulations/amendments/food-products-standards",
+        "documentId": "Amendment register; Amendment No. 84 dated 10.07.2025 shown as latest entry on access date",
+        "jurisdiction": "India",
+        "publicationDate": null,
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "accessedAt": "2026-11-13",
+        "locator": "Amendment list at top of page",
+        "supports": "The register displayed 85 amendments, with Amendment No. 84 dated 10 July 2025 as its newest listed entry on 13 November 2026. Check this register and original notifications again before any regulatory decision.",
+        "licenseStatus": "unknown"
+      }
+    ],
+    "reviewStatus": "needs_review",
+    "createdAt": "2026-11-13T00:00:00Z",
+    "updatedAt": "2026-11-13T00:00:00Z"
+  },
+  {
+    "schemaVersion": "1.1.0",
+    "additiveId": "bha",
+    "canonicalName": "Butylated hydroxyanisole",
+    "insNumber": "320",
+    "casNumber": "25013-16-5",
+    "aliases": [
+      "BHA",
+      "3-tertiary-butyl-4-hydroxyanisole"
+    ],
+    "technologicalFunctions": [
+      "antioxidant"
+    ],
+    "fssaiAuthorisations": [
+      {
+        "jurisdiction": "India",
+        "foodCategoryCode": "7.0",
+        "foodCategoryName": "Bakery products",
+        "status": "permitted",
+        "maximumLevel": {
+          "type": "numeric",
+          "value": 200,
+          "unit": "mg/kg",
+          "basis": "mg_per_kg_food"
+        },
+        "conditions": [
+          "The FSSAI table entry is for BHA INS 320.",
+          "Table notes 180 and 15 apply; interpret those notes from the original notification."
+        ],
+        "regulationTitle": "Food Safety and Standards (Food Products Standards and Food Additives) Regulations, 2011 — Appendix A consolidated compendium",
+        "notificationId": "FSSAI Appendix A Version 3 (01.08.2025); verify original Gazette notification before compliance use",
+        "tableOrClause": "Appendix A, Table 7 (Bakery products), category 7.0; Notes 180, 15",
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "evidenceIds": [
+          "fssai-appendix-a-v3-2025",
+          "fssai-compendium-not-legal-notice"
+        ]
+      }
+    ],
+    "jecfaEvaluations": [
+      {
+        "evaluationDate": null,
+        "meetingNumber": 33,
+        "adiStatus": "numeric",
+        "adi": {
+          "lowerValue": 0,
+          "upperValue": 0.5,
+          "unit": "mg_per_kg_body_weight_per_day"
+        },
+        "groupName": null,
+        "evaluationNotes": "JECFA record lists an ADI of 0–0.5 mg/kg bw/day (1988 evaluation).",
+        "evidenceIds": [
+          "jecfa-bha"
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "evidenceId": "jecfa-bha",
+        "sourceName": "JECFA evaluation: Butylated hydroxyanisole (1988)",
+        "publisher": "Joint FAO/WHO Expert Committee on Food Additives (JECFA), hosted by WHO",
+        "sourceType": "scientific_evaluation",
+        "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2140",
+        "documentId": "JECFA evaluation year 1988; meeting 33",
+        "jurisdiction": "International scientific evaluation",
+        "publicationDate": null,
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "accessedAt": "2026-11-13",
+        "locator": "Evaluations section; 1988 entry",
+        "supports": "JECFA record lists an ADI of 0–0.5 mg/kg bw/day (1988 evaluation).",
+        "licenseStatus": "unknown"
+      },
+      {
+        "evidenceId": "fssai-appendix-a-v3-2025",
+        "sourceName": "Appendix A: Food Category System and Use of Additives, Version 3 (01.08.2025)",
+        "publisher": "Food Safety and Standards Authority of India (FSSAI)",
+        "sourceType": "regulation",
+        "url": "https://fssai.gov.in/upload/uploadfiles/files/Appendix%20A%284%29.pdf",
+        "documentId": "Appendix A, Version 3, 01.08.2025",
+        "jurisdiction": "India",
+        "publicationDate": "2025-08-01",
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "accessedAt": "2026-11-13",
+        "locator": "Appendix A; category tables and additive/INS index; specific table/category locators recorded on each authorization",
+        "supports": "Consolidated reference table lists food categories, additive/group names, INS identifiers and recommended maximum levels. FSSAI states the compendium is not itself a legal document; original Gazette notifications prevail.",
+        "licenseStatus": "unknown"
+      },
+      {
+        "evidenceId": "fssai-compendium-not-legal-notice",
+        "sourceName": "FSSAI Food Products Standards and Food Additives compendium page",
+        "publisher": "Food Safety and Standards Authority of India (FSSAI)",
+        "sourceType": "official_standard",
+        "url": "https://www.fssai.gov.in/food-law/regulations/compendium/food-products-standards",
+        "documentId": "Compendium notice",
+        "jurisdiction": "India",
+        "publicationDate": null,
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "accessedAt": "2026-11-13",
+        "locator": "Notice above compendium downloads",
+        "supports": "FSSAI says the compendium is a ready-reference document, not a legal document, and that original Gazette notifications/amendments prevail in case of error or overlap.",
+        "licenseStatus": "unknown"
+      },
+      {
+        "evidenceId": "fssai-fps-fa-amendment-register",
+        "sourceName": "Food Products Standards and Food Additives amendment register",
+        "publisher": "Food Safety and Standards Authority of India (FSSAI)",
+        "sourceType": "regulation",
+        "url": "https://fssai.gov.in/food-law/regulations/amendments/food-products-standards",
+        "documentId": "Amendment register; Amendment No. 84 dated 10.07.2025 shown as latest entry on access date",
+        "jurisdiction": "India",
+        "publicationDate": null,
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "accessedAt": "2026-11-13",
+        "locator": "Amendment list at top of page",
+        "supports": "The register displayed 85 amendments, with Amendment No. 84 dated 10 July 2025 as its newest listed entry on 13 November 2026. Check this register and original notifications again before any regulatory decision.",
+        "licenseStatus": "unknown"
+      }
+    ],
+    "reviewStatus": "needs_review",
+    "createdAt": "2026-11-13T00:00:00Z",
+    "updatedAt": "2026-11-13T00:00:00Z"
+  },
+  {
+    "schemaVersion": "1.1.0",
+    "additiveId": "bht",
+    "canonicalName": "Butylated hydroxytoluene",
+    "insNumber": "321",
+    "casNumber": "128-37-0",
+    "aliases": [
+      "BHT",
+      "2,6-ditertiary-butyl-p-cresol"
+    ],
+    "technologicalFunctions": [
+      "antioxidant"
+    ],
+    "fssaiAuthorisations": [
+      {
+        "jurisdiction": "India",
+        "foodCategoryCode": "7.0",
+        "foodCategoryName": "Bakery products",
+        "status": "permitted",
+        "maximumLevel": {
+          "type": "numeric",
+          "value": 200,
+          "unit": "mg/kg",
+          "basis": "mg_per_kg_food"
+        },
+        "conditions": [
+          "The FSSAI table entry is for BHT INS 321.",
+          "Table notes 180 and 15 apply; interpret those notes from the original notification."
+        ],
+        "regulationTitle": "Food Safety and Standards (Food Products Standards and Food Additives) Regulations, 2011 — Appendix A consolidated compendium",
+        "notificationId": "FSSAI Appendix A Version 3 (01.08.2025); verify original Gazette notification before compliance use",
+        "tableOrClause": "Appendix A, Table 7 (Bakery products), category 7.0; Notes 180, 15",
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "evidenceIds": [
+          "fssai-appendix-a-v3-2025",
+          "fssai-compendium-not-legal-notice"
+        ]
+      }
+    ],
+    "jecfaEvaluations": [
+      {
+        "evaluationDate": null,
+        "meetingNumber": 44,
+        "adiStatus": "numeric",
+        "adi": {
+          "lowerValue": 0,
+          "upperValue": 0.3,
+          "unit": "mg_per_kg_body_weight_per_day"
+        },
+        "groupName": null,
+        "evaluationNotes": "JECFA record lists an ADI of 0–0.3 mg/kg bw/day (1995 evaluation).",
+        "evidenceIds": [
+          "jecfa-bht"
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "evidenceId": "jecfa-bht",
+        "sourceName": "JECFA evaluation: Butylated hydroxytoluene (1995)",
+        "publisher": "Joint FAO/WHO Expert Committee on Food Additives (JECFA), hosted by WHO",
+        "sourceType": "scientific_evaluation",
+        "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2142",
+        "documentId": "JECFA evaluation year 1995; meeting 44",
+        "jurisdiction": "International scientific evaluation",
+        "publicationDate": null,
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "accessedAt": "2026-11-13",
+        "locator": "Evaluations section; 1995 entry",
+        "supports": "JECFA record lists an ADI of 0–0.3 mg/kg bw/day (1995 evaluation).",
+        "licenseStatus": "unknown"
+      },
+      {
+        "evidenceId": "fssai-appendix-a-v3-2025",
+        "sourceName": "Appendix A: Food Category System and Use of Additives, Version 3 (01.08.2025)",
+        "publisher": "Food Safety and Standards Authority of India (FSSAI)",
+        "sourceType": "regulation",
+        "url": "https://fssai.gov.in/upload/uploadfiles/files/Appendix%20A%284%29.pdf",
+        "documentId": "Appendix A, Version 3, 01.08.2025",
+        "jurisdiction": "India",
+        "publicationDate": "2025-08-01",
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "accessedAt": "2026-11-13",
+        "locator": "Appendix A; category tables and additive/INS index; specific table/category locators recorded on each authorization",
+        "supports": "Consolidated reference table lists food categories, additive/group names, INS identifiers and recommended maximum levels. FSSAI states the compendium is not itself a legal document; original Gazette notifications prevail.",
+        "licenseStatus": "unknown"
+      },
+      {
+        "evidenceId": "fssai-compendium-not-legal-notice",
+        "sourceName": "FSSAI Food Products Standards and Food Additives compendium page",
+        "publisher": "Food Safety and Standards Authority of India (FSSAI)",
+        "sourceType": "official_standard",
+        "url": "https://www.fssai.gov.in/food-law/regulations/compendium/food-products-standards",
+        "documentId": "Compendium notice",
+        "jurisdiction": "India",
+        "publicationDate": null,
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "accessedAt": "2026-11-13",
+        "locator": "Notice above compendium downloads",
+        "supports": "FSSAI says the compendium is a ready-reference document, not a legal document, and that original Gazette notifications/amendments prevail in case of error or overlap.",
+        "licenseStatus": "unknown"
+      },
+      {
+        "evidenceId": "fssai-fps-fa-amendment-register",
+        "sourceName": "Food Products Standards and Food Additives amendment register",
+        "publisher": "Food Safety and Standards Authority of India (FSSAI)",
+        "sourceType": "regulation",
+        "url": "https://fssai.gov.in/food-law/regulations/amendments/food-products-standards",
+        "documentId": "Amendment register; Amendment No. 84 dated 10.07.2025 shown as latest entry on access date",
+        "jurisdiction": "India",
+        "publicationDate": null,
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "accessedAt": "2026-11-13",
+        "locator": "Amendment list at top of page",
+        "supports": "The register displayed 85 amendments, with Amendment No. 84 dated 10 July 2025 as its newest listed entry on 13 November 2026. Check this register and original notifications again before any regulatory decision.",
+        "licenseStatus": "unknown"
+      }
+    ],
+    "reviewStatus": "needs_review",
+    "createdAt": "2026-11-13T00:00:00Z",
+    "updatedAt": "2026-11-13T00:00:00Z"
+  },
+  {
+    "schemaVersion": "1.1.0",
+    "additiveId": "sodium_nitrite",
+    "canonicalName": "Sodium nitrite",
+    "insNumber": "250",
+    "casNumber": "7632-00-0",
+    "aliases": [
+      "nitrite preservative"
+    ],
+    "technologicalFunctions": [
+      "preservative",
+      "colour retention agent"
+    ],
+    "fssaiAuthorisations": [
+      {
+        "jurisdiction": "India",
+        "foodCategoryCode": "8.2.1.3",
+        "foodCategoryName": "Fermented non-heat treated processed meat and poultry products in whole pieces or cuts",
+        "status": "conditional",
+        "maximumLevel": {
+          "type": "numeric",
+          "value": 80,
+          "unit": "mg/kg",
+          "basis": "mg_per_kg_food"
+        },
+        "conditions": [
+          "Appendix A entry is the group NITRITES, not a sodium-nitrite-only row.",
+          "Notes 32 and 288 apply and must be checked in the original notification.",
+          "Use only for the specified processed meat/poultry food category."
+        ],
+        "regulationTitle": "Food Safety and Standards (Food Products Standards and Food Additives) Regulations, 2011 — Appendix A consolidated compendium",
+        "notificationId": "FSSAI Appendix A Version 3 (01.08.2025); verify original Gazette notification before compliance use",
+        "tableOrClause": "Appendix A, Table 8 (Meat and meat products including poultry), category 8.2.1.3; Notes 32, 288",
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "evidenceIds": [
+          "fssai-appendix-a-v3-2025",
+          "fssai-compendium-not-legal-notice"
+        ]
+      }
+    ],
+    "jecfaEvaluations": [
+      {
+        "evaluationDate": null,
+        "meetingNumber": 59,
+        "adiStatus": "numeric",
+        "adi": {
+          "lowerValue": 0,
+          "upperValue": 0.07,
+          "unit": "mg_per_kg_body_weight_per_day"
+        },
+        "groupName": null,
+        "evaluationNotes": "JECFA ADI is 0–0.07 mg/kg bw/day expressed as nitrite ion; applies to all sources of intake but not to infants below 3 months. Do not treat the ADI as the amount present in a product.",
+        "evidenceIds": [
+          "jecfa-sodium_nitrite"
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "evidenceId": "jecfa-sodium_nitrite",
+        "sourceName": "JECFA evaluation: Sodium nitrite (2002)",
+        "publisher": "Joint FAO/WHO Expert Committee on Food Additives (JECFA), hosted by WHO",
+        "sourceType": "scientific_evaluation",
+        "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/4792",
+        "documentId": "JECFA evaluation year 2002; meeting 59",
+        "jurisdiction": "International scientific evaluation",
+        "publicationDate": null,
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "accessedAt": "2026-11-13",
+        "locator": "Evaluations section; 2002 entry",
+        "supports": "JECFA ADI is 0–0.07 mg/kg bw/day expressed as nitrite ion; applies to all sources of intake but not to infants below 3 months. Do not treat the ADI as the amount present in a product.",
+        "licenseStatus": "unknown"
+      },
+      {
+        "evidenceId": "fssai-appendix-a-v3-2025",
+        "sourceName": "Appendix A: Food Category System and Use of Additives, Version 3 (01.08.2025)",
+        "publisher": "Food Safety and Standards Authority of India (FSSAI)",
+        "sourceType": "regulation",
+        "url": "https://fssai.gov.in/upload/uploadfiles/files/Appendix%20A%284%29.pdf",
+        "documentId": "Appendix A, Version 3, 01.08.2025",
+        "jurisdiction": "India",
+        "publicationDate": "2025-08-01",
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "accessedAt": "2026-11-13",
+        "locator": "Appendix A; category tables and additive/INS index; specific table/category locators recorded on each authorization",
+        "supports": "Consolidated reference table lists food categories, additive/group names, INS identifiers and recommended maximum levels. FSSAI states the compendium is not itself a legal document; original Gazette notifications prevail.",
+        "licenseStatus": "unknown"
+      },
+      {
+        "evidenceId": "fssai-compendium-not-legal-notice",
+        "sourceName": "FSSAI Food Products Standards and Food Additives compendium page",
+        "publisher": "Food Safety and Standards Authority of India (FSSAI)",
+        "sourceType": "official_standard",
+        "url": "https://www.fssai.gov.in/food-law/regulations/compendium/food-products-standards",
+        "documentId": "Compendium notice",
+        "jurisdiction": "India",
+        "publicationDate": null,
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "accessedAt": "2026-11-13",
+        "locator": "Notice above compendium downloads",
+        "supports": "FSSAI says the compendium is a ready-reference document, not a legal document, and that original Gazette notifications/amendments prevail in case of error or overlap.",
+        "licenseStatus": "unknown"
+      },
+      {
+        "evidenceId": "fssai-fps-fa-amendment-register",
+        "sourceName": "Food Products Standards and Food Additives amendment register",
+        "publisher": "Food Safety and Standards Authority of India (FSSAI)",
+        "sourceType": "regulation",
+        "url": "https://fssai.gov.in/food-law/regulations/amendments/food-products-standards",
+        "documentId": "Amendment register; Amendment No. 84 dated 10.07.2025 shown as latest entry on access date",
+        "jurisdiction": "India",
+        "publicationDate": null,
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "accessedAt": "2026-11-13",
+        "locator": "Amendment list at top of page",
+        "supports": "The register displayed 85 amendments, with Amendment No. 84 dated 10 July 2025 as its newest listed entry on 13 November 2026. Check this register and original notifications again before any regulatory decision.",
+        "licenseStatus": "unknown"
+      }
+    ],
+    "reviewStatus": "needs_review",
+    "createdAt": "2026-11-13T00:00:00Z",
+    "updatedAt": "2026-11-13T00:00:00Z"
+  },
+  {
+    "schemaVersion": "1.1.0",
+    "additiveId": "monosodium_glutamate",
+    "canonicalName": "Monosodium L-glutamate",
+    "insNumber": "621",
+    "casNumber": "142-47-2",
+    "aliases": [
+      "MSG",
+      "sodium glutamate"
+    ],
+    "technologicalFunctions": [
+      "flavour enhancer"
+    ],
+    "fssaiAuthorisations": [],
+    "jecfaEvaluations": [
+      {
+        "evaluationDate": null,
+        "meetingNumber": 31,
+        "adiStatus": "not_specified",
+        "adi": null,
+        "groupName": "L-glutamic acid and its ammonium, calcium, monosodium, magnesium and potassium salts",
+        "evaluationNotes": "JECFA record states ADI NOT SPECIFIED for the group of L-glutamic acid and its ammonium, calcium, monosodium, magnesium and potassium salts. Not specified is not a numeric allowance and should not be represented as zero.",
+        "evidenceIds": [
+          "jecfa-monosodium_glutamate"
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "evidenceId": "jecfa-monosodium_glutamate",
+        "sourceName": "JECFA evaluation: Monosodium L-glutamate (1987)",
+        "publisher": "Joint FAO/WHO Expert Committee on Food Additives (JECFA), hosted by WHO",
+        "sourceType": "scientific_evaluation",
+        "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2257",
+        "documentId": "JECFA evaluation year 1987; meeting 31",
+        "jurisdiction": "International scientific evaluation",
+        "publicationDate": null,
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "accessedAt": "2026-11-13",
+        "locator": "Evaluations section; 1987 entry",
+        "supports": "JECFA record states ADI NOT SPECIFIED for the group of L-glutamic acid and its ammonium, calcium, monosodium, magnesium and potassium salts. Not specified is not a numeric allowance and should not be represented as zero.",
+        "licenseStatus": "unknown"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "createdAt": "2026-11-13T00:00:00Z",
+    "updatedAt": "2026-11-13T00:00:00Z"
+  },
+  {
+    "schemaVersion": "1.1.0",
+    "additiveId": "brilliant_blue_fcf",
+    "canonicalName": "Brilliant Blue FCF",
+    "insNumber": "133",
+    "casNumber": "3844-45-9",
+    "aliases": [
+      "CI Food Blue 2",
+      "FD&C Blue No. 1"
+    ],
+    "technologicalFunctions": [
+      "colour"
+    ],
+    "fssaiAuthorisations": [
+      {
+        "jurisdiction": "India",
+        "foodCategoryCode": "4.1.2.6",
+        "foodCategoryName": "Fruit-based spreads (e.g. chutney) excluding products specified separately",
+        "status": "permitted",
+        "maximumLevel": {
+          "type": "numeric",
+          "value": 100,
+          "unit": "mg/kg",
+          "basis": "mg_per_kg_food"
+        },
+        "conditions": [],
+        "regulationTitle": "Food Safety and Standards (Food Products Standards and Food Additives) Regulations, 2011 — Appendix A consolidated compendium",
+        "notificationId": "FSSAI Appendix A Version 3 (01.08.2025); verify original Gazette notification before compliance use",
+        "tableOrClause": "Appendix A, Table 4 (Fruits and vegetables), category 4.1.2.6",
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "evidenceIds": [
+          "fssai-appendix-a-v3-2025",
+          "fssai-compendium-not-legal-notice"
+        ]
+      }
+    ],
+    "jecfaEvaluations": [
+      {
+        "evaluationDate": null,
+        "meetingNumber": 84,
+        "adiStatus": "numeric",
+        "adi": {
+          "lowerValue": 0,
+          "upperValue": 6,
+          "unit": "mg_per_kg_body_weight_per_day"
+        },
+        "groupName": null,
+        "evaluationNotes": "JECFA established an ADI of 0–6 mg/kg bw/day in 2017.",
+        "evidenceIds": [
+          "jecfa-brilliant_blue_fcf"
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "evidenceId": "jecfa-brilliant_blue_fcf",
+        "sourceName": "JECFA evaluation: Brilliant Blue FCF (2017)",
+        "publisher": "Joint FAO/WHO Expert Committee on Food Additives (JECFA), hosted by WHO",
+        "sourceType": "scientific_evaluation",
+        "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3309",
+        "documentId": "JECFA evaluation year 2017; meeting 84",
+        "jurisdiction": "International scientific evaluation",
+        "publicationDate": null,
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "accessedAt": "2026-11-13",
+        "locator": "Evaluations section; 2017 entry",
+        "supports": "JECFA established an ADI of 0–6 mg/kg bw/day in 2017.",
+        "licenseStatus": "unknown"
+      },
+      {
+        "evidenceId": "fssai-appendix-a-v3-2025",
+        "sourceName": "Appendix A: Food Category System and Use of Additives, Version 3 (01.08.2025)",
+        "publisher": "Food Safety and Standards Authority of India (FSSAI)",
+        "sourceType": "regulation",
+        "url": "https://fssai.gov.in/upload/uploadfiles/files/Appendix%20A%284%29.pdf",
+        "documentId": "Appendix A, Version 3, 01.08.2025",
+        "jurisdiction": "India",
+        "publicationDate": "2025-08-01",
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "accessedAt": "2026-11-13",
+        "locator": "Appendix A; category tables and additive/INS index; specific table/category locators recorded on each authorization",
+        "supports": "Consolidated reference table lists food categories, additive/group names, INS identifiers and recommended maximum levels. FSSAI states the compendium is not itself a legal document; original Gazette notifications prevail.",
+        "licenseStatus": "unknown"
+      },
+      {
+        "evidenceId": "fssai-compendium-not-legal-notice",
+        "sourceName": "FSSAI Food Products Standards and Food Additives compendium page",
+        "publisher": "Food Safety and Standards Authority of India (FSSAI)",
+        "sourceType": "official_standard",
+        "url": "https://www.fssai.gov.in/food-law/regulations/compendium/food-products-standards",
+        "documentId": "Compendium notice",
+        "jurisdiction": "India",
+        "publicationDate": null,
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "accessedAt": "2026-11-13",
+        "locator": "Notice above compendium downloads",
+        "supports": "FSSAI says the compendium is a ready-reference document, not a legal document, and that original Gazette notifications/amendments prevail in case of error or overlap.",
+        "licenseStatus": "unknown"
+      },
+      {
+        "evidenceId": "fssai-fps-fa-amendment-register",
+        "sourceName": "Food Products Standards and Food Additives amendment register",
+        "publisher": "Food Safety and Standards Authority of India (FSSAI)",
+        "sourceType": "regulation",
+        "url": "https://fssai.gov.in/food-law/regulations/amendments/food-products-standards",
+        "documentId": "Amendment register; Amendment No. 84 dated 10.07.2025 shown as latest entry on access date",
+        "jurisdiction": "India",
+        "publicationDate": null,
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "accessedAt": "2026-11-13",
+        "locator": "Amendment list at top of page",
+        "supports": "The register displayed 85 amendments, with Amendment No. 84 dated 10 July 2025 as its newest listed entry on 13 November 2026. Check this register and original notifications again before any regulatory decision.",
+        "licenseStatus": "unknown"
+      }
+    ],
+    "reviewStatus": "needs_review",
+    "createdAt": "2026-11-13T00:00:00Z",
+    "updatedAt": "2026-11-13T00:00:00Z"
+  },
+  {
+    "schemaVersion": "1.1.0",
+    "additiveId": "allura_red_ac",
+    "canonicalName": "Allura Red AC",
+    "insNumber": "129",
+    "casNumber": "25956-17-6",
+    "aliases": [
+      "CI Food Red 17",
+      "FD&C Red No. 40"
+    ],
+    "technologicalFunctions": [
+      "colour"
+    ],
+    "fssaiAuthorisations": [
+      {
+        "jurisdiction": "India",
+        "foodCategoryCode": "4.1.2.8",
+        "foodCategoryName": "Fruit preparations, including fruit pulp, purees, fruit toppings and coconut milk",
+        "status": "permitted",
+        "maximumLevel": {
+          "type": "numeric",
+          "value": 100,
+          "unit": "mg/kg",
+          "basis": "mg_per_kg_food"
+        },
+        "conditions": [],
+        "regulationTitle": "Food Safety and Standards (Food Products Standards and Food Additives) Regulations, 2011 — Appendix A consolidated compendium",
+        "notificationId": "FSSAI Appendix A Version 3 (01.08.2025); verify original Gazette notification before compliance use",
+        "tableOrClause": "Appendix A, Table 4 (Fruits and vegetables), category 4.1.2.8",
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "evidenceIds": [
+          "fssai-appendix-a-v3-2025",
+          "fssai-compendium-not-legal-notice"
+        ]
+      }
+    ],
+    "jecfaEvaluations": [
+      {
+        "evaluationDate": null,
+        "meetingNumber": 82,
+        "adiStatus": "numeric",
+        "adi": {
+          "lowerValue": 0,
+          "upperValue": 7,
+          "unit": "mg_per_kg_body_weight_per_day"
+        },
+        "groupName": null,
+        "evaluationNotes": "JECFA confirmed an ADI of 0–7 mg/kg bw/day in its 2016 evaluation.",
+        "evidenceIds": [
+          "jecfa-allura_red_ac"
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "evidenceId": "jecfa-allura_red_ac",
+        "sourceName": "JECFA evaluation: Allura Red AC (2016)",
+        "publisher": "Joint FAO/WHO Expert Committee on Food Additives (JECFA), hosted by WHO",
+        "sourceType": "scientific_evaluation",
+        "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2361",
+        "documentId": "JECFA evaluation year 2016; meeting 82",
+        "jurisdiction": "International scientific evaluation",
+        "publicationDate": null,
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "accessedAt": "2026-11-13",
+        "locator": "Evaluations section; 2016 entry",
+        "supports": "JECFA confirmed an ADI of 0–7 mg/kg bw/day in its 2016 evaluation.",
+        "licenseStatus": "unknown"
+      },
+      {
+        "evidenceId": "fssai-appendix-a-v3-2025",
+        "sourceName": "Appendix A: Food Category System and Use of Additives, Version 3 (01.08.2025)",
+        "publisher": "Food Safety and Standards Authority of India (FSSAI)",
+        "sourceType": "regulation",
+        "url": "https://fssai.gov.in/upload/uploadfiles/files/Appendix%20A%284%29.pdf",
+        "documentId": "Appendix A, Version 3, 01.08.2025",
+        "jurisdiction": "India",
+        "publicationDate": "2025-08-01",
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "accessedAt": "2026-11-13",
+        "locator": "Appendix A; category tables and additive/INS index; specific table/category locators recorded on each authorization",
+        "supports": "Consolidated reference table lists food categories, additive/group names, INS identifiers and recommended maximum levels. FSSAI states the compendium is not itself a legal document; original Gazette notifications prevail.",
+        "licenseStatus": "unknown"
+      },
+      {
+        "evidenceId": "fssai-compendium-not-legal-notice",
+        "sourceName": "FSSAI Food Products Standards and Food Additives compendium page",
+        "publisher": "Food Safety and Standards Authority of India (FSSAI)",
+        "sourceType": "official_standard",
+        "url": "https://www.fssai.gov.in/food-law/regulations/compendium/food-products-standards",
+        "documentId": "Compendium notice",
+        "jurisdiction": "India",
+        "publicationDate": null,
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "accessedAt": "2026-11-13",
+        "locator": "Notice above compendium downloads",
+        "supports": "FSSAI says the compendium is a ready-reference document, not a legal document, and that original Gazette notifications/amendments prevail in case of error or overlap.",
+        "licenseStatus": "unknown"
+      },
+      {
+        "evidenceId": "fssai-fps-fa-amendment-register",
+        "sourceName": "Food Products Standards and Food Additives amendment register",
+        "publisher": "Food Safety and Standards Authority of India (FSSAI)",
+        "sourceType": "regulation",
+        "url": "https://fssai.gov.in/food-law/regulations/amendments/food-products-standards",
+        "documentId": "Amendment register; Amendment No. 84 dated 10.07.2025 shown as latest entry on access date",
+        "jurisdiction": "India",
+        "publicationDate": null,
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "accessedAt": "2026-11-13",
+        "locator": "Amendment list at top of page",
+        "supports": "The register displayed 85 amendments, with Amendment No. 84 dated 10 July 2025 as its newest listed entry on 13 November 2026. Check this register and original notifications again before any regulatory decision.",
+        "licenseStatus": "unknown"
+      }
+    ],
+    "reviewStatus": "needs_review",
+    "createdAt": "2026-11-13T00:00:00Z",
+    "updatedAt": "2026-11-13T00:00:00Z"
+  },
+  {
+    "schemaVersion": "1.1.0",
+    "additiveId": "sunset_yellow_fcf",
+    "canonicalName": "Sunset Yellow FCF",
+    "insNumber": "110",
+    "casNumber": "2783-94-0",
+    "aliases": [
+      "CI Food Yellow 3",
+      "Orange Yellow S"
+    ],
+    "technologicalFunctions": [
+      "colour"
+    ],
+    "fssaiAuthorisations": [],
+    "jecfaEvaluations": [
+      {
+        "evaluationDate": null,
+        "meetingNumber": null,
+        "adiStatus": "numeric",
+        "adi": {
+          "lowerValue": 0,
+          "upperValue": 4,
+          "unit": "mg_per_kg_body_weight_per_day"
+        },
+        "groupName": null,
+        "evaluationNotes": "JECFA established an ADI of 0–4 mg/kg bw/day in its 2011 evaluation.",
+        "evidenceIds": [
+          "jecfa-sunset_yellow_fcf"
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "evidenceId": "jecfa-sunset_yellow_fcf",
+        "sourceName": "JECFA evaluation: Sunset Yellow FCF (2011)",
+        "publisher": "Joint FAO/WHO Expert Committee on Food Additives (JECFA), hosted by WHO",
+        "sourceType": "scientific_evaluation",
+        "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2703",
+        "documentId": "JECFA evaluation year 2011; meeting not captured",
+        "jurisdiction": "International scientific evaluation",
+        "publicationDate": null,
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "accessedAt": "2026-11-13",
+        "locator": "Evaluations section; 2011 entry",
+        "supports": "JECFA established an ADI of 0–4 mg/kg bw/day in its 2011 evaluation.",
+        "licenseStatus": "unknown"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "createdAt": "2026-11-13T00:00:00Z",
+    "updatedAt": "2026-11-13T00:00:00Z"
+  },
+  {
+    "schemaVersion": "1.1.0",
+    "additiveId": "citric_acid",
+    "canonicalName": "Citric acid",
+    "insNumber": "330",
+    "casNumber": "77-92-9",
+    "aliases": [
+      "2-hydroxypropane-1,2,3-tricarboxylic acid"
+    ],
+    "technologicalFunctions": [
+      "acidity regulator",
+      "antioxidant synergist",
+      "sequestrant"
+    ],
+    "fssaiAuthorisations": [],
+    "jecfaEvaluations": [
+      {
+        "evaluationDate": null,
+        "meetingNumber": 79,
+        "adiStatus": "not_limited",
+        "adi": null,
+        "groupName": "Citric acid and its salts/bases",
+        "evaluationNotes": "JECFA record states NOT LIMITED in the 2014 evaluation and says it was considered for specifications only. This is not a numeric ADI; retain the source wording and do not convert it to zero or an unlimited product-use permission.",
+        "evidenceIds": [
+          "jecfa-citric_acid"
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "evidenceId": "jecfa-citric_acid",
+        "sourceName": "JECFA evaluation: Citric acid (2014)",
+        "publisher": "Joint FAO/WHO Expert Committee on Food Additives (JECFA), hosted by WHO",
+        "sourceType": "scientific_evaluation",
+        "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3594",
+        "documentId": "JECFA evaluation year 2014; meeting 79",
+        "jurisdiction": "International scientific evaluation",
+        "publicationDate": null,
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "accessedAt": "2026-11-13",
+        "locator": "Evaluations section; 2014 entry",
+        "supports": "JECFA record states NOT LIMITED in the 2014 evaluation and says it was considered for specifications only. This is not a numeric ADI; retain the source wording and do not convert it to zero or an unlimited product-use permission.",
+        "licenseStatus": "unknown"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "createdAt": "2026-11-13T00:00:00Z",
+    "updatedAt": "2026-11-13T00:00:00Z"
+  },
+  {
+    "schemaVersion": "1.1.0",
+    "additiveId": "calcium_propionate",
+    "canonicalName": "Calcium propionate",
+    "insNumber": "282",
+    "casNumber": "4075-81-4",
+    "aliases": [
+      "calcium propanoate"
+    ],
+    "technologicalFunctions": [
+      "preservative"
+    ],
+    "fssaiAuthorisations": [],
+    "jecfaEvaluations": [
+      {
+        "evaluationDate": null,
+        "meetingNumber": 49,
+        "adiStatus": "not_limited",
+        "adi": null,
+        "groupName": "Propionic acid and its calcium, potassium and sodium salts",
+        "evaluationNotes": "JECFA record says the 1973 group ADI of NOT LIMITED for propionic acid and its calcium, potassium and sodium salts was maintained at the 49th meeting (1997). Not limited by JECFA ADI is not the same as FSSAI permission or absence of food-category conditions.",
+        "evidenceIds": [
+          "jecfa-calcium_propionate"
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "evidenceId": "jecfa-calcium_propionate",
+        "sourceName": "JECFA evaluation: Calcium propionate (1997)",
+        "publisher": "Joint FAO/WHO Expert Committee on Food Additives (JECFA), hosted by WHO",
+        "sourceType": "scientific_evaluation",
+        "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2163",
+        "documentId": "JECFA evaluation year 1997; meeting 49",
+        "jurisdiction": "International scientific evaluation",
+        "publicationDate": null,
+        "effectiveFrom": null,
+        "effectiveTo": null,
+        "accessedAt": "2026-11-13",
+        "locator": "Evaluations section; 1997 entry",
+        "supports": "JECFA record says the 1973 group ADI of NOT LIMITED for propionic acid and its calcium, potassium and sodium salts was maintained at the 49th meeting (1997). Not limited by JECFA ADI is not the same as FSSAI permission or absence of food-category conditions.",
+        "licenseStatus": "unknown"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "createdAt": "2026-11-13T00:00:00Z",
+    "updatedAt": "2026-11-13T00:00:00Z"
+  }
+]
