@@ -14,12 +14,12 @@ export async function preprocessImage(imageUri) {
     [
       {
         resize: {
-          width: 2000,
+          width: 1600,
         },
       },
     ],
     {
-      compress: 0.9,
+      compress: 0.7,
       format: ImageManipulator.SaveFormat.JPEG,
     }
   );

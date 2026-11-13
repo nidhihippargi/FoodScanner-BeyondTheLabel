@@ -1,73 +1,75 @@
-let TextRecognition = null;
-try {
-  TextRecognition = require('@react-native-ml-kit/text-recognition').default;
-} catch (e) {}
-
-let cleanOcrText = (t) => (t || '').trim();
-let extractLabelData = (t) => ({ rawText: t, ingredients: t, nutrition: {} });
-try {
-  const ocrMod = require('foodscanner-vision/src/ocr');
-  cleanOcrText = ocrMod.cleanOcrText || cleanOcrText;
-  extractLabelData = ocrMod.extractLabelData || extractLabelData;
-} catch (e) {}
-
 import { preprocessImage } from './imageProcessing';
+import { BASE_URL } from './api';
 
-/**
- * Complete food-label OCR pipeline.
- */
-export async function recognizeFoodLabel(imageUri) {
+export async function recognizeText(imageUri) {
   try {
-    // Step 1: Prepare image
+    // 1. Resize and compress the captured image.
     const preparedImage = await preprocessImage(imageUri);
 
-    // Step 2: Recognize text using Google ML Kit
-    const ocrResult = await TextRecognition.recognize(
-      preparedImage.uri
+    // 2. Read the processed image.
+    const response = await fetch(preparedImage.uri);
+    const blob = await response.blob();
+
+    // 3. Convert image to Base64 for the backend.
+    const base64Image = await new Promise((resolve, reject) => {
+      const reader = new FileReader();
+
+      reader.onloadend = () => {
+        const result = reader.result;
+
+        if (typeof result !== 'string' || !result.includes(',')) {
+          reject(new Error('Could not encode image.'));
+          return;
+        }
+
+        resolve(result.split(',')[1]);
+      };
+
+      reader.onerror = () => reject(new Error('Image reading failed.'));
+      reader.readAsDataURL(blob);
+    });
+
+    // 4. Send image to our backend OCR endpoint.
+    const ocrResponse = await fetch(
+      `${BASE_URL}/api/ocr/recognize`,
+      {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          base64Image,
+          byteSize: blob.size,
+        }),
+      }
     );
 
-    // Step 3: Get raw recognized text
-    const rawText = ocrResult.text || '';
+    const result = await ocrResponse.json();
 
-    if (!rawText.trim()) {
-      return {
-        success: false,
-        error: 'No text detected in the image.',
-        rawText: '',
-        data: null,
-      };
+    if (!ocrResponse.ok || !result.success) {
+      throw new Error(
+        result.message || result.error?.message || 'OCR failed.'
+      );
     }
 
-    // Step 4: Clean recognized text
-    const cleaned = cleanOcrText(rawText);
-
-    if (!cleaned.success) {
-      return {
-        success: false,
-        error: cleaned.error,
-        rawText,
-        data: null,
-      };
-    }
-
-    // Step 5: Extract structured food-label information
-    const extractedData = extractLabelData(cleaned.text);
-
+    // 5. Return recognized text to the review screen.
     return {
-      success: extractedData.success,
-      rawText,
-      cleanedText: cleaned.text,
-      blocks: ocrResult.blocks?.map(block => block.text) || [],
-      data: extractedData,
-      error: extractedData.error || null,
+      success: true,
+      text: result.text,
+      imageUri,
+      mocked: false,
+      confidence: result.confidence,
     };
 
   } catch (error) {
+    console.error('OCR error:', error);
+
     return {
       success: false,
+      text: '',
+      imageUri,
+      mocked: false,
       error: error.message || 'Food label recognition failed.',
-      rawText: '',
-      data: null,
     };
   }
 }

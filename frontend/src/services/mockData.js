@@ -12,8 +12,15 @@
  *     claims[], preferenceFlags[], highlights[], missingFields[] }
  */
 import { ApiError } from './api';
-import { NUTRIENTS, normalizeToPer100 } from '../utils/nutrition';
+import { NUTRIENTS } from '../utils/normalizer';
 
+function normalizeToPer100(value, servingSize) {
+  if (value == null || !servingSize || !servingSize.value) {
+    return null;
+  }
+
+  return (value * 100) / servingSize.value;
+}
 const delay = (ms = 900) => new Promise((r) => setTimeout(r, ms));
 
 const SAMPLES = [

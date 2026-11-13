@@ -13,10 +13,20 @@ function resolveBaseUrl() {
 }
 export const BASE_URL = resolveBaseUrl();
 
+export class ApiError extends Error {
+  constructor(message, options = {}) {
+    super(message);
+    this.name = 'ApiError';
+    this.code = options.code || 'SERVER_ERROR';
+    this.retryable = options.retryable || false;
+  }
+}
+
 function makeError(message, code) {
-  const e = new Error(message);
-  e.code = code;
-  return e;
+  return new ApiError(message, {
+    code,
+    retryable: ['NETWORK', 'TIMEOUT'].includes(code),
+  });
 }
 
 async function timedFetch(url, options = {}, timeoutMs = 20000) {
@@ -43,9 +53,12 @@ async function request(path, { method = 'GET', body, timeoutMs = 20000 } = {}) {
   });
   const json = await res.json().catch(() => null);
   if (!json || json.success !== true) {
-    throw makeError((json && json.error && json.error.message) || `Server error (${res.status})`, (json && json.error && json.error.code) || 'SERVER_ERROR');
+    throw makeError(
+  json?.error?.message || json?.message || `Server error (${res.status})`,
+  json?.error?.code || 'SERVER_ERROR'
+);
   }
-  return json.data;
+  return json.data ?? json.product ?? json;
 }
 
 /* ------------------------------------------------------------------ */
@@ -161,3 +174,33 @@ export async function scanBarcode(barcodeInput) {
 export const scanOcr = (text, engineConfidence) => request('/scan/ocr', { method: 'POST', body: { text, engineConfidence } });
 export const analyze = (payload) => request('/analyze', { method: 'POST', body: payload });
 export const health = () => request('/health');
+// Real backend is the default; mock mode can be enabled explicitly.
+export const USE_MOCK = process.env.EXPO_PUBLIC_USE_MOCK === 'true';
+
+// Fetch a product through our backend (MongoDB cache + Open Food Facts).
+export async function lookupBarcode(barcode) {
+  const result = await request(
+    `/products/${encodeURIComponent(String(barcode))}`
+  );
+
+  return {
+    found: true,
+    product: result,
+    parsedData: result,
+  };
+}
+
+// Temporary adapter for the existing OCR review screen.
+// Structured nutrition extraction will be connected in the OCR step.
+export async function analyzeIngredients(text) {
+  const result = await analyze({
+    productName: 'Scanned food product',
+    ingredients: text,
+    servingSize: null,
+    nutrition: {},
+    claims: [],
+    preferences: [],
+  });
+
+  return result;
+}
