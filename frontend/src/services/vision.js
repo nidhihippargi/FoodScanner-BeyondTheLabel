@@ -1,3 +1,4 @@
+
 import { preprocessImage } from './imageProcessing';
 import { BASE_URL } from './api';
 
@@ -8,6 +9,11 @@ export async function recognizeText(imageUri) {
 
     // 2. Read the processed image.
     const response = await fetch(preparedImage.uri);
+
+    if (!response.ok) {
+      throw new Error('Could not read the captured image.');
+    }
+
     const blob = await response.blob();
 
     // 3. Convert image to Base64 for the backend.
@@ -29,7 +35,7 @@ export async function recognizeText(imageUri) {
       reader.readAsDataURL(blob);
     });
 
-    // 4. Send image to our backend OCR endpoint.
+    // 4. Send image to the backend OCR endpoint.
     const ocrResponse = await fetch(
       `${BASE_URL}/api/ocr/recognize`,
       {
@@ -48,17 +54,37 @@ export async function recognizeText(imageUri) {
 
     if (!ocrResponse.ok || !result.success) {
       throw new Error(
-        result.message || result.error?.message || 'OCR failed.'
+        result.message ||
+        result.error?.message ||
+        'Food label recognition failed.'
       );
     }
 
-    // 5. Return recognized text to the review screen.
+    // 5. Preserve both raw OCR output and structured extraction.
     return {
       success: true,
-      text: result.text,
+
+      // Backward-compatible text property.
+      text: result.cleanedText || result.text || result.rawText || '',
+
+      rawText: result.rawText || result.text || '',
+      cleanedText: result.cleanedText || '',
+
+      parsedData: result.parsedData || null,
+
+      blocks: result.blocks || [],
+
+      confidence: result.confidence || null,
+      extractionConfidence: result.extractionConfidence || null,
+
+      warnings: Array.isArray(result.warnings)
+        ? result.warnings
+        : [],
+
+      engine: result.engine || null,
+
       imageUri,
       mocked: false,
-      confidence: result.confidence,
     };
 
   } catch (error) {
@@ -67,6 +93,13 @@ export async function recognizeText(imageUri) {
     return {
       success: false,
       text: '',
+      rawText: '',
+      cleanedText: '',
+      parsedData: null,
+      blocks: [],
+      confidence: null,
+      extractionConfidence: null,
+      warnings: [],
       imageUri,
       mocked: false,
       error: error.message || 'Food label recognition failed.',
